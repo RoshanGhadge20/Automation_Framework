@@ -30,6 +30,12 @@ public class LoginPage extends Base_Test {
 
 	@FindBy(css = ".a-icon-logo")
 	WebElement logo;
+	
+	@FindBy(css ="input[name='password']")
+	WebElement password;
+	
+	@FindBy (css = "input#signInSubmit")
+	WebElement signbtn;
 
 	public String getpagetitle() {
 		return driver.getTitle();
@@ -40,11 +46,12 @@ public class LoginPage extends Base_Test {
 		return logo.isDisplayed();
 	}
 
-	public void do_login(String un) throws InterruptedException {
+	public void do_login(String un, String pass) throws InterruptedException {
 		email_field.sendKeys(un);
-		Thread.sleep(2000);
 		continue_btn.click();
-		System.out.println("Login Successful");
+		password.sendKeys(pass);
+		signbtn.click();
+		//System.out.println("Login Successful");
 	}
 
 }

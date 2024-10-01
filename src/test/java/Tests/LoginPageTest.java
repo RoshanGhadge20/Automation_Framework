@@ -37,7 +37,7 @@ public class LoginPageTest extends Base_Test {
     
     @Test(priority = 3)
     public void login() throws InterruptedException {
-        loginpage.do_login(pr.getProperty("username"));
+        loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
     }
     
     @AfterMethod
