@@ -3,6 +3,7 @@ package Tests;
 import java.io.IOException;
 import java.security.PublicKey;
 
+import org.openqa.selenium.devtools.v127.systeminfo.model.VideoDecodeAcceleratorCapability;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -44,6 +45,13 @@ public class DashboardPageTest extends Base_Test
 	public void get_title()
 	{
 		dashboardpage.get_page_title();
+	}
+	
+	
+	@Test
+	public void get_elements()
+	{
+		dashboardpage.dash_pg_navbar();
 	}
 	
 	@AfterMethod
