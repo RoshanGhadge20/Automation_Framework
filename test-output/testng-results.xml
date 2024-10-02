@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-02T18:51:12 IST" name="Default suite" finished-at="2024-10-02T18:51:35 IST" duration-ms="23572">
+  <suite started-at="2024-10-02T18:52:42 IST" name="Failed suite [Default suite]" finished-at="2024-10-02T18:52:54 IST" duration-ms="11856">
     <groups>
     </groups>
-    <test started-at="2024-10-02T18:51:12 IST" name="Default test" finished-at="2024-10-02T18:51:35 IST" duration-ms="23572">
+    <test started-at="2024-10-02T18:52:42 IST" name="Default test(failed)" finished-at="2024-10-02T18:52:54 IST" duration-ms="11856">
       <class name="Tests.DashboardPageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@397fbdb]" started-at="2024-10-02T18:51:12 IST" name="initialize" finished-at="2024-10-02T18:51:24 IST" duration-ms="11875" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@5fe94a96]" started-at="2024-10-02T18:52:42 IST" name="initialize" finished-at="2024-10-02T18:52:53 IST" duration-ms="11149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="check_logo()[pri:0, instance:Tests.DashboardPageTest@397fbdb]" started-at="2024-10-02T18:51:24 IST" name="check_logo" finished-at="2024-10-02T18:51:24 IST" duration-ms="214" status="PASS">
+        <test-method signature="check_logo()[pri:0, instance:Tests.DashboardPageTest@5fe94a96]" started-at="2024-10-02T18:52:53 IST" name="check_logo" finished-at="2024-10-02T18:52:54 IST" duration-ms="381" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_logo -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@397fbdb]" started-at="2024-10-02T18:51:24 IST" name="tdown" finished-at="2024-10-02T18:51:24 IST" duration-ms="290" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@397fbdb]" started-at="2024-10-02T18:51:24 IST" name="initialize" finished-at="2024-10-02T18:51:35 IST" duration-ms="10736" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="get_title()[pri:0, instance:Tests.DashboardPageTest@397fbdb]" started-at="2024-10-02T18:51:35 IST" name="get_title" finished-at="2024-10-02T18:51:35 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_title -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@397fbdb]" started-at="2024-10-02T18:51:35 IST" name="tdown" finished-at="2024-10-02T18:51:35 IST" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@5fe94a96]" started-at="2024-10-02T18:52:54 IST" name="tdown" finished-at="2024-10-02T18:52:54 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tdown -->
       </class> <!-- Tests.DashboardPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
 </testng-results>
