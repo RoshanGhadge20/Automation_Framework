@@ -9,18 +9,21 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import BaseTest.Base_Test;
+import CommonUtilities.Testutils;
 
 public class LoginPage extends Base_Test {
+	Testutils testutils;
 
 	public LoginPage() throws IOException, FileNotFoundException {
 		super();
 		PageFactory.initElements(driver, this);
+		testutils = new Testutils();
 	}
 
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
+	
 	// object pool ( Weblements )
 	@FindBy(css = "input#ap_email")
 	WebElement email_field;
@@ -42,16 +45,18 @@ public class LoginPage extends Base_Test {
 	}
 
 	public boolean amazon_logo() {
-		wait.until(ExpectedConditions.visibilityOf(logo));
+		testutils.wait.until(ExpectedConditions.visibilityOf(logo));
 		return logo.isDisplayed();
 	}
 
-	public void do_login(String un, String pass) throws InterruptedException {
+	// After login it return object of dashboard page 
+	public DashboardPage do_login(String un, String pass) throws InterruptedException, FileNotFoundException, IOException {
 		email_field.sendKeys(un);
 		continue_btn.click();
 		password.sendKeys(pass);
 		signbtn.click();
 		//System.out.println("Login Successful");
+		return new DashboardPage();
 	}
 
 }

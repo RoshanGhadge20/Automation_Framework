@@ -36,7 +36,7 @@ public class LoginPageTest extends Base_Test {
     }
     
     @Test(priority = 3)
-    public void login() throws InterruptedException {
+    public void login() throws InterruptedException, FileNotFoundException, IOException {
         loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
     }
     
