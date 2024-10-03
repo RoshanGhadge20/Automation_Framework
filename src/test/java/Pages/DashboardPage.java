@@ -2,6 +2,7 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -12,6 +13,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
+import io.github.bonigarcia.wdm.managers.VoidDriverManager;
 
 public class DashboardPage extends Base_Test
 {
@@ -32,6 +34,15 @@ public class DashboardPage extends Base_Test
 	
 	@FindBy(css = "div#navbar")
 	WebElement navbarElement;
+	
+	@FindBy (css = "input#twotabsearchtextbox")
+	WebElement search_bar;
+	
+	@FindBy(css = "input#nav-search-submit-button")
+	WebElement search_icon;
+	
+	@FindBy(css = "div[data-cy='title-recipe']")
+	List<WebElement> list_of_product;
 	
 	
 
@@ -54,7 +65,18 @@ public class DashboardPage extends Base_Test
 		System.out.println("Elements from Navbar"+ element);
 	}	
 	
-	
+	public void search_product(String product_name)
+	{
+		search_bar.clear();
+		search_bar.sendKeys(product_name);
+		search_icon.click();
+		
+		for(WebElement element:list_of_product)
+		{
+			System.out.println("list of suggested product"+element.getText());
+		}
+				
+	}
 
 
 }
