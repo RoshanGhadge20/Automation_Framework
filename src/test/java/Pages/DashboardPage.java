@@ -52,8 +52,7 @@ public class DashboardPage extends Base_Test
 		testutils.wait.until(ExpectedConditions.visibilityOf(navbarElement));
 		String element=navbarElement.getText();
 		System.out.println("Elements from Navbar"+ element);
-	
-	}
+	}	
 	
 	
 
