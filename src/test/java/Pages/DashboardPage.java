@@ -45,6 +45,7 @@ public class DashboardPage extends Base_Test
 	List<WebElement> list_of_product;
 	
 	
+	
 
 	public boolean verify_dashboard_logo() 
 	{
