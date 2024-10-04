@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-03T16:06:56 IST" name="Default suite" finished-at="2024-10-03T16:07:09 IST" duration-ms="12455">
+  <suite started-at="2024-10-04T22:18:01 IST" name="Suite" finished-at="2024-10-04T22:19:14 IST" duration-ms="73081">
     <groups>
     </groups>
-    <test started-at="2024-10-03T16:06:56 IST" name="Default test" finished-at="2024-10-03T16:07:09 IST" duration-ms="12455">
+    <test started-at="2024-10-04T22:18:01 IST" name="Implementation with Listners" finished-at="2024-10-04T22:19:14 IST" duration-ms="73081">
       <class name="Tests.DashboardPageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@765d7657]" started-at="2024-10-03T16:06:56 IST" name="initialize" finished-at="2024-10-03T16:07:02 IST" duration-ms="5275" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:01 IST" name="initialize" finished-at="2024-10-04T22:18:15 IST" duration-ms="14081" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@765d7657]" started-at="2024-10-03T16:07:02 IST" name="search_products" finished-at="2024-10-03T16:07:08 IST" duration-ms="6773" status="PASS">
+        <test-method signature="check_logo()[pri:1, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:15 IST" name="check_logo" finished-at="2024-10-04T22:18:20 IST" duration-ms="4883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:20 IST" name="tdown" finished-at="2024-10-04T22:18:20 IST" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:20 IST" name="initialize" finished-at="2024-10-04T22:18:25 IST" duration-ms="5256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="get_title()[pri:2, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:25 IST" name="get_title" finished-at="2024-10-04T22:18:31 IST" duration-ms="5211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_title -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:31 IST" name="tdown" finished-at="2024-10-04T22:18:31 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:31 IST" name="initialize" finished-at="2024-10-04T22:18:37 IST" duration-ms="6180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="get_elements()[pri:3, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:37 IST" name="get_elements" finished-at="2024-10-04T22:18:43 IST" duration-ms="5292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_elements -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:43 IST" name="tdown" finished-at="2024-10-04T22:18:43 IST" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:43 IST" name="initialize" finished-at="2024-10-04T22:18:48 IST" duration-ms="4313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:48 IST" name="search_products" finished-at="2024-10-04T22:18:57 IST" duration-ms="9735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_products -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@765d7657]" started-at="2024-10-03T16:07:08 IST" name="tdown" finished-at="2024-10-03T16:07:09 IST" duration-ms="360" status="PASS">
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@74235045]" started-at="2024-10-04T22:18:57 IST" name="tdown" finished-at="2024-10-04T22:18:58 IST" duration-ms="342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tdown -->
       </class> <!-- Tests.DashboardPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.LoginPageTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:18:58 IST" name="initialize" finished-at="2024-10-04T22:19:04 IST" duration-ms="5921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:04 IST" name="check_title" finished-at="2024-10-04T22:19:04 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:04 IST" name="teardown" finished-at="2024-10-04T22:19:05 IST" duration-ms="1173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:05 IST" name="initialize" finished-at="2024-10-04T22:19:08 IST" duration-ms="3285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:08 IST" name="check_logo" finished-at="2024-10-04T22:19:09 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:09 IST" name="teardown" finished-at="2024-10-04T22:19:09 IST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:09 IST" name="initialize" finished-at="2024-10-04T22:19:12 IST" duration-ms="3215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:12 IST" name="login" finished-at="2024-10-04T22:19:14 IST" duration-ms="1535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@6989da5e]" started-at="2024-10-04T22:19:14 IST" name="teardown" finished-at="2024-10-04T22:19:14 IST" duration-ms="378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tests.LoginPageTest -->
+    </test> <!-- Implementation with Listners -->
+  </suite> <!-- Suite -->
 </testng-results>
