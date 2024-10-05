@@ -37,7 +37,7 @@ public class LoginPageTest extends Base_Test {
         Assert.assertTrue(loginpage.amazon_logo(), "Logo is not displayed");
     }
     
-    @Test(priority = 3, groups = {"Sanity, Regression"})
+    @Test(priority = 3, groups = {"Sanity", "Regression"})
     public void login() throws InterruptedException, FileNotFoundException, IOException {
         loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
     }
