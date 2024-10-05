@@ -8,6 +8,8 @@
           <include name="check_logo"/>
           <include name="tdown"/>
           <include name="initialize"/>
+          <include name="search_products"/>
+          <include name="get_elements"/>
         </methods>
       </class> <!-- Tests.DashboardPageTest -->
     </classes>

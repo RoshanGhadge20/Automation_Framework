@@ -6,8 +6,8 @@
 </listeners>
   <test thread-count="5" name="Implementation with Listners">
     <classes>
-      <class name="Tests.DashboardPageTest"/>
       <class name="Tests.LoginPageTest"/>
+      <class name="Tests.DashboardPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

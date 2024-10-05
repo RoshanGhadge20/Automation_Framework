@@ -31,7 +31,7 @@ public class Testutils extends Base_Test
 
 	}
 
-	// Implemented Webdriver wait
+	// Implemented Webdriver wait (Explicit Wait)
 	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
 	// Implementing TakeScreenshot Utility

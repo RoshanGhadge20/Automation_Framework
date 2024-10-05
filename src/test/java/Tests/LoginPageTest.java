@@ -2,6 +2,8 @@ package Tests;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -21,21 +23,21 @@ public class LoginPageTest extends Base_Test {
     @BeforeMethod
     public void initialize() throws IOException {
         active();
-        loginpage = new LoginPage();
+        loginpage = new Pages.LoginPage();
     }
     
-    @Test(priority = 1)
+    @Test(priority = 1, groups = {"Sanity"})
     public void check_title() {
         String titleString = loginpage.getpagetitle();
         Assert.assertEquals(titleString, "Amazon Sign In", "Title of login page does not match");
     }
     
-    @Test(priority = 2)
+    @Test(priority = 2 , groups = {"Sanity"})
     public void check_logo() {
         Assert.assertTrue(loginpage.amazon_logo(), "Logo is not displayed");
     }
     
-    @Test(priority = 3)
+    @Test(priority = 3, groups = {"Sanity, Regression"})
     public void login() throws InterruptedException, FileNotFoundException, IOException {
         loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
     }

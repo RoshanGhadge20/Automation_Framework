@@ -35,26 +35,27 @@ public class DashboardPageTest extends Base_Test
 		
 	}
 	
-	@Test(priority = 1)
-	public void check_logo()
-	{
-		Assert.assertEquals(true, dashboardpage.verify_dashboard_logo());
-	}
-	
-	@Test(priority = 2)
+	@Test(priority = 1 , groups = {"Sanity"})
 	public void get_title()
 	{
 		dashboardpage.get_page_title();
 	}
 	
+	@Test(priority = 2, groups = {"Sanity"})
+	public void check_logo()
+	{
+		Assert.assertEquals(true, dashboardpage.verify_dashboard_logo());
+	}
 	
-	@Test(priority = 3)
+	
+	
+	@Test(priority = 3, groups = {"Sanity"})
 	public void get_elements()
 	{
 		dashboardpage.dash_pg_navbar();
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4, groups = {"Regression"})
 	public void search_products()
 	{
 		dashboardpage.search_product(pr.getProperty("product"));
