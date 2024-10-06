@@ -35,13 +35,13 @@ public class DashboardPageTest extends Base_Test
 		
 	}
 	
-	@Test(priority = 1 , groups = {"Sanity"})
+	@Test(priority = 1 , groups = {"Sanity"}, description = "verify title of page in dashboard screen ")
 	public void get_title()
 	{
 		dashboardpage.get_page_title();
 	}
 	
-	@Test(priority = 2, groups = {"Sanity"})
+	@Test(priority = 2, groups = {"Sanity"} , description = "verify appearnace of logo in dashboard page")
 	public void check_logo()
 	{
 		Assert.assertEquals(true, dashboardpage.verify_dashboard_logo());
@@ -49,13 +49,13 @@ public class DashboardPageTest extends Base_Test
 	
 	
 	
-	@Test(priority = 3, groups = {"Sanity"})
+	@Test(priority = 3, groups = {"Sanity"}, description = "validate all navbar options from dashboard page")
 	public void get_elements()
 	{
 		dashboardpage.dash_pg_navbar();
 	}
 	
-	@Test(priority = 4, groups = {"Regression"})
+	@Test(priority = 4, groups = {"Regression"}, description = "Verify user is able to search product")
 	public void search_products()
 	{
 		dashboardpage.search_product(pr.getProperty("product"));

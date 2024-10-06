@@ -49,13 +49,13 @@ public class ProductDetailsPageTest extends Base_Test
 	        }
 	    }
 	
-	@Test(priority = 1)
+	@Test(priority = 1, description = "Verifying Page title on Product details screen", groups = {"Sanity"})
 	public void check_title_page()
 	{
 		productdetailspage.check_title_page();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, description = "Validate user redirects to correct product details screen", groups = {"Sanity"})
 	public void verify_productdetailscreen()
 	{
 	 Assert.assertEquals((productdetailspage.Verify_Productdetail_page()),true);

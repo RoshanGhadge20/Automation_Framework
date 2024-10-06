@@ -26,18 +26,18 @@ public class LoginPageTest extends Base_Test {
         loginpage = new Pages.LoginPage();
     }
     
-    @Test(priority = 1, groups = {"Sanity"})
+    @Test(priority = 1, groups = {"Sanity"} , description = "check title of page on login page ")
     public void check_title() {
         String titleString = loginpage.getpagetitle();
         Assert.assertEquals(titleString, "Amazon Sign In", "Title of login page does not match");
     }
     
-    @Test(priority = 2 , groups = {"Sanity"})
+    @Test(priority = 2 , groups = {"Sanity"}, description = "Check amazon logo shown in login page")
     public void check_logo() {
         Assert.assertTrue(loginpage.amazon_logo(), "Logo is not displayed");
     }
     
-    @Test(priority = 3, groups = {"Sanity", "Regression"})
+    @Test(priority = 3, groups = {"Sanity", "Regression"}, description = "verify user is able to login with valid credentials ")
     public void login() throws InterruptedException, FileNotFoundException, IOException {
         loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
     }
