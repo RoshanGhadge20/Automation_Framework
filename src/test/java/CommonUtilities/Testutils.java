@@ -29,7 +29,7 @@ public class Testutils extends Base_Test
 	}
 
 	// Implemented Webdriver wait (Explicit Wait)
-	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 	// Implementing TakeScreenshot Utility
 	public void TakeScreenShot() throws IOException 

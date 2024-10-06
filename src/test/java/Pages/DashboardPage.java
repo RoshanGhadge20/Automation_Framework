@@ -2,6 +2,7 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.annotation.ElementType;
 import java.util.Iterator;
 import java.util.List;
 
@@ -44,6 +45,7 @@ public class DashboardPage extends Base_Test
 	@FindBy(css = "div[data-cy='title-recipe']")
 	List<WebElement> list_of_product;
 	
+		
 	
 	
 
@@ -77,6 +79,22 @@ public class DashboardPage extends Base_Test
 			System.out.println("list of suggested product"+element.getText());
 		}
 				
+	}
+	
+	public ProductDetailsPage click_product(String product_name) throws Exception, IOException 
+	{
+		search_bar.clear();
+		search_bar.sendKeys(product_name);
+		search_icon.click();
+		for(WebElement element:list_of_product)
+		{
+			if((element.getText().equalsIgnoreCase("realme 10 Pro 5G (Dark Matter, 6GB RAM, 128GB Storage)")))
+			{
+					element.click();
+			}
+		}
+		
+		return new ProductDetailsPage();
 	}
 
 
