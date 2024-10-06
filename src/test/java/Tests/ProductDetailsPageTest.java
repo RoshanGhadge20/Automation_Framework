@@ -40,7 +40,7 @@ public class ProductDetailsPageTest extends Base_Test
 	        String parentWindow = driver.getWindowHandle();  
 	        Set<String> allWindows = driver.getWindowHandles();  
 	        
-	        // Loop through all windows
+
 	        for (String windowHandle : allWindows) {
 	            if (!windowHandle.equals(parentWindow)) {
 	                driver.switchTo().window(windowHandle);  
