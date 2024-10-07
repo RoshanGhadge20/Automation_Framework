@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-06T20:03:33 IST" name="Default suite" finished-at="2024-10-06T20:04:07 IST" duration-ms="33740">
+    <groups>
+      <group name="Sanity">
+        <method signature="ProductDetailsPageTest.check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@59474f18]" name="check_title_page" class="Tests.ProductDetailsPageTest"/>
+        <method signature="ProductDetailsPageTest.verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@59474f18]" name="verify_productdetailscreen" class="Tests.ProductDetailsPageTest"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test started-at="2024-10-06T20:03:33 IST" name="Default test" finished-at="2024-10-06T20:04:07 IST" duration-ms="33740">
+      <class name="Tests.ProductDetailsPageTest">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@59474f18]" started-at="2024-10-06T20:03:33 IST" name="initiate" finished-at="2024-10-06T20:03:43 IST" duration-ms="10362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@59474f18]" started-at="2024-10-06T20:03:43 IST" name="check_title_page" description="Verifying Page title on Product details screen" finished-at="2024-10-06T20:03:49 IST" duration-ms="5851" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title_page -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:Tests.ProductDetailsPageTest@59474f18]" started-at="2024-10-06T20:03:49 IST" name="terminate" finished-at="2024-10-06T20:03:49 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@59474f18]" started-at="2024-10-06T20:03:49 IST" name="initiate" finished-at="2024-10-06T20:04:01 IST" duration-ms="11408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@59474f18]" started-at="2024-10-06T20:04:01 IST" name="verify_productdetailscreen" description="Validate user redirects to correct product details screen" finished-at="2024-10-06T20:04:06 IST" duration-ms="5628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_productdetailscreen -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:Tests.ProductDetailsPageTest@59474f18]" started-at="2024-10-06T20:04:06 IST" name="terminate" finished-at="2024-10-06T20:04:07 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- Tests.ProductDetailsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
