@@ -12,8 +12,7 @@ import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
 
 public class ProductDetailsPage extends Base_Test 
-{
-	
+{	
 	Testutils testutils;
 
 	public ProductDetailsPage() throws IOException, FileNotFoundException 
@@ -24,25 +23,21 @@ public class ProductDetailsPage extends Base_Test
 		
 	}
 	
-	
 
 	@FindBy(xpath = "//span[@id='submit.buy-now']")
 	WebElement BuyNowBtn;
-	
-
 	
 	public void check_title_page()
 	{
 		testutils.wait.until(ExpectedConditions.visibilityOf(BuyNowBtn));
 		System.out.println("Page Title on Product details page "+driver.getTitle());
 	}
+	
 
 	public boolean Verify_Productdetail_page()
 	{
 		testutils.wait.until(ExpectedConditions.visibilityOf(BuyNowBtn));
 		return BuyNowBtn.isDisplayed();
 	}
-	
-	
-	
+		
 }

@@ -3,6 +3,7 @@ package Tests;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import BaseTest.Base_Test;
@@ -28,8 +29,14 @@ public class YourOrdersPageTest extends Base_Test
 	public void initiate()
 	{
 		active();
-		dashboardpage
 		
+	}
+	
+	
+	@AfterMethod
+	public void quite()
+	{
+		driver.quit();
 		
 	}
 }

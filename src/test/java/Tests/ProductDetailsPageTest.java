@@ -65,9 +65,6 @@ public class ProductDetailsPageTest extends Base_Test
 	public void terminate()
 	{
 		driver.quit();
-		//driver.manage().deleteAllCookies();
 	}
-	
-	
 	
 }
