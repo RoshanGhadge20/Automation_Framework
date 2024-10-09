@@ -48,7 +48,6 @@ public class DashboardPageTest extends Base_Test
 	}
 	
 	
-	
 	@Test(priority = 3, groups = {"Sanity"}, description = "validate all navbar options from dashboard page")
 	public void get_elements()
 	{
@@ -62,14 +61,11 @@ public class DashboardPageTest extends Base_Test
 	}
 	
 	
-	
 	@AfterMethod
 	public void tdown()
 	{
 		driver.manage().deleteAllCookies();
 		driver.quit();
 	}
-	
-	
 	
 }
