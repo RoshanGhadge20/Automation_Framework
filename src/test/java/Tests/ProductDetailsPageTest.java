@@ -24,7 +24,6 @@ public class ProductDetailsPageTest extends Base_Test
 	public ProductDetailsPageTest() throws IOException, FileNotFoundException
 	{
 		super();
-	
 	}
 	
 	@BeforeMethod
