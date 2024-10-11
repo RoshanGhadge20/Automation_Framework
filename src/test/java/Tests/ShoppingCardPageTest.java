@@ -45,7 +45,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	}
 
 	
-	@Test(priority = 3)
+	@Test(priority = 3,description ="Add Product to Shopping cart")
 	public void add_product()
 	{
 		productdetailspage.add_to_shoppingcart();
