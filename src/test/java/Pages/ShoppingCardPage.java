@@ -16,18 +16,21 @@ public class ShoppingCardPage extends Base_Test
 {
 	Testutils testutils= new Testutils();
 
+
 	public ShoppingCardPage() throws IOException, FileNotFoundException
 	{
 		super();
 		PageFactory.initElements(driver, this);
 	}
 
+	
 	@FindBy(xpath = "//div[@id='nav-cart-text-container']")
 	WebElement Cart;
 
 	@FindBy(xpath = "//h2[contains(text(),'Shopping Cart')]")
 	WebElement shoppingCartText;
 
+	
 
 
 	public void verify_title()
@@ -44,4 +47,5 @@ public class ShoppingCardPage extends Base_Test
 		Cart.click();
 		return shoppingCartText.isDisplayed();
 	}
+	
 }
