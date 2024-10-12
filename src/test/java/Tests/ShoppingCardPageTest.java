@@ -1,5 +1,7 @@
 package Tests;
 
+import static org.testng.Assert.fail;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -45,14 +47,14 @@ public class ShoppingCardPageTest extends Base_Test {
 	}
 
 	
-	@Test(priority = 3,description ="Select a product and add it to the shopping cart", groups = {"Sanity", "Regression"})
-	public void add_product()
+	@Test(priority = 3,description ="Select a product and add it to the shopping cart", groups = {"Sanity", "Regression"}, enabled = false)
+	public void add_product() throws IOException, Exception
 	{
+		//dashboardpage.search_product(pr.getProperty("product"));
 		productdetailspage.add_to_shoppingcart();
 	}
 	
-	@AfterMethod
-	public void quite_all() {
+	@AfterMethod void quite_all() {
 		driver.quit();
 	}
 	

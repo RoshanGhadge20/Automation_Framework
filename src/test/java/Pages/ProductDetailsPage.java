@@ -10,9 +10,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
+import Tests.ProductDetailsPageTest;
 
 public class ProductDetailsPage extends Base_Test {
 	Testutils testutils;
+	
+	DashboardPage dashboardpage = new DashboardPage();
+	ProductDetailsPageTest productdetailspagetest= new ProductDetailsPageTest();
 
 	public ProductDetailsPage() throws IOException, FileNotFoundException {
 		super();
@@ -24,8 +28,9 @@ public class ProductDetailsPage extends Base_Test {
 	@FindBy(xpath = "//span[@id='submit.buy-now']")
 	WebElement BuyNowBtn;
 
-	@FindBy(xpath = "//body/div[@id='a-page']/div[@id='dp']/div[@id='dp-container']/div[@id='ppd']/div[@id='rightCol']/div[@id='desktop_buybox']/div[@id='buybox']/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/form[1]/div[1]/div[1]/div[37]/div[1]/span[1]/span[1]/span[1]/input[1]")
+	@FindBy(xpath = "//input[@id='add-to-cart-button']")
 	WebElement AddToCard;
+
 
 	public void check_title_page() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(BuyNowBtn));
@@ -37,9 +42,11 @@ public class ProductDetailsPage extends Base_Test {
 		return BuyNowBtn.isDisplayed();
 	}
 
-	public void add_to_shoppingcart()
+	public void add_to_shoppingcart() throws IOException, Exception
 	{
-		testutils.wait.until(ExpectedConditions.visibilityOf(AddToCard));
+		dashboardpage.click_product(pr.getProperty("product"));
+		productdetailspagetest.switchToNewWindow();
+		testutils.wait.until(ExpectedConditions.elementToBeClickable(AddToCard));
 		AddToCard.click();
 		System.out.println("Item added to card successfully");
 	}
