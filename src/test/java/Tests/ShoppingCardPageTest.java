@@ -30,22 +30,22 @@ public class ShoppingCardPageTest extends Base_Test {
 		active();
 		loginpage = new LoginPage();
 		dashboardpage = loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
-		
+		productdetailspage = new ProductDetailsPage();
 		shoppingcardpage = new ShoppingCardPage();
 	}
 
-	@Test(priority = 1, description = "Verify title of page")
+	@Test(priority = 1, description = "Verify title of page", groups = {"Sanity"})
 	public void Verify_title_of_page() {
 		shoppingcardpage.verify_title();
 	}
 
-	@Test(priority = 2, description = "Validate user lands on correct page")
+	@Test(priority = 2, description = "Validate user lands on correct page", groups = {"Sanity"})
 	public void check_page() {
 		shoppingcardpage.verify_correct_page();
 	}
 
 	
-	@Test(priority = 3,description ="Add Product to Shopping cart")
+	@Test(priority = 3,description ="Select a product and add it to the shopping cart", groups = {"Sanity", "Regression"})
 	public void add_product()
 	{
 		productdetailspage.add_to_shoppingcart();
