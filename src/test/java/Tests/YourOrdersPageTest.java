@@ -54,13 +54,16 @@ public class YourOrdersPageTest extends Base_Test
 		Assert.assertTrue(yourorderspage.Verify_YourOrdersPage());
 	}
 	
-	
+	@Test(priority = 3, description = "Verifying all list of options available on your orders page")
+	public void get_yourorders_options() throws InterruptedException
+	{
+		yourorderspage.order_options();
+	}
 	
 	
 	@AfterMethod
 	public void quite()
 	{
 		driver.quit();
-		
 	}
 }

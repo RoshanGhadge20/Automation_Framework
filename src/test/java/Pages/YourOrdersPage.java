@@ -2,16 +2,21 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import BaseTest.Base_Test;
+import CommonUtilities.Testutils;
 
 public class YourOrdersPage extends Base_Test 
 {
 
+	Testutils testutils = new Testutils();
 	
 	public YourOrdersPage() throws IOException, FileNotFoundException 
 	{
@@ -26,11 +31,14 @@ public class YourOrdersPage extends Base_Test
 	@FindBy(xpath = "//h1[contains(text(),'Your Orders')]")
 	WebElement YouOrderText;
 	
+	@FindBy(xpath = "//ul[@role='tablist']//li")
+	List<WebElement> your_orders_options;
+	
 
 	public void get_title_of_yourorderpage() 
 	{
 		Return_Order.click();
-		System.out.println("Title of Your Order Page"+driver.getTitle());
+		System.out.println("Title of Page"+driver.getTitle());
 	}
 	
 
@@ -38,6 +46,17 @@ public class YourOrdersPage extends Base_Test
 	{
 		Return_Order.click();
 		return YouOrderText.isDisplayed();
+	}
+	
+	public void order_options() throws InterruptedException
+	{
+		Return_Order.click();
+		testutils.wait.until(ExpectedConditions.visibilityOf(YouOrderText));
+		for(WebElement element : your_orders_options)
+		{
+			System.out.println("Options are :- " + element.getText());
+			Thread.sleep(1000);
+		}
 	}
 	
 	
