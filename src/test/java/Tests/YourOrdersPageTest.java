@@ -29,7 +29,6 @@ public class YourOrdersPageTest extends Base_Test
 		
 	}
 
-	
 	@BeforeMethod
 	public void initiate() throws FileNotFoundException, IOException, InterruptedException
 	{
@@ -42,23 +41,25 @@ public class YourOrdersPageTest extends Base_Test
 		
 	}
 	
-	@Test(priority = 1, description ="Verify title of page")
+	@Test(priority = 1, description ="Verify title of page", groups = "Sanity")
 	public void check_title()
 	{
 		yourorderspage.get_title_of_yourorderpage();
 	}
 	
-	@Test(priority = 2, description ="Validate user is correctly landed on Yours order page by validating text ")
+	@Test(priority = 2, description ="Validate user is correctly landed on Yours order page by validating text", groups = {"Sanity", "Regression"})
 	public void check_page()
 	{
 		Assert.assertTrue(yourorderspage.Verify_YourOrdersPage());
 	}
 	
-	@Test(priority = 3, description = "Verifying all list of options available on your orders page")
+	@Test(priority = 3, description = "Verifying all list of options available on your orders page", groups = "Sanity")
 	public void get_yourorders_options() throws InterruptedException
 	{
 		yourorderspage.order_options();
 	}
+	
+	
 	
 	
 	@AfterMethod
