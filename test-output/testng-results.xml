@@ -1,21 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-13T16:54:11 IST" name="Default suite" finished-at="2024-10-13T16:54:23 IST" duration-ms="11697">
+  <suite started-at="2024-10-13T17:33:33 IST" name="Default suite" finished-at="2024-10-13T17:34:10 IST" duration-ms="36980">
     <groups>
+      <group name="Sanity">
+        <method signature="YourOrdersPageTest.check_title()[pri:1, instance:Tests.YourOrdersPageTest@65fb9ffc]" name="check_title" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@65fb9ffc]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@65fb9ffc]" name="get_yourorders_options" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@65fb9ffc]" name="check_path" class="Tests.YourOrdersPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@65fb9ffc]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@65fb9ffc]" name="check_path" class="Tests.YourOrdersPageTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-13T16:54:11 IST" name="Default test" finished-at="2024-10-13T16:54:23 IST" duration-ms="11697">
+    <test started-at="2024-10-13T17:33:33 IST" name="Default test" finished-at="2024-10-13T17:34:10 IST" duration-ms="36980">
       <class name="Tests.YourOrdersPageTest">
-        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@397fbdb]" started-at="2024-10-13T16:54:11 IST" name="initiate" finished-at="2024-10-13T16:54:14 IST" duration-ms="3599" status="PASS">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:33 IST" name="initiate" finished-at="2024-10-13T17:33:36 IST" duration-ms="3520" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiate -->
-        <test-method signature="get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@397fbdb]" started-at="2024-10-13T16:54:14 IST" name="get_yourorders_options" description="Verifying all list of options available on your orders page" finished-at="2024-10-13T16:54:22 IST" duration-ms="7808" status="PASS">
+        <test-method signature="check_title()[pri:1, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:36 IST" name="check_title" description="Verify title of page" finished-at="2024-10-13T17:33:40 IST" duration-ms="3509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:40 IST" name="quite" finished-at="2024-10-13T17:33:40 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:40 IST" name="initiate" finished-at="2024-10-13T17:33:43 IST" duration-ms="3049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:43 IST" name="check_page" description="Validate user is correctly landed on Yours order page by validating text" finished-at="2024-10-13T17:33:47 IST" duration-ms="3731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_page -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:47 IST" name="quite" finished-at="2024-10-13T17:33:47 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:47 IST" name="initiate" finished-at="2024-10-13T17:33:50 IST" duration-ms="3164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:50 IST" name="get_yourorders_options" description="Verifying all list of options available on your orders page" finished-at="2024-10-13T17:33:58 IST" duration-ms="7705" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- get_yourorders_options -->
-        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@397fbdb]" started-at="2024-10-13T16:54:22 IST" name="quite" finished-at="2024-10-13T16:54:23 IST" duration-ms="236" status="PASS">
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:58 IST" name="quite" finished-at="2024-10-13T17:33:58 IST" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:33:58 IST" name="initiate" finished-at="2024-10-13T17:34:01 IST" duration-ms="2846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:34:01 IST" name="check_path" description="Verify correct path gets shown in your orders page" finished-at="2024-10-13T17:34:09 IST" duration-ms="8602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_path -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@65fb9ffc]" started-at="2024-10-13T17:34:09 IST" name="quite" finished-at="2024-10-13T17:34:10 IST" duration-ms="186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quite -->

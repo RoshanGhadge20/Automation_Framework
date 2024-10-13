@@ -34,6 +34,9 @@ public class YourOrdersPage extends Base_Test
 	@FindBy(xpath = "//ul[@role='tablist']//li")
 	List<WebElement> your_orders_options;
 	
+	@FindBy(xpath   = "//span[@class='a-color-state']")
+	WebElement page_path;
+	
 
 	public void get_title_of_yourorderpage() 
 	{
@@ -57,6 +60,23 @@ public class YourOrdersPage extends Base_Test
 			System.out.println("Options are :- " + element.getText());
 			Thread.sleep(1000);
 		}
+	}
+	
+	public void validate_path() throws InterruptedException 
+	{
+		Return_Order.click();
+		Thread.sleep(5000);
+		testutils.wait.until(ExpectedConditions.visibilityOf(YouOrderText));
+		String path= page_path.getText();
+		//System.out.println("Path of page "+ path);
+		if (path.contains("Your Orders")) 
+		{
+			System.out.println("Correct page path");
+		}
+		else {
+			System.out.println("Incorrect page path");
+		}
+		
 	}
 	
 	

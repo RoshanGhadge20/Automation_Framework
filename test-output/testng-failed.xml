@@ -6,8 +6,8 @@
       <class name="Tests.YourOrdersPageTest">
         <methods>
           <include name="initiate"/>
+          <include name="check_path"/>
           <include name="quite"/>
-          <include name="get_yourorders_options"/>
         </methods>
       </class> <!-- Tests.YourOrdersPageTest -->
     </classes>

@@ -59,7 +59,11 @@ public class YourOrdersPageTest extends Base_Test
 		yourorderspage.order_options();
 	}
 	
-	
+	@Test(priority = 4, description = "Verify correct path gets shown in your orders page", groups = {"Sanity", "Regression"})
+	public void check_path() throws InterruptedException
+	{
+		yourorderspage.validate_path();
+	}
 	
 	
 	@AfterMethod
