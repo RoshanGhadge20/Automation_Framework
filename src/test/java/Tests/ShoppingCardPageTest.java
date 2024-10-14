@@ -54,6 +54,12 @@ public class ShoppingCardPageTest extends Base_Test {
 		productdetailspage.add_to_shoppingcart();
 	}
 	
+	@Test(priority = 4, groups = "Sanity", description = "fetching list of items added into shoppingcart")
+	public void list_of_items()
+	{
+		shoppingcardpage.list_of_items_addedinto_shopping_cart();
+	}
+	
 	@AfterMethod void quite_all() {
 		driver.quit();
 	}

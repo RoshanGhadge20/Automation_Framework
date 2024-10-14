@@ -1,8 +1,11 @@
 package Pages;
 
+import java.awt.ItemSelectable;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -29,6 +32,9 @@ public class ShoppingCardPage extends Base_Test
 
 	@FindBy(xpath = "//h2[contains(text(),'Shopping Cart')]")
 	WebElement shoppingCartText;
+	
+	@FindBy(css = "div[data-name='Active Items']")
+	WebElement active_items_Area;
 
 	
 
@@ -48,4 +54,14 @@ public class ShoppingCardPage extends Base_Test
 		return shoppingCartText.isDisplayed();
 	}
 	
+	public void list_of_items_addedinto_shopping_cart()
+	{
+		Cart.click();
+		List<WebElement> elements= active_items_Area.findElements(By.xpath("//div[contains(@class, 'sc-list-item-content')]//span[@class='a-truncate-full a-offscreen']"));
+		for(WebElement element:elements)
+		{
+			System.out.println("Items " + element.getAttribute("innerHTML"));
+		}
+		
+	}
 }
