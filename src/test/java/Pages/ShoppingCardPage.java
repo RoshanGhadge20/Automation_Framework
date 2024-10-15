@@ -4,14 +4,12 @@ import java.awt.ItemSelectable;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
 
@@ -25,7 +23,6 @@ public class ShoppingCardPage extends Base_Test
 		super();
 		PageFactory.initElements(driver, this);
 	}
-
 	
 	@FindBy(xpath = "//div[@id='nav-cart-text-container']")
 	WebElement Cart;
@@ -35,9 +32,6 @@ public class ShoppingCardPage extends Base_Test
 	
 	@FindBy(css = "div[data-name='Active Items']")
 	WebElement active_items_Area;
-
-	
-
 
 	public void verify_title()
 	{

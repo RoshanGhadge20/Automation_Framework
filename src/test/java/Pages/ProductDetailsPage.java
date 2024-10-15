@@ -22,7 +22,6 @@ public class ProductDetailsPage extends Base_Test {
 		super();
 		PageFactory.initElements(driver, this);
 		testutils = new Testutils();
-
 	}
 
 	@FindBy(xpath = "//span[@id='submit.buy-now']")

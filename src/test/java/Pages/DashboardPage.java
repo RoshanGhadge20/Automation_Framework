@@ -45,13 +45,11 @@ public class DashboardPage extends Base_Test
 	@FindBy(css = "div[data-cy='title-recipe']")
 	List<WebElement> list_of_product;
 	
-		
-	
-	
+
 
 	public boolean verify_dashboard_logo() 
 	{
-	
+
 		testutils.wait.until(ExpectedConditions.visibilityOf(Dashboardlogo));
 		return Dashboardlogo.isDisplayed();
 	}

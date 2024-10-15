@@ -63,7 +63,5 @@ public class ShoppingCardPageTest extends Base_Test {
 	@AfterMethod void quite_all() {
 		driver.quit();
 	}
-	
-	
 
 }

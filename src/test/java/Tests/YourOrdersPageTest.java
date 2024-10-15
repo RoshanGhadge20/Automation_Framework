@@ -26,7 +26,6 @@ public class YourOrdersPageTest extends Base_Test
 	public YourOrdersPageTest() throws IOException, FileNotFoundException, InterruptedException
 	{
 		super();
-		
 	}
 
 	@BeforeMethod
