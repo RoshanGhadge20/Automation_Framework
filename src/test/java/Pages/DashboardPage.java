@@ -49,7 +49,6 @@ public class DashboardPage extends Base_Test
 
 	public boolean verify_dashboard_logo() 
 	{
-
 		testutils.wait.until(ExpectedConditions.visibilityOf(Dashboardlogo));
 		return Dashboardlogo.isDisplayed();
 	}

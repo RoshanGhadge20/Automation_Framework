@@ -2,17 +2,16 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
 import Tests.ProductDetailsPageTest;
 
-public class ProductDetailsPage extends Base_Test {
+public class ProductDetailsPage extends Base_Test 
+{
 	Testutils testutils;
 	
 	DashboardPage dashboardpage = new DashboardPage();

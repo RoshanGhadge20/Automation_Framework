@@ -60,7 +60,8 @@ public class ShoppingCardPageTest extends Base_Test {
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
 	}
 	
-	@AfterMethod void quite_all() {
+	@AfterMethod void quite_all() 
+	{
 		driver.quit();
 	}
 

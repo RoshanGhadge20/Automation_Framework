@@ -68,17 +68,15 @@ public class YourOrdersPage extends Base_Test
 		Thread.sleep(5000);
 		testutils.wait.until(ExpectedConditions.visibilityOf(YouOrderText));
 		String path= page_path.getText();
-		//System.out.println("Path of page "+ path);
 		if (path.contains("Your Orders")) 
 		{
 			System.out.println("Correct page path");
 		}
-		else {
+		else
+		{
 			System.out.println("Incorrect page path");
 		}
 		
 	}
-	
-	
 
 }
