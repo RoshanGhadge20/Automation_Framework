@@ -5,8 +5,8 @@
     <classes>
       <class name="Tests.ShoppingCardPageTest">
         <methods>
-          <include name="list_of_items"/>
           <include name="initiate_all"/>
+          <include name="do_checkout"/>
           <include name="quite_all"/>
         </methods>
       </class> <!-- Tests.ShoppingCardPageTest -->

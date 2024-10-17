@@ -32,6 +32,12 @@ public class ShoppingCardPage extends Base_Test
 	
 	@FindBy(css = "div[data-name='Active Items']")
 	WebElement active_items_Area;
+	
+	@FindBy(css = "input[name='proceedToRetailCheckout']")
+	WebElement Proceed_to_buy_btn;
+	
+	@FindBy(xpath = "//h1[contains(text(),'Checkout')]")
+	WebElement checkout_title;
 
 	public void verify_title()
 	{
@@ -57,5 +63,14 @@ public class ShoppingCardPage extends Base_Test
 			System.out.println("Items " + element.getAttribute("innerHTML"));
 		}
 		
+	}
+	
+	public void proceed_to_buy()
+	{
+		testutils.wait.until(ExpectedConditions.visibilityOf(Cart));
+		Cart.click();
+		Proceed_to_buy_btn.click();
+		testutils.wait.until(ExpectedConditions.visibilityOf(checkout_title));
+		System.out.println("Redirected to checkout page");
 	}
 }

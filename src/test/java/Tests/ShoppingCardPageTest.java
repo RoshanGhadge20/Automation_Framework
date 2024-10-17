@@ -1,15 +1,12 @@
 package Tests;
 
 import static org.testng.Assert.fail;
-
 import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import BaseTest.Base_Test;
 import Pages.DashboardPage;
 import Pages.LoginPage;
@@ -58,6 +55,13 @@ public class ShoppingCardPageTest extends Base_Test {
 	public void list_of_items()
 	{
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
+	}
+	
+	
+	@Test(priority = 5, groups = "Regression", description = "Proceed to checkout ")
+	public void do_checkout()
+	{
+		shoppingcardpage.proceed_to_buy();
 	}
 	
 	@AfterMethod void quite_all() 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-17T12:26:50 IST" name="Default suite" finished-at="2024-10-17T12:27:43 IST" duration-ms="53278">
+    <groups>
+      <group name="Sanity">
+        <method signature="ShoppingCardPageTest.Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@65fb9ffc]" name="Verify_title_of_page" class="Tests.ShoppingCardPageTest"/>
+        <method signature="ShoppingCardPageTest.check_page()[pri:2, instance:Tests.ShoppingCardPageTest@65fb9ffc]" name="check_page" class="Tests.ShoppingCardPageTest"/>
+        <method signature="ShoppingCardPageTest.list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@65fb9ffc]" name="list_of_items" class="Tests.ShoppingCardPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@65fb9ffc]" name="do_checkout" class="Tests.ShoppingCardPageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-10-17T12:26:50 IST" name="Default test" finished-at="2024-10-17T12:27:43 IST" duration-ms="53278">
+      <class name="Tests.ShoppingCardPageTest">
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:26:50 IST" name="initiate_all" finished-at="2024-10-17T12:26:57 IST" duration-ms="7061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:26:57 IST" name="Verify_title_of_page" description="Verify title of page" finished-at="2024-10-17T12:27:03 IST" duration-ms="6219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_title_of_page -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:03 IST" name="quite_all" finished-at="2024-10-17T12:27:03 IST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:03 IST" name="initiate_all" finished-at="2024-10-17T12:27:08 IST" duration-ms="4846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="check_page()[pri:2, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:08 IST" name="check_page" description="Validate user lands on correct page" finished-at="2024-10-17T12:27:13 IST" duration-ms="5422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_page -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:13 IST" name="quite_all" finished-at="2024-10-17T12:27:14 IST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:14 IST" name="initiate_all" finished-at="2024-10-17T12:27:18 IST" duration-ms="4587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:18 IST" name="list_of_items" description="fetching list of items added into shoppingcart" finished-at="2024-10-17T12:27:24 IST" duration-ms="6220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- list_of_items -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:24 IST" name="quite_all" finished-at="2024-10-17T12:27:25 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:25 IST" name="initiate_all" finished-at="2024-10-17T12:27:30 IST" duration-ms="5681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:30 IST" name="do_checkout" description="Proceed to checkout " finished-at="2024-10-17T12:27:42 IST" duration-ms="11704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- do_checkout -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@65fb9ffc]" started-at="2024-10-17T12:27:42 IST" name="quite_all" finished-at="2024-10-17T12:27:43 IST" duration-ms="950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+      </class> <!-- Tests.ShoppingCardPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
