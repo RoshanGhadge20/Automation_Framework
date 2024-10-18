@@ -60,6 +60,14 @@ public class DashboardPageTest extends Base_Test
 		dashboardpage.search_product(pr.getProperty("product"));
 	}
 	
+	@Test(priority = 5)
+	public void check_user_name()
+	{
+		Assert.assertEquals(true, dashboardpage.verify_profile_details());
+	}
+	
+	
+	
 	
 	@AfterMethod
 	public void tdown()

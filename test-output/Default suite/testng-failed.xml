@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.ShoppingCardPageTest">
+      <class name="Tests.DashboardPageTest">
         <methods>
-          <include name="initiate_all"/>
-          <include name="do_checkout"/>
-          <include name="quite_all"/>
+          <include name="tdown"/>
+          <include name="initialize"/>
+          <include name="check_user_name"/>
         </methods>
-      </class> <!-- Tests.ShoppingCardPageTest -->
+      </class> <!-- Tests.DashboardPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

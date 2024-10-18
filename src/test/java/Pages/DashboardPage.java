@@ -6,6 +6,7 @@ import java.lang.annotation.ElementType;
 import java.util.Iterator;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
@@ -15,6 +16,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
 import io.github.bonigarcia.wdm.managers.VoidDriverManager;
+import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
 public class DashboardPage extends Base_Test
 {
@@ -45,6 +47,13 @@ public class DashboardPage extends Base_Test
 	@FindBy(css = "div[data-cy='title-recipe']")
 	List<WebElement> list_of_product;
 	
+	@FindBy(css = "span.hm-icon-label")
+	WebElement all_menu_option;
+	
+	
+	 @FindBy(css = "#hmenu-customer-name b")
+	 WebElement UserProfile;
+	 	
 
 
 	public boolean verify_dashboard_logo() 
@@ -77,6 +86,31 @@ public class DashboardPage extends Base_Test
 		}
 				
 	}
+	
+	
+	public boolean verify_profile_details() 
+	{
+		testutils.wait.until(ExpectedConditions.visibilityOf(all_menu_option));
+	    all_menu_option.click();
+	    testutils.wait.until(ExpectedConditions.visibilityOf(UserProfile));
+	    String nameString = UserProfile.getText();
+	    System.out.println("nameString "+ nameString);
+	    if(nameString.equalsIgnoreCase("Hello, Roshan"))
+	    { 
+	    	return true;
+	    }
+	    else {
+			return false;
+		}
+	   
+	    
+	}
+	
+	
+	
+	
+	
+	
 	
 	public ProductDetailsPage click_product(String product_name) throws Exception, IOException 
 	{
