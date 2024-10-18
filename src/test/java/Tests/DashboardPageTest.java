@@ -60,7 +60,7 @@ public class DashboardPageTest extends Base_Test
 		dashboardpage.search_product(pr.getProperty("product"));
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 5, groups = "Sanity", description = "Verify user profile details name on all section ")
 	public void check_user_name()
 	{
 		Assert.assertEquals(true, dashboardpage.verify_profile_details());
