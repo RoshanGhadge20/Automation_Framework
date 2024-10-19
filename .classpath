@@ -36,5 +36,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Admin/Downloads/selenium-java-4.16.1/selenium-support-4.16.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
