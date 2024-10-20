@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,7 +18,6 @@ public class ShoppingCardPage extends Base_Test
 {
 	Testutils testutils= new Testutils();
 
-
 	public ShoppingCardPage() throws IOException, FileNotFoundException
 	{
 		super();
@@ -25,6 +25,7 @@ public class ShoppingCardPage extends Base_Test
 	}
 	
 	@FindBy(xpath = "//div[@id='nav-cart-text-container']")
+	@CacheLookup
 	WebElement Cart;
 
 	@FindBy(xpath = "//h2[contains(text(),'Shopping Cart')]")
@@ -34,6 +35,7 @@ public class ShoppingCardPage extends Base_Test
 	WebElement active_items_Area;
 	
 	@FindBy(css = "input[name='proceedToRetailCheckout']")
+	@CacheLookup
 	WebElement Proceed_to_buy_btn;
 	
 	@FindBy(xpath = "//h1[contains(text(),'Checkout')]")

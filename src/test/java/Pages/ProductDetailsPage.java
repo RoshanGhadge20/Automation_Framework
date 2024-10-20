@@ -3,6 +3,7 @@ package Pages;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -24,9 +25,11 @@ public class ProductDetailsPage extends Base_Test
 	}
 
 	@FindBy(xpath = "//span[@id='submit.buy-now']")
+	@CacheLookup
 	WebElement BuyNowBtn;
 
 	@FindBy(xpath = "//input[@id='add-to-cart-button']")
+	@CacheLookup
 	WebElement AddToCard;
 
 
