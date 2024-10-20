@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -26,15 +27,18 @@ public class YourOrdersPage extends Base_Test
 	
 	
 	@FindBy(xpath = "//span[contains(text(),'Returns')]")
+	@CacheLookup
 	WebElement Return_Order;
 	
 	@FindBy(xpath = "//h1[contains(text(),'Your Orders')]")
+	@CacheLookup
 	WebElement YouOrderText;
 	
 	@FindBy(xpath = "//ul[@role='tablist']//li")
 	List<WebElement> your_orders_options;
 	
 	@FindBy(xpath   = "//span[@class='a-color-state']")
+	@CacheLookup
 	WebElement page_path;
 	
 
