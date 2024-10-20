@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -26,18 +27,22 @@ public class LoginPage extends Base_Test {
 	
 	// object pool ( Weblements )
 	@FindBy(css = "input#ap_email")
+	@CacheLookup
 	WebElement email_field;
 
 	@FindBy(css = "span#continue")
+	@CacheLookup
 	WebElement continue_btn;
 
 	@FindBy(css = ".a-icon-logo")
 	WebElement logo;
 	
 	@FindBy(css ="input[name='password']")
+	@CacheLookup
 	WebElement password;
 	
 	@FindBy (css = "input#signInSubmit")
+	@CacheLookup
 	WebElement signbtn;
 
 	public String getpagetitle() {

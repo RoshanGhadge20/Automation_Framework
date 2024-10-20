@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
@@ -36,12 +37,15 @@ public class DashboardPage extends Base_Test
 	WebElement Dashboardlogo;
 	
 	@FindBy(css = "div#navbar")
+	@CacheLookup
 	WebElement navbarElement;
 	
 	@FindBy (css = "input#twotabsearchtextbox")
+	@CacheLookup
 	WebElement search_bar;
 	
 	@FindBy(css = "input#nav-search-submit-button")
+	@CacheLookup
 	WebElement search_icon;
 	
 	@FindBy(css = "div[data-cy='title-recipe']")
