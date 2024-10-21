@@ -44,14 +44,14 @@ public class Testutils extends Base_Test
 		FileUtils.copyFile(fs,des);
 	}
 
-
+	// Implemented select option utility
 	public void select(WebElement element, String  sel_element)
 	{
 		Select sc= new Select(element);
 		sc.selectByVisibleText(sel_element);
 	}
 
-
+	// Implemented window handle functionality
 	public void window_handles()
 	{
 		String parent_win=driver.getWindowHandle();
@@ -63,7 +63,6 @@ public class Testutils extends Base_Test
 			System.out.println(win);
 		}
 		driver.switchTo().window(parent_win);
-		
 	}	
 	
 
