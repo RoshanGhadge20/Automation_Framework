@@ -64,9 +64,5 @@ public class Testutils extends Base_Test
 		}
 		driver.switchTo().window(parent_win);
 	}	
-	
-
-
-
 
 }

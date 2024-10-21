@@ -1,231 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T15:50:55 IST" name="Suite" finished-at="2024-10-21T15:50:55 IST" duration-ms="202">
+  <suite started-at="2024-10-21T16:34:56 IST" name="Suite" finished-at="2024-10-21T16:37:30 IST" duration-ms="154260">
     <groups>
       <group name="Sanity">
-        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_page" class="Tests.YourOrdersPageTest"/>
-        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@1d296da]" name="login" class="Tests.LoginPageTest"/>
-        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.get_title()[pri:1, instance:Tests.DashboardPageTest@77c2494c]" name="get_title" class="Tests.DashboardPageTest"/>
+        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@13c9d689]" name="check_title" class="Tests.LoginPageTest"/>
+        <method signature="ProductDetailsPageTest.check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@f5958c9]" name="check_title_page" class="Tests.ProductDetailsPageTest"/>
+        <method signature="ShoppingCardPageTest.Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@233795b6]" name="Verify_title_of_page" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_title()[pri:1, instance:Tests.YourOrdersPageTest@3eb738bb]" name="check_title" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.check_logo()[pri:2, instance:Tests.DashboardPageTest@77c2494c]" name="check_logo" class="Tests.DashboardPageTest"/>
+        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@13c9d689]" name="check_logo" class="Tests.LoginPageTest"/>
+        <method signature="ProductDetailsPageTest.verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@f5958c9]" name="verify_productdetailscreen" class="Tests.ProductDetailsPageTest"/>
+        <method signature="ShoppingCardPageTest.check_page()[pri:2, instance:Tests.ShoppingCardPageTest@233795b6]" name="check_page" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3eb738bb]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.get_elements()[pri:3, instance:Tests.DashboardPageTest@77c2494c]" name="get_elements" class="Tests.DashboardPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@13c9d689]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="YourOrdersPageTest.get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@3eb738bb]" name="get_yourorders_options" class="Tests.YourOrdersPageTest"/>
+        <method signature="ShoppingCardPageTest.list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@233795b6]" name="list_of_items" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3eb738bb]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.check_user_name()[pri:5, instance:Tests.DashboardPageTest@77c2494c]" name="check_user_name" class="Tests.DashboardPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_page" class="Tests.YourOrdersPageTest"/>
-        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@1d296da]" name="login" class="Tests.LoginPageTest"/>
-        <method signature="DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@1165b38]" name="search_products" class="Tests.DashboardPageTest"/>
-        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_path" class="Tests.YourOrdersPageTest"/>
-        <method signature="ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@7586beff]" name="do_checkout" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3eb738bb]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@13c9d689]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@77c2494c]" name="search_products" class="Tests.DashboardPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3eb738bb]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@233795b6]" name="do_checkout" class="Tests.ShoppingCardPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-21T15:50:55 IST" name="Regression_Test" finished-at="2024-10-21T15:50:55 IST" duration-ms="202">
+    <test started-at="2024-10-21T16:34:56 IST" name="Implementation with Listners" finished-at="2024-10-21T16:37:30 IST" duration-ms="154260">
       <class name="Tests.YourOrdersPageTest">
-        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@3b69e7d1]" started-at="2024-10-21T15:50:55 IST" name="check_page" description="Validate user is correctly landed on Yours order page by validating text" finished-at="2024-10-21T15:50:55 IST" duration-ms="102" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Pages.YourOrdersPage.Verify_YourOrdersPage()" because "this.yourorderspage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.YourOrdersPage.Verify_YourOrdersPage()" because "this.yourorderspage" is null
-at Tests.YourOrdersPageTest.check_page(YourOrdersPageTest.java:52)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:36:51 IST" name="initiate" finished-at="2024-10-21T16:36:54 IST" duration-ms="2620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_title()[pri:1, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:36:54 IST" name="check_title" description="Verify title of page" finished-at="2024-10-21T16:36:58 IST" duration-ms="4484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:36:58 IST" name="quite" finished-at="2024-10-21T16:36:58 IST" duration-ms="142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:36:58 IST" name="initiate" finished-at="2024-10-21T16:37:01 IST" duration-ms="2747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:01 IST" name="check_page" description="Validate user is correctly landed on Yours order page by validating text" finished-at="2024-10-21T16:37:05 IST" duration-ms="4346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_page -->
-        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@3b69e7d1]" started-at="2024-10-21T15:50:55 IST" name="check_path" description="Verify correct path gets shown in your orders page" finished-at="2024-10-21T15:50:55 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Pages.YourOrdersPage.validate_path()" because "this.yourorderspage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.YourOrdersPage.validate_path()" because "this.yourorderspage" is null
-at Tests.YourOrdersPageTest.check_path(YourOrdersPageTest.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:05 IST" name="quite" finished-at="2024-10-21T16:37:05 IST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:05 IST" name="initiate" finished-at="2024-10-21T16:37:08 IST" duration-ms="3022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:08 IST" name="get_yourorders_options" description="Verifying all list of options available on your orders page" finished-at="2024-10-21T16:37:18 IST" duration-ms="9025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_yourorders_options -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:18 IST" name="quite" finished-at="2024-10-21T16:37:18 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:18 IST" name="initiate" finished-at="2024-10-21T16:37:21 IST" duration-ms="2875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:21 IST" name="check_path" description="Verify correct path gets shown in your orders page" finished-at="2024-10-21T16:37:30 IST" duration-ms="9240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_path -->
+        <test-method is-config="true" signature="quite()[pri:0, instance:Tests.YourOrdersPageTest@3eb738bb]" started-at="2024-10-21T16:37:30 IST" name="quite" finished-at="2024-10-21T16:37:30 IST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
       </class> <!-- Tests.YourOrdersPageTest -->
       <class name="Tests.DashboardPageTest">
-        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@1165b38]" started-at="2024-10-21T15:50:55 IST" name="search_products" description="Verify user is able to search product" finished-at="2024-10-21T15:50:55 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Pages.DashboardPage.search_product(String)" because "this.dashboardpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.DashboardPage.search_product(String)" because "this.dashboardpage" is null
-at Tests.DashboardPageTest.search_products(DashboardPageTest.java:60)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:07 IST" name="initialize" finished-at="2024-10-21T16:35:10 IST" duration-ms="3005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="get_title()[pri:1, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:10 IST" name="get_title" description="verify title of page in dashboard screen " finished-at="2024-10-21T16:35:13 IST" duration-ms="2748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_title -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:13 IST" name="tdown" finished-at="2024-10-21T16:35:13 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:13 IST" name="initialize" finished-at="2024-10-21T16:35:16 IST" duration-ms="3009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:16 IST" name="check_logo" description="verify appearnace of logo in dashboard page" finished-at="2024-10-21T16:35:19 IST" duration-ms="2838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:19 IST" name="tdown" finished-at="2024-10-21T16:35:20 IST" duration-ms="355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:20 IST" name="initialize" finished-at="2024-10-21T16:35:23 IST" duration-ms="3029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="get_elements()[pri:3, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:23 IST" name="get_elements" description="validate all navbar options from dashboard page" finished-at="2024-10-21T16:35:25 IST" duration-ms="2570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_elements -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:25 IST" name="tdown" finished-at="2024-10-21T16:35:25 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:25 IST" name="initialize" finished-at="2024-10-21T16:35:28 IST" duration-ms="2909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:28 IST" name="search_products" description="Verify user is able to search product" finished-at="2024-10-21T16:35:35 IST" duration-ms="6801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_products -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:35 IST" name="tdown" finished-at="2024-10-21T16:35:35 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:35 IST" name="initialize" finished-at="2024-10-21T16:35:39 IST" duration-ms="3143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_user_name()[pri:5, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:39 IST" name="check_user_name" description="Verify user profile details name on all section " finished-at="2024-10-21T16:35:42 IST" duration-ms="3423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_user_name -->
+        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@77c2494c]" started-at="2024-10-21T16:35:42 IST" name="tdown" finished-at="2024-10-21T16:35:42 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
       </class> <!-- Tests.DashboardPageTest -->
       <class name="Tests.LoginPageTest">
-        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@1d296da]" started-at="2024-10-21T15:50:55 IST" name="login" description="verify user is able to login with valid credentials" finished-at="2024-10-21T15:50:55 IST" duration-ms="16" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Pages.LoginPage.do_login(String, String)" because "this.loginpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.LoginPage.do_login(String, String)" because "this.loginpage" is null
-at Tests.LoginPageTest.login(LoginPageTest.java:41)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:34:56 IST" name="initialize" finished-at="2024-10-21T16:35:02 IST" duration-ms="6027" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:02 IST" name="check_title" description="check title of page on login page " finished-at="2024-10-21T16:35:02 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:02 IST" name="teardown" finished-at="2024-10-21T16:35:02 IST" duration-ms="147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:02 IST" name="initialize" finished-at="2024-10-21T16:35:04 IST" duration-ms="1858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:04 IST" name="check_logo" description="Check amazon logo shown in login page" finished-at="2024-10-21T16:35:04 IST" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:04 IST" name="teardown" finished-at="2024-10-21T16:35:04 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:04 IST" name="initialize" finished-at="2024-10-21T16:35:06 IST" duration-ms="1797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:06 IST" name="login" description="verify user is able to login with valid credentials" finished-at="2024-10-21T16:35:07 IST" duration-ms="1167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.LoginPageTest@13c9d689]" started-at="2024-10-21T16:35:07 IST" name="teardown" finished-at="2024-10-21T16:35:07 IST" duration-ms="150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- Tests.LoginPageTest -->
+      <class name="Tests.ProductDetailsPageTest">
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@f5958c9]" started-at="2024-10-21T16:35:42 IST" name="initiate" finished-at="2024-10-21T16:35:52 IST" duration-ms="9799" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@f5958c9]" started-at="2024-10-21T16:35:52 IST" name="check_title_page" description="Verifying Page title on Product details screen" finished-at="2024-10-21T16:35:57 IST" duration-ms="5081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title_page -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:Tests.ProductDetailsPageTest@f5958c9]" started-at="2024-10-21T16:35:57 IST" name="terminate" finished-at="2024-10-21T16:35:57 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@f5958c9]" started-at="2024-10-21T16:35:57 IST" name="initiate" finished-at="2024-10-21T16:36:08 IST" duration-ms="10253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@f5958c9]" started-at="2024-10-21T16:36:08 IST" name="verify_productdetailscreen" description="Validate user redirects to correct product details screen" finished-at="2024-10-21T16:36:13 IST" duration-ms="5309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_productdetailscreen -->
+        <test-method is-config="true" signature="terminate()[pri:0, instance:Tests.ProductDetailsPageTest@f5958c9]" started-at="2024-10-21T16:36:13 IST" name="terminate" finished-at="2024-10-21T16:36:13 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+      </class> <!-- Tests.ProductDetailsPageTest -->
       <class name="Tests.ShoppingCardPageTest">
-        <test-method signature="do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@7586beff]" started-at="2024-10-21T15:50:55 IST" name="do_checkout" description="Proceed to checkout " finished-at="2024-10-21T15:50:55 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "Pages.ShoppingCardPage.proceed_to_buy()" because "this.shoppingcardpage" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.ShoppingCardPage.proceed_to_buy()" because "this.shoppingcardpage" is null
-at Tests.ShoppingCardPageTest.do_checkout(ShoppingCardPageTest.java:64)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:13 IST" name="initiate_all" finished-at="2024-10-21T16:36:16 IST" duration-ms="2770" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:16 IST" name="Verify_title_of_page" description="Verify title of page" finished-at="2024-10-21T16:36:20 IST" duration-ms="4001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_title_of_page -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:20 IST" name="quite_all" finished-at="2024-10-21T16:36:20 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:20 IST" name="initiate_all" finished-at="2024-10-21T16:36:23 IST" duration-ms="2726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="check_page()[pri:2, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:23 IST" name="check_page" description="Validate user lands on correct page" finished-at="2024-10-21T16:36:28 IST" duration-ms="4948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_page -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:28 IST" name="quite_all" finished-at="2024-10-21T16:36:28 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:28 IST" name="initiate_all" finished-at="2024-10-21T16:36:31 IST" duration-ms="2862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:31 IST" name="list_of_items" description="fetching list of items added into shoppingcart" finished-at="2024-10-21T16:36:35 IST" duration-ms="4350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- list_of_items -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:35 IST" name="quite_all" finished-at="2024-10-21T16:36:35 IST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:35 IST" name="initiate_all" finished-at="2024-10-21T16:36:38 IST" duration-ms="2830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:38 IST" name="do_checkout" description="Proceed to checkout " finished-at="2024-10-21T16:36:51 IST" duration-ms="12521" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- do_checkout -->
+        <test-method is-config="true" signature="quite_all()[pri:0, instance:Tests.ShoppingCardPageTest@233795b6]" started-at="2024-10-21T16:36:51 IST" name="quite_all" finished-at="2024-10-21T16:36:51 IST" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
       </class> <!-- Tests.ShoppingCardPageTest -->
-    </test> <!-- Regression_Test -->
+    </test> <!-- Implementation with Listners -->
   </suite> <!-- Suite -->
 </testng-results>
