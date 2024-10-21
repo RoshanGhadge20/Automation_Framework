@@ -1,82 +1,231 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-19T18:11:56 IST" name="Default suite" finished-at="2024-10-19T18:12:59 IST" duration-ms="63436">
+  <suite started-at="2024-10-21T15:50:55 IST" name="Suite" finished-at="2024-10-21T15:50:55 IST" duration-ms="202">
     <groups>
       <group name="Sanity">
-        <method signature="DashboardPageTest.get_title()[pri:1, instance:Tests.DashboardPageTest@78691363]" name="get_title" class="Tests.DashboardPageTest"/>
-        <method signature="DashboardPageTest.check_logo()[pri:2, instance:Tests.DashboardPageTest@78691363]" name="check_logo" class="Tests.DashboardPageTest"/>
-        <method signature="DashboardPageTest.get_elements()[pri:3, instance:Tests.DashboardPageTest@78691363]" name="get_elements" class="Tests.DashboardPageTest"/>
-        <method signature="DashboardPageTest.check_user_name()[pri:5, instance:Tests.DashboardPageTest@78691363]" name="check_user_name" class="Tests.DashboardPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@1d296da]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_path" class="Tests.YourOrdersPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@78691363]" name="search_products" class="Tests.DashboardPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@1d296da]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@1165b38]" name="search_products" class="Tests.DashboardPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3b69e7d1]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@7586beff]" name="do_checkout" class="Tests.ShoppingCardPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-19T18:11:56 IST" name="Default test" finished-at="2024-10-19T18:12:59 IST" duration-ms="63436">
+    <test started-at="2024-10-21T15:50:55 IST" name="Regression_Test" finished-at="2024-10-21T15:50:55 IST" duration-ms="202">
+      <class name="Tests.YourOrdersPageTest">
+        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@3b69e7d1]" started-at="2024-10-21T15:50:55 IST" name="check_page" description="Validate user is correctly landed on Yours order page by validating text" finished-at="2024-10-21T15:50:55 IST" duration-ms="102" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.YourOrdersPage.Verify_YourOrdersPage()" because "this.yourorderspage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.YourOrdersPage.Verify_YourOrdersPage()" because "this.yourorderspage" is null
+at Tests.YourOrdersPageTest.check_page(YourOrdersPageTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_page -->
+        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@3b69e7d1]" started-at="2024-10-21T15:50:55 IST" name="check_path" description="Verify correct path gets shown in your orders page" finished-at="2024-10-21T15:50:55 IST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.YourOrdersPage.validate_path()" because "this.yourorderspage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.YourOrdersPage.validate_path()" because "this.yourorderspage" is null
+at Tests.YourOrdersPageTest.check_path(YourOrdersPageTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_path -->
+      </class> <!-- Tests.YourOrdersPageTest -->
       <class name="Tests.DashboardPageTest">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:11:56 IST" name="initialize" finished-at="2024-10-19T18:12:02 IST" duration-ms="5943" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="get_title()[pri:1, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:02 IST" name="get_title" description="verify title of page in dashboard screen " finished-at="2024-10-19T18:12:07 IST" duration-ms="5266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_title -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:07 IST" name="tdown" finished-at="2024-10-19T18:12:07 IST" duration-ms="355" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:07 IST" name="initialize" finished-at="2024-10-19T18:12:12 IST" duration-ms="5146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="check_logo()[pri:2, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:12 IST" name="check_logo" description="verify appearnace of logo in dashboard page" finished-at="2024-10-19T18:12:18 IST" duration-ms="5317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_logo -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:18 IST" name="tdown" finished-at="2024-10-19T18:12:19 IST" duration-ms="996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:19 IST" name="initialize" finished-at="2024-10-19T18:12:25 IST" duration-ms="6390" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="get_elements()[pri:3, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:25 IST" name="get_elements" description="validate all navbar options from dashboard page" finished-at="2024-10-19T18:12:30 IST" duration-ms="4692" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_elements -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:30 IST" name="tdown" finished-at="2024-10-19T18:12:30 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:30 IST" name="initialize" finished-at="2024-10-19T18:12:36 IST" duration-ms="5313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:36 IST" name="search_products" description="Verify user is able to search product" finished-at="2024-10-19T18:12:45 IST" duration-ms="9075" status="PASS">
+        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@1165b38]" started-at="2024-10-21T15:50:55 IST" name="search_products" description="Verify user is able to search product" finished-at="2024-10-21T15:50:55 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.DashboardPage.search_product(String)" because "this.dashboardpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.DashboardPage.search_product(String)" because "this.dashboardpage" is null
+at Tests.DashboardPageTest.search_products(DashboardPageTest.java:60)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search_products -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:45 IST" name="tdown" finished-at="2024-10-19T18:12:46 IST" duration-ms="1204" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdown -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:46 IST" name="initialize" finished-at="2024-10-19T18:12:50 IST" duration-ms="4539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="check_user_name()[pri:5, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:50 IST" name="check_user_name" description="Verify user profile details name on all section " finished-at="2024-10-19T18:12:57 IST" duration-ms="6872" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_user_name -->
-        <test-method is-config="true" signature="tdown()[pri:0, instance:Tests.DashboardPageTest@78691363]" started-at="2024-10-19T18:12:57 IST" name="tdown" finished-at="2024-10-19T18:12:59 IST" duration-ms="1933" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tdown -->
       </class> <!-- Tests.DashboardPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="Tests.LoginPageTest">
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@1d296da]" started-at="2024-10-21T15:50:55 IST" name="login" description="verify user is able to login with valid credentials" finished-at="2024-10-21T15:50:55 IST" duration-ms="16" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.LoginPage.do_login(String, String)" because "this.loginpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.LoginPage.do_login(String, String)" because "this.loginpage" is null
+at Tests.LoginPageTest.login(LoginPageTest.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- Tests.LoginPageTest -->
+      <class name="Tests.ShoppingCardPageTest">
+        <test-method signature="do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@7586beff]" started-at="2024-10-21T15:50:55 IST" name="do_checkout" description="Proceed to checkout " finished-at="2024-10-21T15:50:55 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.ShoppingCardPage.proceed_to_buy()" because "this.shoppingcardpage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.ShoppingCardPage.proceed_to_buy()" because "this.shoppingcardpage" is null
+at Tests.ShoppingCardPageTest.do_checkout(ShoppingCardPageTest.java:64)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- do_checkout -->
+      </class> <!-- Tests.ShoppingCardPageTest -->
+    </test> <!-- Regression_Test -->
+  </suite> <!-- Suite -->
 </testng-results>

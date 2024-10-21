@@ -8,15 +8,30 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">63,436</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Regression_Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">5</td><td class="num">202</td><td>Regression</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">Tests.DashboardPageTest</td><td><a href="#m0">check_logo</a></td><td rowspan="1">1729341732982</td><td rowspan="1">5317</td></tr><tr class="passedeven"><td><a href="#m1">check_user_name</a></td><td rowspan="1">1729341770837</td><td rowspan="1">6872</td></tr><tr class="passedeven"><td><a href="#m2">get_elements</a></td><td rowspan="1">1729341745688</td><td rowspan="1">4692</td></tr><tr class="passedeven"><td><a href="#m3">get_title</a></td><td rowspan="1">1729341722204</td><td rowspan="1">5266</td></tr><tr class="passedeven"><td><a href="#m4">search_products</a></td><td rowspan="1">1729341756010</td><td rowspan="1">9075</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.DashboardPageTest</td><td><a href="#m0">search_products</a></td><td rowspan="1">1729506055789</td><td rowspan="1">3</td></tr><tr class="failedodd"><td rowspan="1">Tests.LoginPageTest</td><td><a href="#m1">login</a></td><td rowspan="1">1729506055760</td><td rowspan="1">16</td></tr><tr class="failedeven"><td rowspan="1">Tests.ShoppingCardPageTest</td><td><a href="#m2">do_checkout</a></td><td rowspan="1">1729506055795</td><td rowspan="1">3</td></tr><tr class="failedodd"><td rowspan="2">Tests.YourOrdersPageTest</td><td><a href="#m3">check_page</a></td><td rowspan="1">1729506055801</td><td rowspan="1">102</td></tr><tr class="failedodd"><td><a href="#m4">check_path</a></td><td rowspan="1">1729506055905</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Tests.DashboardPageTest#check_logo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.DashboardPageTest#check_user_name</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.DashboardPageTest#get_elements</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">Tests.DashboardPageTest#get_title</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">Tests.DashboardPageTest#search_products</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Regression_Test</h2><h3 id="m0">Tests.DashboardPageTest#search_products</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Pages.DashboardPage.search_product(String)&quot; because &quot;this.dashboardpage&quot; is null
+	at Tests.DashboardPageTest.search_products(DashboardPageTest.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.LoginPageTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Pages.LoginPage.do_login(String, String)&quot; because &quot;this.loginpage&quot; is null
+	at Tests.LoginPageTest.login(LoginPageTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.ShoppingCardPageTest#do_checkout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Pages.ShoppingCardPage.proceed_to_buy()&quot; because &quot;this.shoppingcardpage&quot; is null
+	at Tests.ShoppingCardPageTest.do_checkout(ShoppingCardPageTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.YourOrdersPageTest#check_page</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Pages.YourOrdersPage.Verify_YourOrdersPage()&quot; because &quot;this.yourorderspage&quot; is null
+	at Tests.YourOrdersPageTest.check_page(YourOrdersPageTest.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.YourOrdersPageTest#check_path</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;Pages.YourOrdersPage.validate_path()&quot; because &quot;this.yourorderspage&quot; is null
+	at Tests.YourOrdersPageTest.check_path(YourOrdersPageTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -10,9 +10,9 @@
 		<classes>
 			<class name="Tests.LoginPageTest" />
 			<class name="Tests.DashboardPageTest" />
-			<class name="Tests.ProductDetailsPage" />
-			<class name="Tests.ShoppingCardPage" />
-			<class name="Tests.YourOrdersPage" />
+			<class name="Tests.ProductDetailsPageTest" />
+			<class name="Tests.ShoppingCardPageTest" />
+			<class name="Tests.YourOrdersPageTest" />
 		</classes>
 	</test> <!--
 	Test -->
