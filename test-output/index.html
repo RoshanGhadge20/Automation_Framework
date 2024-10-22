@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2047006497\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1347367604\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +104,22 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="check_title_page">check_title_page</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="check_page">check_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="verify_productdetailscreen">verify_productdetailscreen</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="check_path">check_path</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="check_title">check_title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="get_yourorders_options">get_yourorders_options</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -127,25 +137,43 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.ProductDetailsPageTest</span>
+              <span class="class-name">Tests.YourOrdersPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="check_title_page">
-                  </a> <!-- check_title_page -->
-                  <span class="method-name">check_title_page</span>
+                  <a name="check_page">
+                  </a> <!-- check_page -->
+                  <span class="method-name">check_page</span>
                   <em>
-(Verifying Page title on Product details screen)                  </em>
+(Validate user is correctly landed on Yours order page by validating text)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_productdetailscreen">
-                  </a> <!-- verify_productdetailscreen -->
-                  <span class="method-name">verify_productdetailscreen</span>
+                  <a name="check_path">
+                  </a> <!-- check_path -->
+                  <span class="method-name">check_path</span>
                   <em>
-(Validate user redirects to correct product details screen)                  </em>
+(Verify correct path gets shown in your orders page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_title">
+                  </a> <!-- check_title -->
+                  <span class="method-name">check_title</span>
+                  <em>
+(Verify title of page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_yourorders_options">
+                  </a> <!-- get_yourorders_options -->
+                  <span class="method-name">get_yourorders_options</span>
+                  <em>
+(Verifying all list of options available on your orders page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,7 +181,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--2047006497\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1347367604\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -162,7 +190,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.ProductDetailsPageTest&quot;/&gt;
+      &lt;class name=&quot;Tests.YourOrdersPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -187,14 +215,34 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">Sanity</span>
+              <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">check_title_page</span>
+                <span class="method-in-group-name">check_page</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
-                <span class="method-in-group-name">verify_productdetailscreen</span>
+                <span class="method-in-group-name">check_path</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_page</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_path</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_title</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">get_yourorders_options</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -214,20 +262,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_productdetailscreen')
-data.setCell(0, 2, 'Tests.ProductDetailsPageTest')
-data.setCell(0, 3, 5540);
+data.setCell(0, 1, 'check_path')
+data.setCell(0, 2, 'Tests.YourOrdersPageTest')
+data.setCell(0, 3, 9306);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'check_title_page')
-data.setCell(1, 2, 'Tests.ProductDetailsPageTest')
-data.setCell(1, 3, 5121);
+data.setCell(1, 1, 'get_yourorders_options')
+data.setCell(1, 2, 'Tests.YourOrdersPageTest')
+data.setCell(1, 3, 8455);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'check_page')
+data.setCell(2, 2, 'Tests.YourOrdersPageTest')
+data.setCell(2, 3, 5050);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'check_title')
+data.setCell(3, 2, 'Tests.YourOrdersPageTest')
+data.setCell(3, 3, 4172);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -253,54 +309,94 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.ProductDetailsPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Tests.YourOrdersPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">active</span>
-                <span class="method-start">294 ms</span>
+                <span class="method-start">281 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initiate</span>
-                <span class="method-start">3623 ms</span>
+                <span class="method-start">2715 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">check_title_page</span>
-                <span class="method-start">11190 ms</span>
+                <span class="method-name">check_title</span>
+                <span class="method-start">3929 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">terminate([TestResult name=check_title_page status=SUCCESS method=ProductDetailsPageTest.check_title_page()[pr...)</span>
-                <span class="method-start">16314 ms</span>
+                <span class="method-name">quite([TestResult name=check_title status=SUCCESS method=YourOrdersPageTest.check_title()[pri:1, instance:...)</span>
+                <span class="method-start">8106 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">deactive</span>
-                <span class="method-start">16321 ms</span>
+                <span class="method-start">8111 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">active</span>
-                <span class="method-start">16958 ms</span>
+                <span class="method-start">8389 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initiate</span>
-                <span class="method-start">18601 ms</span>
+                <span class="method-start">10345 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verify_productdetailscreen</span>
-                <span class="method-start">26099 ms</span>
+                <span class="method-name">check_page</span>
+                <span class="method-start">11963 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">terminate([TestResult name=verify_productdetailscreen status=SUCCESS method=ProductDetailsPageTest.verify_prod...)</span>
-                <span class="method-start">31641 ms</span>
+                <span class="method-name">quite([TestResult name=check_page status=SUCCESS method=YourOrdersPageTest.check_page()[pri:2, instance:Te...)</span>
+                <span class="method-start">17014 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">deactive</span>
-                <span class="method-start">31642 ms</span>
+                <span class="method-start">17014 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">active</span>
+                <span class="method-start">17315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initiate</span>
+                <span class="method-start">19113 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">get_yourorders_options</span>
+                <span class="method-start">20312 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quite([TestResult name=get_yourorders_options status=SUCCESS method=YourOrdersPageTest.get_yourorders_opti...)</span>
+                <span class="method-start">28771 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">deactive</span>
+                <span class="method-start">28772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">active</span>
+                <span class="method-start">29077 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initiate</span>
+                <span class="method-start">30769 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">check_path</span>
+                <span class="method-start">31960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quite([TestResult name=check_path status=SUCCESS method=YourOrdersPageTest.check_path()[pri:4, instance:Te...)</span>
+                <span class="method-start">41267 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">deactive</span>
+                <span class="method-start">41269 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDownReport</span>
-                <span class="method-start">32184 ms</span>
+                <span class="method-start">43140 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
