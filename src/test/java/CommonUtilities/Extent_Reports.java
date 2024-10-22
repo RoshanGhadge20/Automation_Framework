@@ -1,4 +1,4 @@
-package BaseTest;
+package CommonUtilities;
 import java.io.File;
 
 import org.testng.ITestResult;

@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import BaseTest.Base_Test;
-import BaseTest.Extent_Reports;
+import CommonUtilities.Extent_Reports;
 import CommonUtilities.Testutils;
 
 public class LoginPage extends Base_Test  {
