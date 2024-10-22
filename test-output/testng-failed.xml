@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Regression_Test(failed)">
-    <groups>
-      <run>
-        <include name="Regression"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.YourOrdersPageTest">
-        <methods>
-          <include name="check_page"/>
-          <include name="check_path"/>
-        </methods>
-      </class> <!-- Tests.YourOrdersPageTest -->
-      <class name="Tests.DashboardPageTest">
-        <methods>
-          <include name="search_products"/>
-        </methods>
-      </class> <!-- Tests.DashboardPageTest -->
       <class name="Tests.LoginPageTest">
         <methods>
+          <include name="tearDownReport"/>
           <include name="login"/>
+          <include name="initialize"/>
+          <include name="setupReport"/>
+          <include name="teardown"/>
+          <include name="check_logo"/>
         </methods>
       </class> <!-- Tests.LoginPageTest -->
-      <class name="Tests.ShoppingCardPageTest">
-        <methods>
-          <include name="do_checkout"/>
-        </methods>
-      </class> <!-- Tests.ShoppingCardPageTest -->
     </classes>
-  </test> <!-- Regression_Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
