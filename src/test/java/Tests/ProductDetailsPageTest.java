@@ -6,6 +6,7 @@ import java.security.PublicKey;
 import java.util.Set;
 
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -29,7 +30,6 @@ public class ProductDetailsPageTest extends Base_Test
 	@BeforeMethod
 	public void initiate() throws FileNotFoundException, IOException, Exception
 	{
-		active();
 		dashboardpage = new LoginPage().do_login(pr.getProperty("username"), pr.getProperty("password"));
 		productdetailspage = new DashboardPage().click_product(pr.getProperty("product"));
 		switchToNewWindow();
@@ -49,19 +49,22 @@ public class ProductDetailsPageTest extends Base_Test
 	@Test(priority = 1, description = "Verifying Page title on Product details screen", groups = {"Sanity"})
 	public void check_title_page()
 	{
+		testreports.test_details("Verifying Page title on Product details screen");
 		productdetailspage.check_title_page();
 	}
 
 	@Test(priority = 2, description = "Validate user redirects to correct product details screen", groups = {"Sanity"})
 	public void verify_productdetailscreen()
 	{
+		testreports.test_details("Validate user redirects to correct product details screen");
 	 Assert.assertEquals((productdetailspage.Verify_Productdetail_page()),true);
 	}
 	
 	@AfterMethod
-	public void terminate()
+	public void terminate(ITestResult result)
 	{
-		driver.quit();
+		testreports.getresult(result);
 	}
 	
 }
+

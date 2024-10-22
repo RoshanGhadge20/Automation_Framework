@@ -13,6 +13,7 @@ import Pages.LoginPage;
 public class LoginPageTest extends Base_Test {
 
     LoginPage loginpage;
+    
 
     public LoginPageTest() throws IOException, FileNotFoundException {
         super();
@@ -21,8 +22,6 @@ public class LoginPageTest extends Base_Test {
     @BeforeMethod
     public void initialize() throws IOException 
     {
-        // Call parent method to initialize WebDriver and navigate to URL
-        //active();
         loginpage = new Pages.LoginPage();
     }
 
@@ -47,7 +46,6 @@ public class LoginPageTest extends Base_Test {
 
     @AfterMethod
     public void teardown(ITestResult result) {
-        testreports.getresult(result);  // Log the result of the current test
-       // deactive();  // Quit the driver after each test
+        testreports.getresult(result);  
     }
 }
