@@ -25,7 +25,6 @@ public class Testutils extends Base_Test
 	public Testutils() throws IOException, FileNotFoundException 
 	{
 		super();
-
 	}
 
 	// Implemented Webdriver wait (Explicit Wait)
