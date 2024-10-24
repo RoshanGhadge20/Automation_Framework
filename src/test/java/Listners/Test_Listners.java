@@ -1,10 +1,9 @@
 package Listners;
 
 import java.io.IOException;
-
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
+import CommonUtilities.Testutils;
 import CommonUtilities.Testutils;
 
 public class Test_Listners implements ITestListener 
@@ -21,9 +20,8 @@ public class Test_Listners implements ITestListener
 		System.out.println("Test Gets Failure :- "+ result.getName());
 		try {
 			util.TakeScreenShot();
-		} catch (IOException e) 
-		{
-			System.out.println("Throwing Exception while taking screenshot from failed method "+e.getMessage());
+		} catch (Exception e) {
+			System.out.println("Exception Caught" + e.getMessage());
 		}
 	}
 	

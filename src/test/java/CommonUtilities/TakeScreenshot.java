@@ -16,7 +16,7 @@ public class TakeScreenshot extends Base_Test {
 		super();
 	}
 
-	public void Takescreenhots(WebDriver driver) throws IOException
+	public void Takescreenhots() throws IOException
 	{
 		TakesScreenshot ts= (TakesScreenshot) driver;
 		File source= ts.getScreenshotAs(OutputType.FILE);
