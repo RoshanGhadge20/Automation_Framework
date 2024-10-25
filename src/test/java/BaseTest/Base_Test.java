@@ -43,7 +43,7 @@ public class Base_Test {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         } else {
-            System.out.println("Browser not supported");
+            System.out.println("Webdriver not initialized");
         }
 
         // Load URL with exception handling
