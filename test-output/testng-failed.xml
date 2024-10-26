@@ -5,7 +5,6 @@
     <classes>
       <class name="Tests.LoginPageTest">
         <methods>
-          <include name="login"/>
           <include name="initialize"/>
           <include name="deactive"/>
           <include name="tearDownReport"/>
@@ -13,7 +12,6 @@
           <include name="teardown"/>
           <include name="setupReport"/>
           <include name="check_title"/>
-          <include name="check_logo"/>
         </methods>
       </class> <!-- Tests.LoginPageTest -->
     </classes>
