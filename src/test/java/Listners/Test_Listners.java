@@ -1,6 +1,8 @@
 package Listners;
 
 import java.io.IOException;
+
+import org.apache.logging.log4j.message.Message;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import CommonUtilities.Testutils;
@@ -17,6 +19,11 @@ public class Test_Listners implements ITestListener
 	
 	public void onTestFailure(ITestResult result)
 	{
+		try {
+			util = new Testutils();
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 		System.out.println("Test Gets Failure :- "+ result.getName());
 		try {
 			util.TakeScreenShot();

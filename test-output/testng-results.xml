@@ -2,44 +2,69 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-26T18:10:14 IST" name="Default suite" finished-at="2024-10-26T18:10:30 IST" duration-ms="15389">
+  <suite started-at="2024-10-27T11:57:28 IST" name="Suite" finished-at="2024-10-27T11:57:39 IST" duration-ms="10545">
     <groups>
       <group name="Sanity">
-        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@2f9f7dcf]" name="check_logo" class="Tests.LoginPageTest"/>
-        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@2f9f7dcf]" name="check_title" class="Tests.LoginPageTest"/>
-        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@2f9f7dcf]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@747ddf94]" name="check_logo" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@747ddf94]" name="check_title" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@747ddf94]" name="login" class="Tests.LoginPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@2f9f7dcf]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@747ddf94]" name="login" class="Tests.LoginPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-26T18:10:14 IST" name="Default test" finished-at="2024-10-26T18:10:30 IST" duration-ms="15389">
+    <test started-at="2024-10-27T11:57:28 IST" name="Implementation with Listners" finished-at="2024-10-27T11:57:39 IST" duration-ms="10545">
       <class name="Tests.LoginPageTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:14 IST" name="setupReport" finished-at="2024-10-26T18:10:14 IST" duration-ms="343" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:28 IST" name="setupReport" finished-at="2024-10-27T11:57:28 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:14 IST" name="active" finished-at="2024-10-26T18:10:21 IST" duration-ms="6150" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:28 IST" name="active" finished-at="2024-10-27T11:57:31 IST" duration-ms="2481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:21 IST" name="initialize" finished-at="2024-10-26T18:10:21 IST" duration-ms="171" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:31 IST" name="initialize" finished-at="2024-10-27T11:57:31 IST" duration-ms="34" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:21 IST" name="check_title" description="Check title of login page" finished-at="2024-10-26T18:10:21 IST" duration-ms="30" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:31 IST" name="check_title" description="Check title of login page" finished-at="2024-10-27T11:57:31 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:31 IST" name="teardown" finished-at="2024-10-27T11:57:31 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_title status=SUCCESS method=LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@747ddf94] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:31 IST" name="deactive" finished-at="2024-10-27T11:57:31 IST" duration-ms="228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:31 IST" name="active" finished-at="2024-10-27T11:57:33 IST" duration-ms="1773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:33 IST" name="initialize" finished-at="2024-10-27T11:57:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:33 IST" name="check_logo" description="Check Amazon logo is displayed on login page" finished-at="2024-10-27T11:57:33 IST" duration-ms="65" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA["E:\Automation_Framework\POM\Test_Data\LoginTestDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)]]>
+              <![CDATA[Logo is not displayed expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: "E:\Automation_Framework\POM\Test_Data\LoginTestDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-at CommonUtilities.ExcelUtility.excelutil(ExcelUtility.java:27)
-at Tests.LoginPageTest.check_title(LoginPageTest.java:36)
+              <![CDATA[java.lang.AssertionError: Logo is not displayed expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at Tests.LoginPageTest.check_logo(LoginPageTest.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -68,84 +93,57 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_title -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:21 IST" name="teardown" finished-at="2024-10-26T18:10:21 IST" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=check_title status=FAILURE method=LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@2f9f7dcf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:21 IST" name="deactive" finished-at="2024-10-26T18:10:21 IST" duration-ms="497" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:21 IST" name="active" finished-at="2024-10-26T18:10:23 IST" duration-ms="1815" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:23 IST" name="initialize" finished-at="2024-10-26T18:10:23 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:23 IST" name="check_logo" description="Check Amazon logo is displayed on login page" finished-at="2024-10-26T18:10:23 IST" duration-ms="75" status="PASS">
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_logo -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:23 IST" name="teardown" finished-at="2024-10-26T18:10:23 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:33 IST" name="teardown" finished-at="2024-10-27T11:57:33 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=check_logo status=SUCCESS method=LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@2f9f7dcf] output={null}]]]>
+                <![CDATA[[TestResult name=check_logo status=FAILURE method=LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@747ddf94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:23 IST" name="deactive" finished-at="2024-10-26T18:10:23 IST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:33 IST" name="deactive" finished-at="2024-10-27T11:57:33 IST" duration-ms="166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:23 IST" name="active" finished-at="2024-10-26T18:10:26 IST" duration-ms="2147" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:33 IST" name="active" finished-at="2024-10-27T11:57:35 IST" duration-ms="1638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:26 IST" name="initialize" finished-at="2024-10-26T18:10:26 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:35 IST" name="initialize" finished-at="2024-10-27T11:57:35 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:26 IST" name="login" description="Verify user can log in with valid credentials" finished-at="2024-10-26T18:10:27 IST" duration-ms="1218" status="PASS">
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:35 IST" name="login" description="Verify user can log in with valid credentials" finished-at="2024-10-27T11:57:36 IST" duration-ms="1188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:27 IST" name="teardown" finished-at="2024-10-26T18:10:27 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:36 IST" name="teardown" finished-at="2024-10-27T11:57:36 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@2f9f7dcf] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@747ddf94] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:27 IST" name="deactive" finished-at="2024-10-26T18:10:30 IST" duration-ms="3005" status="PASS">
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:36 IST" name="deactive" finished-at="2024-10-27T11:57:39 IST" duration-ms="2666" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginPageTest@2f9f7dcf]" started-at="2024-10-26T18:10:30 IST" name="tearDownReport" finished-at="2024-10-26T18:10:30 IST" duration-ms="396" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginPageTest@747ddf94]" started-at="2024-10-27T11:57:39 IST" name="tearDownReport" finished-at="2024-10-27T11:57:39 IST" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
       </class> <!-- Tests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Implementation with Listners -->
+  </suite> <!-- Suite -->
 </testng-results>

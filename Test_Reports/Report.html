@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">QA,Test Reports</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Saturday, October 26, 2024, 06:10 PM (IST)</span></a>
+<a href="#"><span class="badge badge-primary">Sunday, October 27, 2024, 11:57 AM (IST)</span></a>
 </li>
 </ul>
 </div>
@@ -80,25 +80,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Check title of login page</p>
             <p class="text-sm">
-              <span>6:10:21 PM</span> / <span>00:00:00:024</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>11:57:31 AM</span> / <span>00:00:00:023</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Check title of login page</h5>
-<span class='badge badge-success'>10.26.2024 6:10:21 PM</span>
-<span class='badge badge-danger'>10.26.2024 6:10:21 PM</span>
-<span class='badge badge-default'>00:00:00:024</span>
+<h5 class="test-status text-pass">Check title of login page</h5>
+<span class='badge badge-success'>10.27.2024 11:57:31 AM</span>
+<span class='badge badge-danger'>10.27.2024 11:57:31 AM</span>
+<span class='badge badge-default'>00:00:00:023</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -110,16 +110,55 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>6:10:21 PM</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:57:31 AM</td>
         <td>
-          <textarea readonly class="code-block">java.io.FileNotFoundException: "E:\Automation_Framework\POM\Test_Data\LoginTestDetails.xlsx" (The filename, directory name, or volume label syntax is incorrect)
-	at java.base/java.io.FileInputStream.open0(Native Method)
-	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:158)
-	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
-	at CommonUtilities.ExcelUtility.excelutil(ExcelUtility.java:27)
-	at Tests.LoginPageTest.check_title(LoginPageTest.java:36)
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Amazon logo displayed on login page</p>
+            <p class="text-sm">
+              <span>11:57:33 AM</span> / <span>00:00:00:280</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Check Amazon logo displayed on login page</h5>
+<span class='badge badge-success'>10.27.2024 11:57:33 AM</span>
+<span class='badge badge-danger'>10.27.2024 11:57:33 AM</span>
+<span class='badge badge-default'>00:00:00:280</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:57:33 AM</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: Logo is not displayed expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at Tests.LoginPageTest.check_logo(LoginPageTest.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -155,47 +194,6 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Check Amazon logo displayed on login page</p>
-            <p class="text-sm">
-              <span>6:10:23 PM</span> / <span>00:00:00:075</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Check Amazon logo displayed on login page</h5>
-<span class='badge badge-success'>10.26.2024 6:10:23 PM</span>
-<span class='badge badge-danger'>10.26.2024 6:10:23 PM</span>
-<span class='badge badge-default'>00:00:00:075</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:10:23 PM</td>
-        <td>
-          
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
         <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
@@ -203,7 +201,7 @@
           <div class="test-detail">
             <p class="name">Verify user can log in with valid credentials</p>
             <p class="text-sm">
-              <span>6:10:26 PM</span> / <span>00:00:01:218</span>
+              <span>11:57:35 AM</span> / <span>00:00:01:189</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -212,9 +210,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Verify user can log in with valid credentials</h5>
-<span class='badge badge-success'>10.26.2024 6:10:26 PM</span>
-<span class='badge badge-danger'>10.26.2024 6:10:27 PM</span>
-<span class='badge badge-default'>00:00:01:218</span>
+<span class='badge badge-success'>10.27.2024 11:57:35 AM</span>
+<span class='badge badge-danger'>10.27.2024 11:57:36 AM</span>
+<span class='badge badge-default'>00:00:01:189</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -227,7 +225,7 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>6:10:27 PM</td>
+        <td>11:57:36 AM</td>
         <td>
           
         </td>
@@ -259,12 +257,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.io.FileNotFoundException</p>
+<p class="name">java.lang.AssertionError</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.io.FileNotFoundException</h4>
+<h4>java.lang.AssertionError</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -278,9 +276,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>18:10:21 PM</td>
+<td>11:57:33 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>Check title of login page</a>
+<a href="#" class="linked" test-id='2' id='2'>Check Amazon logo displayed on login page</a>
 </td>
 </tr>
 </tbody>
@@ -300,13 +298,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Saturday, October 26, 2024, 06:10 PM (IST)</h3>
+<h3>Sunday, October 27, 2024, 11:57 AM (IST)</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Saturday, October 26, 2024, 06:10 PM (IST)</h3>
+<h3>Sunday, October 27, 2024, 11:57 AM (IST)</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -376,7 +374,7 @@
 </div></div>
 <script>
 var timeline = {
-"Check title of login page":0.024,"Check Amazon logo displayed on login page":0.075,"Verify user can log in with valid credentials":1.218
+"Check title of login page":0.023,"Check Amazon logo displayed on login page":0.28,"Verify user can log in with valid credentials":1.189
 };
 </script>
 <div class="row">
