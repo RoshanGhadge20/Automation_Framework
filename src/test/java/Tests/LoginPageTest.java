@@ -10,10 +10,11 @@ import org.testng.annotations.Test;
 import BaseTest.Base_Test;
 import CommonUtilities.ExcelUtility;
 import Pages.LoginPage;
-
+import ScreenRecording.*;
 public class LoginPageTest extends Base_Test {
 
     LoginPage loginpage;
+    CaptureVideo capturevideo;
     
 
     public LoginPageTest() throws IOException, FileNotFoundException {
@@ -24,6 +25,7 @@ public class LoginPageTest extends Base_Test {
     public void initialize() throws IOException 
     {
         loginpage = new Pages.LoginPage();
+        capturevideo = new CaptureVideo();
     }
 
     @Test(priority = 1, groups = {"Sanity"}, description = "Check title of login page")
@@ -41,8 +43,10 @@ public class LoginPageTest extends Base_Test {
 
     @Test(priority = 3, groups = {"Sanity", "Regression"}, description = "Verify user can log in with valid credentials")
     public void login() throws InterruptedException, IOException {
+    	capturevideo.StartRecording();
         testreports.test_details("Verify user can log in with valid credentials");
         loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
+        capturevideo.StopRecording();
     }
 
     @AfterMethod
