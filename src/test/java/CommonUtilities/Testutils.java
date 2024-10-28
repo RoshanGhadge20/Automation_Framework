@@ -65,10 +65,11 @@ public class Testutils extends Base_Test
 		driver.switchTo().window(parent_win);
 	}	
 
-	//Implementing Page ScrollDown / Scrollup
+	//Implementing Page ScrollDown / ScrollUp
 	public void scroll_down(int x, int y)
 	{
 		JavascriptExecutor js= (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(x,y)","");
 	}
+	
 }

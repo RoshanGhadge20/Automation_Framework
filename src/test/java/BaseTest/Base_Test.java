@@ -21,8 +21,8 @@ public class Base_Test {
 
     public Base_Test() throws IOException, FileNotFoundException {
         // Load configuration properties
+    	pr = new Properties();
         FileReader fin = new FileReader("E://Automation_Framework//POM//src//test//java//Configurations//config.properties");
-        pr = new Properties();
         pr.load(fin);
     }
 
