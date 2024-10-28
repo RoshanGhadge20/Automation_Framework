@@ -11,6 +11,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
@@ -64,4 +65,10 @@ public class Testutils extends Base_Test
 		driver.switchTo().window(parent_win);
 	}	
 
+	//Implementing Page ScrollDown / Scrollup
+	public void scroll_down(int x, int y)
+	{
+		JavascriptExecutor js= (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(x,y)","");
+	}
 }
