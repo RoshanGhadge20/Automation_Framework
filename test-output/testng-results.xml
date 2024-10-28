@@ -1,106 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-27T12:11:22 IST" name="Default suite" finished-at="2024-10-27T12:11:34 IST" duration-ms="11382">
+  <suite started-at="2024-10-28T17:11:55 IST" name="Default suite" finished-at="2024-10-28T17:12:09 IST" duration-ms="13784">
     <groups>
       <group name="Sanity">
-        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@327514f]" name="check_logo" class="Tests.LoginPageTest"/>
-        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@327514f]" name="check_title" class="Tests.LoginPageTest"/>
-        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@327514f]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@5b12b668]" name="check_logo" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@5b12b668]" name="check_title" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@5b12b668]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@5b12b668]" name="verify_createaccount_option" class="Tests.LoginPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
-        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@327514f]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@5b12b668]" name="login" class="Tests.LoginPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-27T12:11:22 IST" name="Default test" finished-at="2024-10-27T12:11:34 IST" duration-ms="11382">
+    <test started-at="2024-10-28T17:11:55 IST" name="Default test" finished-at="2024-10-28T17:12:09 IST" duration-ms="13784">
       <class name="Tests.LoginPageTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:22 IST" name="setupReport" finished-at="2024-10-27T12:11:22 IST" duration-ms="239" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:55 IST" name="setupReport" finished-at="2024-10-28T17:11:55 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:22 IST" name="active" finished-at="2024-10-27T12:11:25 IST" duration-ms="2474" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:55 IST" name="active" finished-at="2024-10-28T17:11:58 IST" duration-ms="2517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:25 IST" name="initialize" finished-at="2024-10-27T12:11:25 IST" duration-ms="31" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:58 IST" name="initialize" finished-at="2024-10-28T17:11:58 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:25 IST" name="check_title" description="Check title of login page" finished-at="2024-10-27T12:11:25 IST" duration-ms="46" status="PASS">
+        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:58 IST" name="check_title" description="Title of Login Page" finished-at="2024-10-28T17:11:58 IST" duration-ms="54" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_title -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:25 IST" name="teardown" finished-at="2024-10-27T12:11:25 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:58 IST" name="teardown" finished-at="2024-10-28T17:11:58 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=check_title status=SUCCESS method=LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@327514f] output={null}]]]>
+                <![CDATA[[TestResult name=check_title status=SUCCESS method=LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@5b12b668] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:25 IST" name="deactive" finished-at="2024-10-27T12:11:25 IST" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:58 IST" name="deactive" finished-at="2024-10-28T17:11:58 IST" duration-ms="247" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:25 IST" name="active" finished-at="2024-10-27T12:11:27 IST" duration-ms="1890" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:11:58 IST" name="active" finished-at="2024-10-28T17:12:00 IST" duration-ms="1718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:27 IST" name="initialize" finished-at="2024-10-27T12:11:27 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:00 IST" name="initialize" finished-at="2024-10-28T17:12:00 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:27 IST" name="check_logo" description="Check Amazon logo is displayed on login page" finished-at="2024-10-27T12:11:27 IST" duration-ms="85" status="PASS">
+        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:00 IST" name="check_logo" description="Verify Amazon logo displays on login page" finished-at="2024-10-28T17:12:00 IST" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_logo -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:27 IST" name="teardown" finished-at="2024-10-27T12:11:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:00 IST" name="teardown" finished-at="2024-10-28T17:12:00 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=check_logo status=SUCCESS method=LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@327514f] output={null}]]]>
+                <![CDATA[[TestResult name=check_logo status=SUCCESS method=LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@5b12b668] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:27 IST" name="deactive" finished-at="2024-10-27T12:11:27 IST" duration-ms="192" status="PASS">
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:00 IST" name="deactive" finished-at="2024-10-28T17:12:00 IST" duration-ms="188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:27 IST" name="active" finished-at="2024-10-27T12:11:29 IST" duration-ms="1787" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:00 IST" name="active" finished-at="2024-10-28T17:12:02 IST" duration-ms="1970" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:29 IST" name="initialize" finished-at="2024-10-27T12:11:29 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:02 IST" name="initialize" finished-at="2024-10-28T17:12:02 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:29 IST" name="login" description="Verify user can log in with valid credentials" finished-at="2024-10-27T12:11:31 IST" duration-ms="1911" status="PASS">
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:02 IST" name="login" description="login with valid credentials" finished-at="2024-10-28T17:12:04 IST" duration-ms="1936" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:31 IST" name="teardown" finished-at="2024-10-27T12:11:31 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:04 IST" name="teardown" finished-at="2024-10-28T17:12:04 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@327514f] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@5b12b668] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:31 IST" name="deactive" finished-at="2024-10-27T12:11:34 IST" duration-ms="2670" status="PASS">
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:04 IST" name="deactive" finished-at="2024-10-28T17:12:07 IST" duration-ms="2965" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginPageTest@327514f]" started-at="2024-10-27T12:11:34 IST" name="tearDownReport" finished-at="2024-10-27T12:11:34 IST" duration-ms="314" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:07 IST" name="active" finished-at="2024-10-28T17:12:09 IST" duration-ms="1744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:09 IST" name="initialize" finished-at="2024-10-28T17:12:09 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:09 IST" name="verify_createaccount_option" description="Verify Create_account option in login page" finished-at="2024-10-28T17:12:09 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_createaccount_option -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:09 IST" name="teardown" finished-at="2024-10-28T17:12:09 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_createaccount_option status=SUCCESS method=LoginPageTest.verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@5b12b668] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:09 IST" name="deactive" finished-at="2024-10-28T17:12:09 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginPageTest@5b12b668]" started-at="2024-10-28T17:12:09 IST" name="tearDownReport" finished-at="2024-10-28T17:12:09 IST" duration-ms="380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->

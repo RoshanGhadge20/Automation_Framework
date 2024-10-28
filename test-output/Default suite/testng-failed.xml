@@ -7,11 +7,11 @@
         <methods>
           <include name="initialize"/>
           <include name="deactive"/>
+          <include name="verify_createaccount_option"/>
           <include name="tearDownReport"/>
           <include name="active"/>
           <include name="teardown"/>
           <include name="setupReport"/>
-          <include name="check_title"/>
         </methods>
       </class> <!-- Tests.LoginPageTest -->
     </classes>
