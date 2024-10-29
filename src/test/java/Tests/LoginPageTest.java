@@ -17,7 +17,8 @@ public class LoginPageTest extends Base_Test {
     CaptureVideo capturevideo;
     
 
-    public LoginPageTest() throws IOException, FileNotFoundException {
+    public LoginPageTest() throws IOException, FileNotFoundException 
+    {
         super();
     }
 
@@ -36,7 +37,7 @@ public class LoginPageTest extends Base_Test {
         Assert.assertEquals(titleString, "Amazon Sign In", "Title does not match");
     }
 
-    @Test(priority = 2, groups = {"Sanity"}, description = "Verify Amazon logo displays on login page")
+    @Test(priority = 2, groups = {"Sanity"}, description = "Validate appearance & size of logo")
     public void check_logo() 
     {
         testreports.test_details("Verify Amazon logo displays on login page");
@@ -44,7 +45,8 @@ public class LoginPageTest extends Base_Test {
     }
 
     @Test(priority = 3, groups = {"Sanity", "Regression"}, description = "login with valid credentials")
-    public void login() throws InterruptedException, IOException {
+    public void login() throws InterruptedException, IOException 
+    {
     	capturevideo.StartRecording();
         testreports.test_details("Verify user can log in with valid credentials");
         capturevideo.StopRecording();
