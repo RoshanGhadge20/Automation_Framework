@@ -60,6 +60,12 @@ public class ProductDetailsPageTest extends Base_Test
 	 Assert.assertEquals((productdetailspage.Verify_Productdetail_page()),true);
 	}
 	
+	@Test(priority = 3, groups = "Sanity", description = "Fetch details about product")
+	public void about_product() {
+		testreports.test_details("Fetch details about product");
+		productdetailspage.get_product_details();
+	}
+	
 	@AfterMethod
 	public void terminate(ITestResult result)
 	{

@@ -67,5 +67,10 @@
 			<artifactId>Selenium_practice_code</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+		<dependency>
+			<groupId>RG</groupId>
+			<artifactId>Maven_Project_Practice_Set</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
