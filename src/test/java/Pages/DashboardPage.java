@@ -20,7 +20,6 @@ import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
 public class DashboardPage extends Base_Test
 {
-
 	LoginPage loginpage;
 	Testutils testutils;
 
