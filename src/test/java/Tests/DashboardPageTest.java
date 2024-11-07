@@ -34,14 +34,21 @@ public class DashboardPageTest extends Base_Test
 		dashboardpage = new LoginPage().do_login(pr.getProperty("username"), pr.getProperty("password"));
 	}
 	
-	@Test(priority = 1 , groups = {"Sanity"}, description = "Verify title of dashboard page")
+	
+	/**
+	 * Verify title of dashboard page
+	 */
+	@Test(priority = 1 , groups = {"Sanity"})
 	public void get_title()
 	{
 		testreports.test_details("Verify title of dashboard page");
 		dashboardpage.get_page_title();
 	}
 	
-	@Test(priority = 2, groups = {"Sanity"} , description = "Verify appearnace of logo and size in dashboard page")
+	/**
+	 * Verify the apperance of logo & size on dashboard page
+	 */
+	@Test(priority = 2, groups = {"Sanity"})
 	public void check_logo()
 	{
 		testreports.test_details("verify appearnace of logo in dashboard page");
@@ -49,21 +56,30 @@ public class DashboardPageTest extends Base_Test
 	}
 	
 	
-	@Test(priority = 3, groups = {"Sanity"}, description = "Validate all navbar options in dashboard page")
+	/**
+	 * Verify all the navbar options from dashboard page as expected
+	 */
+	@Test(priority = 3, groups = {"Sanity"})
 	public void get_elements()
 	{
 		testreports.test_details("Validate all navbar options in dashboard page");
 		dashboardpage.dash_pg_navbar();
 	}
 	
-	@Test(priority = 4, groups = {"Regression"}, description = "Verify user is able to search product")
+	/**
+	 * Check if user is able to search product on dashboard page
+	 */
+	@Test(priority = 4, groups = {"Regression"})
 	public void search_products()
 	{
 		testreports.test_details("Verify user is able to search product");
 		dashboardpage.search_product(pr.getProperty("product"));
 	}
 	
-	@Test(priority = 5, groups = "Sanity", description = "Verify user profile details name on all section")
+	/**
+	 * Validate profile details & all listing of options from sidebar
+	 */
+	@Test(priority = 5, groups = {"Sanity"})
 	public void check_user_name()
 	{
 		testreports.test_details("Verify user profile details name on all section");
