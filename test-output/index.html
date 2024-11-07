@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 18 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Sanity_Test" class="navigator-link">
+              <span class="suite-name border-failed">Sanity_Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1670819381\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Sanity_Test" class="navigator-link ">
+                    <span>E:\Automation_Framework\POM\Sanity_Test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Sanity_Test" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                  <a href="#" panel-name="group-Sanity_Test" class="navigator-link ">
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Sanity_Test" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Sanity_Test" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Sanity_Test" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Sanity_Test" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,31 +93,106 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">18 methods, 18 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Sanity_Test" class="hide-methods failed suite-Sanity_Test"> (hide)</a> <!-- hide-methods failed suite-Sanity_Test -->
+                      <a href="#" panel-name="suite-Sanity_Test" class="show-methods failed suite-Sanity_Test"> (show)</a> <!-- show-methods failed suite-Sanity_Test -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Sanity_Test">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="about_product">about_product</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.ShoppingCardPageTest" class="method navigator-link" hash-for-method="Verify_title_of_page">Verify_title_of_page</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="check_title_page">check_title_page</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="about_product">about_product</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="verify_productdetailscreen">verify_productdetailscreen</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.LoginPageTest" class="method navigator-link" hash-for-method="check_logo">check_logo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.DashboardPageTest" class="method navigator-link" hash-for-method="check_logo">check_logo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="check_page">check_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.ShoppingCardPageTest" class="method navigator-link" hash-for-method="check_page">check_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="check_path">check_path</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.LoginPageTest" class="method navigator-link" hash-for-method="check_title">check_title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="check_title">check_title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="check_title_page">check_title_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.DashboardPageTest" class="method navigator-link" hash-for-method="check_user_name">check_user_name</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.DashboardPageTest" class="method navigator-link" hash-for-method="get_elements">get_elements</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.DashboardPageTest" class="method navigator-link" hash-for-method="get_title">get_title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.YourOrdersPageTest" class="method navigator-link" hash-for-method="get_yourorders_options">get_yourorders_options</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.ShoppingCardPageTest" class="method navigator-link" hash-for-method="list_of_items">list_of_items</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.LoginPageTest" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.LoginPageTest" class="method navigator-link" hash-for-method="verify_createaccount_option">verify_createaccount_option</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Sanity_Test" title="Tests.ProductDetailsPageTest" class="method navigator-link" hash-for-method="verify_productdetailscreen">verify_productdetailscreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Sanity_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -128,10 +203,82 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Sanity_Test" class="panel Sanity_Test">
+          <div class="suite-Sanity_Test-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">Tests.YourOrdersPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_page">
+                  </a> <!-- check_page -->
+                  <span class="method-name">check_page</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.check_page(YourOrdersPageTest.java:55)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate user is correctly landed on Yours order page by validating text)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_path">
+                  </a> <!-- check_path -->
+                  <span class="method-name">check_path</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.check_path(YourOrdersPageTest.java:69)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify correct path gets shown in your orders page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_title">
+                  </a> <!-- check_title -->
+                  <span class="method-name">check_title</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.check_title(YourOrdersPageTest.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify title of page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_yourorders_options">
+                  </a> <!-- get_yourorders_options -->
+                  <span class="method-name">get_yourorders_options</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.get_yourorders_options(YourOrdersPageTest.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying all list of options available on your orders page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Test-class-failed -->
+          <div class="suite-Sanity_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">Tests.ProductDetailsPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,6 +287,13 @@
                   <a name="about_product">
                   </a> <!-- about_product -->
                   <span class="method-name">about_product</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ProductDetailsPageTest.testreports&quot; is null
+	at Tests.ProductDetailsPageTest.about_product(ProductDetailsPageTest.java:65)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Fetch details about product)                  </em>
                 </div> <!-- method-content -->
@@ -149,6 +303,13 @@
                   <a name="check_title_page">
                   </a> <!-- check_title_page -->
                   <span class="method-name">check_title_page</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ProductDetailsPageTest.testreports&quot; is null
+	at Tests.ProductDetailsPageTest.check_title_page(ProductDetailsPageTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Verifying Page title on Product details screen)                  </em>
                 </div> <!-- method-content -->
@@ -158,57 +319,321 @@
                   <a name="verify_productdetailscreen">
                   </a> <!-- verify_productdetailscreen -->
                   <span class="method-name">verify_productdetailscreen</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ProductDetailsPageTest.testreports&quot; is null
+	at Tests.ProductDetailsPageTest.verify_productdetailscreen(ProductDetailsPageTest.java:59)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Validate user redirects to correct product details screen)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Sanity_Test-class-failed -->
+          <div class="suite-Sanity_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.ShoppingCardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Verify_title_of_page">
+                  </a> <!-- Verify_title_of_page -->
+                  <span class="method-name">Verify_title_of_page</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ShoppingCardPageTest.testreports&quot; is null
+	at Tests.ShoppingCardPageTest.Verify_title_of_page(ShoppingCardPageTest.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify title of page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_page">
+                  </a> <!-- check_page -->
+                  <span class="method-name">check_page</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ShoppingCardPageTest.testreports&quot; is null
+	at Tests.ShoppingCardPageTest.check_page(ShoppingCardPageTest.java:54)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Validate user lands on correct page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="list_of_items">
+                  </a> <!-- list_of_items -->
+                  <span class="method-name">list_of_items</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ShoppingCardPageTest.testreports&quot; is null
+	at Tests.ShoppingCardPageTest.list_of_items(ShoppingCardPageTest.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(fetching list of items added into shoppingcart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Test-class-failed -->
+          <div class="suite-Sanity_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.DashboardPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_logo">
+                  </a> <!-- check_logo -->
+                  <span class="method-name">check_logo</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.check_logo(DashboardPageTest.java:54)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_user_name">
+                  </a> <!-- check_user_name -->
+                  <span class="method-name">check_user_name</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.check_user_name(DashboardPageTest.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_elements">
+                  </a> <!-- get_elements -->
+                  <span class="method-name">get_elements</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.get_elements(DashboardPageTest.java:65)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="get_title">
+                  </a> <!-- get_title -->
+                  <span class="method-name">get_title</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.get_title(DashboardPageTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Test-class-failed -->
+          <div class="suite-Sanity_Test-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Tests.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_logo">
+                  </a> <!-- check_logo -->
+                  <span class="method-name">check_logo</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.LoginPageTest.testreports&quot; is null
+	at Tests.LoginPageTest.check_logo(LoginPageTest.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="check_title">
+                  </a> <!-- check_title -->
+                  <span class="method-name">check_title</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.LoginPageTest.testreports&quot; is null
+	at Tests.LoginPageTest.check_title(LoginPageTest.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;ScreenRecording.CaptureVideo.StartRecording()&quot; because &quot;this.capturevideo&quot; is null
+	at Tests.LoginPageTest.login(LoginPageTest.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_createaccount_option">
+                  </a> <!-- verify_createaccount_option -->
+                  <span class="method-name">verify_createaccount_option</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.LoginPageTest.testreports&quot; is null
+	at Tests.LoginPageTest.verify_createaccount_option(LoginPageTest.java:76)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Sanity_Test-class-failed -->
+        </div> <!-- panel Sanity_Test -->
+        <div panel-name="test-xml-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1670819381\testng-customsuite.xml</span>
+            <span class="header-content">E:\Automation_Framework\POM\Sanity_Test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Sanity_Test&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Sanity&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;Tests.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;Tests.DashboardPageTest&quot;/&gt;
       &lt;class name=&quot;Tests.ProductDetailsPageTest&quot;/&gt;
+      &lt;class name=&quot;Tests.ShoppingCardPageTest&quot;/&gt;
+      &lt;class name=&quot;Tests.YourOrdersPageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Sanity_Test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Sanity_Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Sanity_Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_page</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_path</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">Sanity</span>
               <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">Verify_title_of_page</span>
+                <br/>
+              </div> <!-- method-in-group -->
               <div class="method-in-group">
                 <span class="method-in-group-name">about_product</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
+                <span class="method-in-group-name">check_logo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_page</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_path</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_title</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">check_title_page</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">check_user_name</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">get_elements</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">get_title</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">get_yourorders_options</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">list_of_items</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_createaccount_option</span>
                 <br/>
               </div> <!-- method-in-group -->
               <div class="method-in-group">
@@ -218,132 +643,299 @@
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Sanity_Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Sanity_Test');
+function tableData_Sanity_Test() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(18);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'check_title_page')
-data.setCell(0, 2, 'Tests.ProductDetailsPageTest')
-data.setCell(0, 3, 7583);
+data.setCell(0, 1, 'check_title')
+data.setCell(0, 2, 'Tests.LoginPageTest')
+data.setCell(0, 3, 17);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_productdetailscreen')
+data.setCell(1, 1, 'check_title_page')
 data.setCell(1, 2, 'Tests.ProductDetailsPageTest')
-data.setCell(1, 3, 6554);
+data.setCell(1, 3, 17);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'about_product')
-data.setCell(2, 2, 'Tests.ProductDetailsPageTest')
-data.setCell(2, 3, 5679);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(2, 1, 'Verify_title_of_page')
+data.setCell(2, 2, 'Tests.ShoppingCardPageTest')
+data.setCell(2, 3, 17);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'check_title')
+data.setCell(3, 2, 'Tests.YourOrdersPageTest')
+data.setCell(3, 3, 17);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'get_title')
+data.setCell(4, 2, 'Tests.DashboardPageTest')
+data.setCell(4, 3, 17);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'check_logo')
+data.setCell(5, 2, 'Tests.LoginPageTest')
+data.setCell(5, 3, 8);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'list_of_items')
+data.setCell(6, 2, 'Tests.ShoppingCardPageTest')
+data.setCell(6, 3, 7);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'get_elements')
+data.setCell(7, 2, 'Tests.DashboardPageTest')
+data.setCell(7, 3, 7);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'check_page')
+data.setCell(8, 2, 'Tests.ShoppingCardPageTest')
+data.setCell(8, 3, 7);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'check_logo')
+data.setCell(9, 2, 'Tests.DashboardPageTest')
+data.setCell(9, 3, 7);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'check_path')
+data.setCell(10, 2, 'Tests.YourOrdersPageTest')
+data.setCell(10, 3, 6);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'check_page')
+data.setCell(11, 2, 'Tests.YourOrdersPageTest')
+data.setCell(11, 3, 4);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verify_createaccount_option')
+data.setCell(12, 2, 'Tests.LoginPageTest')
+data.setCell(12, 3, 4);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'login')
+data.setCell(13, 2, 'Tests.LoginPageTest')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verify_productdetailscreen')
+data.setCell(14, 2, 'Tests.ProductDetailsPageTest')
+data.setCell(14, 3, 2);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'check_user_name')
+data.setCell(15, 2, 'Tests.DashboardPageTest')
+data.setCell(15, 3, 2);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'get_yourorders_options')
+data.setCell(16, 2, 'Tests.YourOrdersPageTest')
+data.setCell(16, 3, 2);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'about_product')
+data.setCell(17, 2, 'Tests.ProductDetailsPageTest')
+data.setCell(17, 3, 2);
+window.suiteTableData['Sanity_Test']= { tableData: data, tableDiv: 'times-div-Sanity_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 145 ms</span>
+              <div id="times-div-Sanity_Test">
+              </div> <!-- times-div-Sanity_Test -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Sanity_Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.ShoppingCardPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">do_checkout</span>
+                <br/>
+                <span class="ignored-method-name">add_product</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Tests.DashboardPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">search_products</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Sanity_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Tests.ProductDetailsPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-suite before">
-                <span class="method-name">setupReport</span>
+              <div class="chronological-class-name">Tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_title</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-suite before -->
-              <div class="configuration-method before">
-                <span class="method-name">active</span>
-                <span class="method-start">338 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initiate</span>
-                <span class="method-start">4581 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ProductDetailsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">check_title_page</span>
-                <span class="method-start">13520 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">terminate([TestResult name=check_title_page status=SUCCESS method=ProductDetailsPageTest.check_title_page()[pr...)</span>
-                <span class="method-start">21107 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">deactive</span>
-                <span class="method-start">21118 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">active</span>
-                <span class="method-start">22385 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initiate</span>
-                <span class="method-start">25980 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ShoppingCardPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Verify_title_of_page</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.YourOrdersPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_title</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.DashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">get_title</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_logo</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ShoppingCardPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_page</span>
+                <span class="method-start">22 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.YourOrdersPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_page</span>
+                <span class="method-start">23 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ProductDetailsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verify_productdetailscreen</span>
-                <span class="method-start">38037 ms</span>
+                <span class="method-start">24 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">terminate([TestResult name=verify_productdetailscreen status=SUCCESS method=ProductDetailsPageTest.verify_prod...)</span>
-                <span class="method-start">44592 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">deactive</span>
-                <span class="method-start">44593 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">active</span>
-                <span class="method-start">45908 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">initiate</span>
-                <span class="method-start">49554 ms</span>
-              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.DashboardPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">about_product</span>
-                <span class="method-start">59907 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_logo</span>
+                <span class="method-start">25 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">terminate([TestResult name=about_product status=SUCCESS method=ProductDetailsPageTest.about_product()[pri:3, i...)</span>
-                <span class="method-start">65589 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">deactive</span>
-                <span class="method-start">65590 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-suite after">
-                <span class="method-name">tearDownReport</span>
-                <span class="method-start">67761 ms</span>
-              </div> <!-- configuration-suite after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ProductDetailsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">about_product</span>
+                <span class="method-start">28 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.YourOrdersPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">get_yourorders_options</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">35 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.ShoppingCardPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">list_of_items</span>
+                <span class="method-start">36 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.YourOrdersPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_path</span>
+                <span class="method-start">38 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.DashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">get_elements</span>
+                <span class="method-start">39 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verify_createaccount_option</span>
+                <span class="method-start">40 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.DashboardPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">check_user_name</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

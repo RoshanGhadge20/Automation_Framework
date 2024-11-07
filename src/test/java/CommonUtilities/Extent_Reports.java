@@ -50,8 +50,6 @@ public class Extent_Reports
 		}
 	}
 	
-	
-	
 	public void test_details(String des)
 	{
 		extenttest = extentreports.createTest(des);

@@ -6,9 +6,11 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import BaseTest.Base_Test;
+import CommonUtilities.Extent_Reports;
 import Pages.DashboardPage;
 import Pages.LoginPage;
 import Pages.ProductDetailsPage;
@@ -24,6 +26,14 @@ public class ShoppingCardPageTest extends Base_Test {
 	public ShoppingCardPageTest() throws IOException, FileNotFoundException {
 		super();
 	}
+	
+	@BeforeClass
+    public void ensureTestReportsInitialized() {
+        if (testreports == null) {
+            testreports = new Extent_Reports();
+            testreports.start_reporter();
+        }
+    }
 
 	@BeforeMethod
 	public void initiate_all() throws FileNotFoundException, IOException, InterruptedException {

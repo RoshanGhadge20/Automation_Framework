@@ -8,13 +8,118 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">67,425</td><td></td><td></td></tr>
+<tr><th colspan="8">Sanity_Test</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">18</td><td class="num">90</td><td>Sanity</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">Tests.ProductDetailsPageTest</td><td><a href="#m0">about_product</a></td><td rowspan="1">1730197335351</td><td rowspan="1">5679</td></tr><tr class="passedeven"><td><a href="#m1">check_title_page</a></td><td rowspan="1">1730197288964</td><td rowspan="1">7583</td></tr><tr class="passedeven"><td><a href="#m2">verify_productdetailscreen</a></td><td rowspan="1">1730197313481</td><td rowspan="1">6554</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sanity_Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">Tests.DashboardPageTest</td><td><a href="#m0">check_logo</a></td><td rowspan="1">1730979860630</td><td rowspan="1">7</td></tr><tr class="failedeven"><td><a href="#m1">check_user_name</a></td><td rowspan="1">1730979860655</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m2">get_elements</a></td><td rowspan="1">1730979860644</td><td rowspan="1">7</td></tr><tr class="failedeven"><td><a href="#m3">get_title</a></td><td rowspan="1">1730979860605</td><td rowspan="1">17</td></tr><tr class="failedodd"><td rowspan="4">Tests.LoginPageTest</td><td><a href="#m4">check_logo</a></td><td rowspan="1">1730979860627</td><td rowspan="1">8</td></tr><tr class="failedodd"><td><a href="#m5">check_title</a></td><td rowspan="1">1730979860605</td><td rowspan="1">17</td></tr><tr class="failedodd"><td><a href="#m6">login</a></td><td rowspan="1">1730979860640</td><td rowspan="1">2</td></tr><tr class="failedodd"><td><a href="#m7">verify_createaccount_option</a></td><td rowspan="1">1730979860645</td><td rowspan="1">4</td></tr><tr class="failedeven"><td rowspan="3">Tests.ProductDetailsPageTest</td><td><a href="#m8">about_product</a></td><td rowspan="1">1730979860633</td><td rowspan="1">2</td></tr><tr class="failedeven"><td><a href="#m9">check_title_page</a></td><td rowspan="1">1730979860605</td><td rowspan="1">17</td></tr><tr class="failedeven"><td><a href="#m10">verify_productdetailscreen</a></td><td rowspan="1">1730979860629</td><td rowspan="1">2</td></tr><tr class="failedodd"><td rowspan="3">Tests.ShoppingCardPageTest</td><td><a href="#m11">Verify_title_of_page</a></td><td rowspan="1">1730979860605</td><td rowspan="1">17</td></tr><tr class="failedodd"><td><a href="#m12">check_page</a></td><td rowspan="1">1730979860627</td><td rowspan="1">7</td></tr><tr class="failedodd"><td><a href="#m13">list_of_items</a></td><td rowspan="1">1730979860641</td><td rowspan="1">7</td></tr><tr class="failedeven"><td rowspan="4">Tests.YourOrdersPageTest</td><td><a href="#m14">check_page</a></td><td rowspan="1">1730979860628</td><td rowspan="1">4</td></tr><tr class="failedeven"><td><a href="#m15">check_path</a></td><td rowspan="1">1730979860643</td><td rowspan="1">6</td></tr><tr class="failedeven"><td><a href="#m16">check_title</a></td><td rowspan="1">1730979860605</td><td rowspan="1">17</td></tr><tr class="failedeven"><td><a href="#m17">get_yourorders_options</a></td><td rowspan="1">1730979860636</td><td rowspan="1">2</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">Tests.ProductDetailsPageTest#about_product</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">Tests.ProductDetailsPageTest#check_title_page</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">Tests.ProductDetailsPageTest#verify_productdetailscreen</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">Tests.DashboardPageTest#check_logo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.check_logo(DashboardPageTest.java:54)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Tests.DashboardPageTest#check_user_name</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.check_user_name(DashboardPageTest.java:85)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Tests.DashboardPageTest#get_elements</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.get_elements(DashboardPageTest.java:65)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">Tests.DashboardPageTest#get_title</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.DashboardPageTest.testreports&quot; is null
+	at Tests.DashboardPageTest.get_title(DashboardPageTest.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">Tests.LoginPageTest#check_logo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.LoginPageTest.testreports&quot; is null
+	at Tests.LoginPageTest.check_logo(LoginPageTest.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">Tests.LoginPageTest#check_title</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.LoginPageTest.testreports&quot; is null
+	at Tests.LoginPageTest.check_title(LoginPageTest.java:40)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">Tests.LoginPageTest#login</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;ScreenRecording.CaptureVideo.StartRecording()&quot; because &quot;this.capturevideo&quot; is null
+	at Tests.LoginPageTest.login(LoginPageTest.java:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">Tests.LoginPageTest#verify_createaccount_option</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.LoginPageTest.testreports&quot; is null
+	at Tests.LoginPageTest.verify_createaccount_option(LoginPageTest.java:76)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">Tests.ProductDetailsPageTest#about_product</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ProductDetailsPageTest.testreports&quot; is null
+	at Tests.ProductDetailsPageTest.about_product(ProductDetailsPageTest.java:65)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">Tests.ProductDetailsPageTest#check_title_page</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ProductDetailsPageTest.testreports&quot; is null
+	at Tests.ProductDetailsPageTest.check_title_page(ProductDetailsPageTest.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">Tests.ProductDetailsPageTest#verify_productdetailscreen</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ProductDetailsPageTest.testreports&quot; is null
+	at Tests.ProductDetailsPageTest.verify_productdetailscreen(ProductDetailsPageTest.java:59)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">Tests.ShoppingCardPageTest#Verify_title_of_page</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ShoppingCardPageTest.testreports&quot; is null
+	at Tests.ShoppingCardPageTest.Verify_title_of_page(ShoppingCardPageTest.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">Tests.ShoppingCardPageTest#check_page</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ShoppingCardPageTest.testreports&quot; is null
+	at Tests.ShoppingCardPageTest.check_page(ShoppingCardPageTest.java:54)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">Tests.ShoppingCardPageTest#list_of_items</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.ShoppingCardPageTest.testreports&quot; is null
+	at Tests.ShoppingCardPageTest.list_of_items(ShoppingCardPageTest.java:70)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">Tests.YourOrdersPageTest#check_page</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.check_page(YourOrdersPageTest.java:55)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">Tests.YourOrdersPageTest#check_path</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.check_path(YourOrdersPageTest.java:69)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">Tests.YourOrdersPageTest#check_title</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.check_title(YourOrdersPageTest.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">Tests.YourOrdersPageTest#get_yourorders_options</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;CommonUtilities.Extent_Reports.test_details(String)&quot; because &quot;Tests.YourOrdersPageTest.testreports&quot; is null
+	at Tests.YourOrdersPageTest.get_yourorders_options(YourOrdersPageTest.java:62)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
