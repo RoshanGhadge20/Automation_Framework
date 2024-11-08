@@ -36,34 +36,44 @@ public class YourOrdersPageTest extends Base_Test
 	{
 		loginpage = new LoginPage();
 		dashboardpage =loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
-		//productdetailspage = new DashboardPage().click_product(pr.getProperty("product"));
-		//switchToNewWindow();
 		yourorderspage = new YourOrdersPage();
 		
 	}
 	
-	@Test(priority = 1, description ="Verify title of page", groups = "Sanity")
+	/** 
+	 * Verify title of page on Yourorders page
+	 */
+	@Test(priority = 1, groups = "Sanity")
 	public void check_title()
 	{
 		testreports.test_details("Verify title of page");
 		yourorderspage.get_title_of_yourorderpage();
 	}
 	
-	@Test(priority = 2, description ="Validate user is correctly landed on Yours order page by validating text", groups = {"Sanity", "Regression"})
+	/**
+	 * Validate user is correctly landed on Yours order page by validating text ( Your Orders )
+	 */
+	@Test(priority = 2, groups = {"Sanity", "Regression"})
 	public void check_page()
 	{
 		testreports.test_details("Validate user is correctly landed on Yours order page by validating text");
 		Assert.assertTrue(yourorderspage.Verify_YourOrdersPage());
 	}
 	
-	@Test(priority = 3, description = "Verifying all list of options available on your orders page", groups = "Sanity")
+	/**
+	 * Verify listing of all options available on your orders page
+	 */
+	@Test(priority = 3,  groups = "Sanity")
 	public void get_yourorders_options() throws InterruptedException
 	{
 		testreports.test_details("Verifying all list of options available on your orders page");
 		yourorderspage.order_options();
 	}
 	
-	@Test(priority = 4, description = "Verify correct path gets shown in your orders page", groups = {"Sanity", "Regression"})
+	/**
+	 * Check if correct path gets shown in your order page
+	 */
+	@Test(priority = 4, groups = {"Sanity", "Regression"})
 	public void check_path() throws InterruptedException
 	{
 		testreports.test_details("Verify correct path gets shown in your orders page");

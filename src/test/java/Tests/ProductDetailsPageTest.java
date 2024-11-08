@@ -46,21 +46,30 @@ public class ProductDetailsPageTest extends Base_Test
 	        }
 	    }
 	
-	@Test(priority = 1, description = "Verifying Page title on Product details screen", groups = {"Sanity"})
+	 /**
+	  * Verify page title on product detail page
+	  */
+	@Test(priority = 1,groups = {"Sanity"})
 	public void check_title_page()
 	{
 		testreports.test_details("Verifying Page title on Product details screen");
 		productdetailspage.check_title_page();
 	}
 
-	@Test(priority = 2, description = "Validate user redirects to correct product details screen", groups = {"Sanity"})
+	/**
+	 * Verify if user is able to redirects to correct product details page after searching & clicking on respective product
+	 */
+	@Test(priority = 2, groups = {"Sanity"})
 	public void verify_productdetailscreen()
 	{
 		testreports.test_details("Validate user redirects to correct product details screen");
 	 Assert.assertEquals((productdetailspage.Verify_Productdetail_page()),true);
 	}
 	
-	@Test(priority = 3, groups = "Sanity", description = "Fetch details about product")
+	/**
+	 * Getting all product details from its details page
+	 */
+	@Test(priority = 3, groups = "Sanity")
 	public void about_product() {
 		testreports.test_details("Fetch details about product");
 		productdetailspage.get_product_details();

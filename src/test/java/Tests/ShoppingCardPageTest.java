@@ -43,20 +43,29 @@ public class ShoppingCardPageTest extends Base_Test {
 		shoppingcardpage = new ShoppingCardPage();
 	}
 
-	@Test(priority = 1, description = "Verify title of page", groups = {"Sanity"})
+	/**
+	 * Verify title of page on shopping card page
+	 */
+	@Test(priority = 1, groups = {"Sanity"})
 	public void Verify_title_of_page() {
 		testreports.test_details("Verify title of page");
 		shoppingcardpage.verify_title();
 	}
 
-	@Test(priority = 2, description = "Validate user lands on correct page", groups = {"Sanity"})
+	/**
+	 * Verify if user correctly land on shopping card page
+	 */
+	@Test(priority = 2, groups = {"Sanity"})
 	public void check_page() {
 		testreports.test_details("Validate user lands on correct page");
 		shoppingcardpage.verify_correct_page();
 	}
 
-	
-	@Test(priority = 3,description ="Select a product and add it to the shopping cart", groups = {"Sanity", "Regression"}, enabled = false)
+
+	/**
+	 * Check if user is able to search product & add it into shopping cart page 
+	 */
+	@Test(priority = 3, groups = {"Sanity", "Regression"}, enabled = false)
 	public void add_product() throws IOException, Exception
 	{
 		testreports.test_details("Select a product and add it to the shopping cart");
@@ -64,15 +73,20 @@ public class ShoppingCardPageTest extends Base_Test {
 		productdetailspage.add_to_shoppingcart();
 	}
 	
-	@Test(priority = 4, groups = "Sanity", description = "fetching list of items added into shoppingcart")
+	/**
+	 * Getting list of items added into shopping cart page
+	 */
+	@Test(priority = 4, groups = "Sanity")
 	public void list_of_items()
 	{
 		testreports.test_details("fetching list of items added into shoppingcart");
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
 	}
 	
-	
-	@Test(priority = 5, groups = "Regression", description = "Proceed to checkout ")
+	/**
+	 * Check if user is able to proceed to checkout
+	 */
+	@Test(priority = 5, groups = "Regression")
 	public void do_checkout()
 	{
 		testreports.test_details("Verify Checkout Functionality");
