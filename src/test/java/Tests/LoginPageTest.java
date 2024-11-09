@@ -37,7 +37,7 @@ public class LoginPageTest extends Base_Test
     @Test(priority = 1, groups = {"Sanity"})
     public void check_title() throws IOException 
     {
-        testreports.test_details("Check title of login page");
+    	testreports.test_details("Check title of login page");
         String titleString = loginpage.getpagetitle();
         Assert.assertEquals(titleString, "Amazon Sign In", "Title does not match");
     }

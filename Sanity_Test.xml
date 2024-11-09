@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Sanity_Test">
+		<groups>
+			<run>
+				<include name="Sanity"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="Tests.LoginPageTest"></class>
+			<class name="Tests.DashboardPageTest"></class>
+			<class name="Tests.ProductDetailsPageTest"></class>
+			<class name="Tests.ShoppingCardPageTest"></class>
+			<class name="Tests.YourOrdersPageTest"></class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
