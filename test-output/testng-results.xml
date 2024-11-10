@@ -1,78 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="21" passed="0" failed="18" skipped="0">
+<testng-results ignored="16" total="21" passed="0" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-09T20:05:58 IST" name="Suite" finished-at="2024-11-09T20:05:58 IST" duration-ms="97">
+  <suite started-at="2024-11-10T11:41:18 IST" name="Suite" finished-at="2024-11-10T11:41:18 IST" duration-ms="198">
     <groups>
       <group name="Sanity">
-        <method signature="DashboardPageTest.check_logo()[pri:2, instance:Tests.DashboardPageTest@385c9627]" name="check_logo" class="Tests.DashboardPageTest"/>
-        <method signature="DashboardPageTest.check_user_name()[pri:5, instance:Tests.DashboardPageTest@385c9627]" name="check_user_name" class="Tests.DashboardPageTest"/>
-        <method signature="DashboardPageTest.get_elements()[pri:3, instance:Tests.DashboardPageTest@385c9627]" name="get_elements" class="Tests.DashboardPageTest"/>
-        <method signature="DashboardPageTest.get_title()[pri:1, instance:Tests.DashboardPageTest@385c9627]" name="get_title" class="Tests.DashboardPageTest"/>
-        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@6150c3ec]" name="check_logo" class="Tests.LoginPageTest"/>
-        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@6150c3ec]" name="check_title" class="Tests.LoginPageTest"/>
         <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@6150c3ec]" name="login" class="Tests.LoginPageTest"/>
-        <method signature="LoginPageTest.verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@6150c3ec]" name="verify_createaccount_option" class="Tests.LoginPageTest"/>
-        <method signature="ProductDetailsPageTest.about_product()[pri:3, instance:Tests.ProductDetailsPageTest@139982de]" name="about_product" class="Tests.ProductDetailsPageTest"/>
-        <method signature="ProductDetailsPageTest.check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@139982de]" name="check_title_page" class="Tests.ProductDetailsPageTest"/>
-        <method signature="ProductDetailsPageTest.verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@139982de]" name="verify_productdetailscreen" class="Tests.ProductDetailsPageTest"/>
-        <method signature="ShoppingCardPageTest.Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@682b2fa]" name="Verify_title_of_page" class="Tests.ShoppingCardPageTest"/>
-        <method signature="ShoppingCardPageTest.check_page()[pri:2, instance:Tests.ShoppingCardPageTest@682b2fa]" name="check_page" class="Tests.ShoppingCardPageTest"/>
-        <method signature="ShoppingCardPageTest.list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@682b2fa]" name="list_of_items" class="Tests.ShoppingCardPageTest"/>
-        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@217ed35e]" name="check_page" class="Tests.YourOrdersPageTest"/>
-        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@217ed35e]" name="check_path" class="Tests.YourOrdersPageTest"/>
-        <method signature="YourOrdersPageTest.check_title()[pri:1, instance:Tests.YourOrdersPageTest@217ed35e]" name="check_title" class="Tests.YourOrdersPageTest"/>
-        <method signature="YourOrdersPageTest.get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@217ed35e]" name="get_yourorders_options" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@682b2fa]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@682b2fa]" name="check_path" class="Tests.YourOrdersPageTest"/>
       </group> <!-- Sanity -->
       <group name="Regression">
+        <method signature="DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@385c9627]" name="search_products" class="Tests.DashboardPageTest"/>
         <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@6150c3ec]" name="login" class="Tests.LoginPageTest"/>
-        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@217ed35e]" name="check_page" class="Tests.YourOrdersPageTest"/>
-        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@217ed35e]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@217ed35e]" name="do_checkout" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@682b2fa]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@682b2fa]" name="check_path" class="Tests.YourOrdersPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-11-09T20:05:58 IST" name="Sanity_Test" finished-at="2024-11-09T20:05:58 IST" duration-ms="97">
+    <test started-at="2024-11-10T11:41:18 IST" name="Test" finished-at="2024-11-10T11:41:18 IST" duration-ms="198">
       <class name="Tests.YourOrdersPageTest">
-        <test-method signature="check_title()[pri:1, instance:Tests.YourOrdersPageTest@217ed35e]" started-at="2024-11-09T20:05:58 IST" name="check_title" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.YourOrdersPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.YourOrdersPageTest.testreports" is null
-at Tests.YourOrdersPageTest.check_title(YourOrdersPageTest.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_title -->
-        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@217ed35e]" started-at="2024-11-09T20:05:58 IST" name="check_page" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
+        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@682b2fa]" started-at="2024-11-10T11:41:18 IST" name="check_page" finished-at="2024-11-10T11:41:18 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.YourOrdersPageTest.testreports" is null]]>
@@ -112,47 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_page -->
-        <test-method signature="get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@217ed35e]" started-at="2024-11-09T20:05:58 IST" name="get_yourorders_options" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.YourOrdersPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.YourOrdersPageTest.testreports" is null
-at Tests.YourOrdersPageTest.get_yourorders_options(YourOrdersPageTest.java:69)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_yourorders_options -->
-        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@217ed35e]" started-at="2024-11-09T20:05:58 IST" name="check_path" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
+        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@682b2fa]" started-at="2024-11-10T11:41:18 IST" name="check_path" finished-at="2024-11-10T11:41:18 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.YourOrdersPageTest.testreports" is null]]>
@@ -194,14 +101,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
         </test-method> <!-- check_path -->
       </class> <!-- Tests.YourOrdersPageTest -->
       <class name="Tests.DashboardPageTest">
-        <test-method signature="get_title()[pri:1, instance:Tests.DashboardPageTest@385c9627]" started-at="2024-11-09T20:05:58 IST" name="get_title" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
+        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@385c9627]" started-at="2024-11-10T11:41:18 IST" name="search_products" finished-at="2024-11-10T11:41:18 IST" duration-ms="101" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null
-at Tests.DashboardPageTest.get_title(DashboardPageTest.java:44)
+at Tests.DashboardPageTest.search_products(DashboardPageTest.java:75)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -233,210 +140,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- get_title -->
-        <test-method signature="check_logo()[pri:2, instance:Tests.DashboardPageTest@385c9627]" started-at="2024-11-09T20:05:58 IST" name="check_logo" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null
-at Tests.DashboardPageTest.check_logo(DashboardPageTest.java:54)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_logo -->
-        <test-method signature="get_elements()[pri:3, instance:Tests.DashboardPageTest@385c9627]" started-at="2024-11-09T20:05:58 IST" name="get_elements" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null
-at Tests.DashboardPageTest.get_elements(DashboardPageTest.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- get_elements -->
-        <test-method signature="check_user_name()[pri:5, instance:Tests.DashboardPageTest@385c9627]" started-at="2024-11-09T20:05:58 IST" name="check_user_name" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.DashboardPageTest.testreports" is null
-at Tests.DashboardPageTest.check_user_name(DashboardPageTest.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_user_name -->
+        </test-method> <!-- search_products -->
       </class> <!-- Tests.DashboardPageTest -->
       <class name="Tests.LoginPageTest">
-        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@6150c3ec]" started-at="2024-11-09T20:05:58 IST" name="check_title" finished-at="2024-11-09T20:05:58 IST" duration-ms="13" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "BaseTest.Base_Test.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "BaseTest.Base_Test.testreports" is null
-at Tests.LoginPageTest.check_title(LoginPageTest.java:40)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_title -->
-        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@6150c3ec]" started-at="2024-11-09T20:05:58 IST" name="check_logo" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.LoginPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.LoginPageTest.testreports" is null
-at Tests.LoginPageTest.check_logo(LoginPageTest.java:53)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_logo -->
-        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@6150c3ec]" started-at="2024-11-09T20:05:58 IST" name="login" finished-at="2024-11-09T20:05:58 IST" duration-ms="2" status="FAIL">
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@6150c3ec]" started-at="2024-11-10T11:41:18 IST" name="login" finished-at="2024-11-10T11:41:18 IST" duration-ms="18" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "ScreenRecording.CaptureVideo.StartRecording()" because "this.capturevideo" is null]]>
@@ -476,178 +183,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@6150c3ec]" started-at="2024-11-09T20:05:58 IST" name="verify_createaccount_option" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.LoginPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.LoginPageTest.testreports" is null
-at Tests.LoginPageTest.verify_createaccount_option(LoginPageTest.java:76)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_createaccount_option -->
       </class> <!-- Tests.LoginPageTest -->
-      <class name="Tests.ProductDetailsPageTest">
-        <test-method signature="check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@139982de]" started-at="2024-11-09T20:05:58 IST" name="check_title_page" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ProductDetailsPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ProductDetailsPageTest.testreports" is null
-at Tests.ProductDetailsPageTest.check_title_page(ProductDetailsPageTest.java:55)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_title_page -->
-        <test-method signature="verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@139982de]" started-at="2024-11-09T20:05:58 IST" name="verify_productdetailscreen" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ProductDetailsPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ProductDetailsPageTest.testreports" is null
-at Tests.ProductDetailsPageTest.verify_productdetailscreen(ProductDetailsPageTest.java:65)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_productdetailscreen -->
-        <test-method signature="about_product()[pri:3, instance:Tests.ProductDetailsPageTest@139982de]" started-at="2024-11-09T20:05:58 IST" name="about_product" finished-at="2024-11-09T20:05:58 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ProductDetailsPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ProductDetailsPageTest.testreports" is null
-at Tests.ProductDetailsPageTest.about_product(ProductDetailsPageTest.java:74)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- about_product -->
-      </class> <!-- Tests.ProductDetailsPageTest -->
       <class name="Tests.ShoppingCardPageTest">
-        <test-method signature="Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@682b2fa]" started-at="2024-11-09T20:05:58 IST" name="Verify_title_of_page" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
+        <test-method signature="do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@217ed35e]" started-at="2024-11-10T11:41:18 IST" name="do_checkout" finished-at="2024-11-10T11:41:18 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ShoppingCardPageTest.testreports" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ShoppingCardPageTest.testreports" is null
-at Tests.ShoppingCardPageTest.Verify_title_of_page(ShoppingCardPageTest.java:51)
+at Tests.ShoppingCardPageTest.do_checkout(ShoppingCardPageTest.java:92)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -679,88 +224,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Verify_title_of_page -->
-        <test-method signature="check_page()[pri:2, instance:Tests.ShoppingCardPageTest@682b2fa]" started-at="2024-11-09T20:05:58 IST" name="check_page" finished-at="2024-11-09T20:05:58 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ShoppingCardPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ShoppingCardPageTest.testreports" is null
-at Tests.ShoppingCardPageTest.check_page(ShoppingCardPageTest.java:60)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- check_page -->
-        <test-method signature="list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@682b2fa]" started-at="2024-11-09T20:05:58 IST" name="list_of_items" finished-at="2024-11-09T20:05:58 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ShoppingCardPageTest.testreports" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "CommonUtilities.Extent_Reports.test_details(String)" because "Tests.ShoppingCardPageTest.testreports" is null
-at Tests.ShoppingCardPageTest.list_of_items(ShoppingCardPageTest.java:82)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- list_of_items -->
+        </test-method> <!-- do_checkout -->
       </class> <!-- Tests.ShoppingCardPageTest -->
-    </test> <!-- Sanity_Test -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
