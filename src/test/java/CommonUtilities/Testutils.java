@@ -3,6 +3,7 @@ package CommonUtilities;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.annotation.Documented;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -19,6 +20,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import BaseTest.Base_Test;
+import Working_with_JavaScriptExecutor.js_practice1;
 
 public class Testutils extends Base_Test
 {	
@@ -27,6 +29,10 @@ public class Testutils extends Base_Test
 	{
 		super();
 	}
+	
+	//Added JavascriptExecutor & cascaded with driver obj
+	JavascriptExecutor js= (JavascriptExecutor) driver;
+	
 
 	// Implemented Webdriver wait (Explicit Wait)
 	public WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -68,8 +74,13 @@ public class Testutils extends Base_Test
 	//Implementing Page ScrollDown / ScrollUp
 	public void scroll_down(int x, int y)
 	{
-		JavascriptExecutor js= (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(x,y)","");
 	}
 	
+	//Added scrollintoview for element
+	public void scroll_to_element(WebElement element)
+	{
+	    js.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+
 }
