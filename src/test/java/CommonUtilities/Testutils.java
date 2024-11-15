@@ -20,7 +20,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import BaseTest.Base_Test;
-import Working_with_JavaScriptExecutor.js_practice1;
 
 public class Testutils extends Base_Test
 {	
