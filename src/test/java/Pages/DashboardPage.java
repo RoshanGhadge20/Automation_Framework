@@ -61,7 +61,7 @@ public class DashboardPage extends Base_Test
 		testutils.wait.until(ExpectedConditions.visibilityOf(Dashboardlogo));
 		int height= Dashboardlogo.getRect().getHeight();
 		int width= Dashboardlogo.getRect().getWidth();
-		Assert.assertEquals(height, 31);
+		Assert.assertEquals(height, 50);
 		Assert.assertEquals(width, 103);
 		return Dashboardlogo.isDisplayed();
 	}
