@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="18" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-16T17:38:04 IST" name="Surefire suite" finished-at="2024-11-16T17:42:03 IST" duration-ms="238663">
+    <groups>
+      <group name="Sanity">
+        <method signature="DashboardPageTest.get_title()[pri:1, instance:Tests.DashboardPageTest@72057ecf]" name="get_title" class="Tests.DashboardPageTest"/>
+        <method signature="LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@8dbdac1]" name="check_title" class="Tests.LoginPageTest"/>
+        <method signature="ProductDetailsPageTest.check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@6e20b53a]" name="check_title_page" class="Tests.ProductDetailsPageTest"/>
+        <method signature="ShoppingCardPageTest.Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@71809907]" name="Verify_title_of_page" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_title()[pri:1, instance:Tests.YourOrdersPageTest@3ce1e309]" name="check_title" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.check_logo()[pri:2, instance:Tests.DashboardPageTest@72057ecf]" name="check_logo" class="Tests.DashboardPageTest"/>
+        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@8dbdac1]" name="check_logo" class="Tests.LoginPageTest"/>
+        <method signature="ProductDetailsPageTest.verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@6e20b53a]" name="verify_productdetailscreen" class="Tests.ProductDetailsPageTest"/>
+        <method signature="ShoppingCardPageTest.check_page()[pri:2, instance:Tests.ShoppingCardPageTest@71809907]" name="check_page" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3ce1e309]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.get_elements()[pri:3, instance:Tests.DashboardPageTest@72057ecf]" name="get_elements" class="Tests.DashboardPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@8dbdac1]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="ProductDetailsPageTest.about_product()[pri:3, instance:Tests.ProductDetailsPageTest@6e20b53a]" name="about_product" class="Tests.ProductDetailsPageTest"/>
+        <method signature="YourOrdersPageTest.get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@3ce1e309]" name="get_yourorders_options" class="Tests.YourOrdersPageTest"/>
+        <method signature="LoginPageTest.verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@8dbdac1]" name="verify_createaccount_option" class="Tests.LoginPageTest"/>
+        <method signature="ShoppingCardPageTest.list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@71809907]" name="list_of_items" class="Tests.ShoppingCardPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3ce1e309]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="DashboardPageTest.check_user_name()[pri:5, instance:Tests.DashboardPageTest@72057ecf]" name="check_user_name" class="Tests.DashboardPageTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3ce1e309]" name="check_page" class="Tests.YourOrdersPageTest"/>
+        <method signature="LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@8dbdac1]" name="login" class="Tests.LoginPageTest"/>
+        <method signature="DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@72057ecf]" name="search_products" class="Tests.DashboardPageTest"/>
+        <method signature="YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3ce1e309]" name="check_path" class="Tests.YourOrdersPageTest"/>
+        <method signature="ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@71809907]" name="do_checkout" class="Tests.ShoppingCardPageTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2024-11-16T17:38:04 IST" name="Surefire test" finished-at="2024-11-16T17:42:03 IST" duration-ms="238663">
+      <class name="Tests.YourOrdersPageTest">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:22 IST" name="active" finished-at="2024-11-16T17:41:24 IST" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:24 IST" name="initiate" finished-at="2024-11-16T17:41:25 IST" duration-ms="1137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_title()[pri:1, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:25 IST" name="check_title" finished-at="2024-11-16T17:41:30 IST" duration-ms="4632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="quite(org.testng.ITestResult)[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:30 IST" name="quite" finished-at="2024-11-16T17:41:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_title status=SUCCESS method=YourOrdersPageTest.check_title()[pri:1, instance:Tests.YourOrdersPageTest@3ce1e309] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:30 IST" name="deactive" finished-at="2024-11-16T17:41:30 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:30 IST" name="active" finished-at="2024-11-16T17:41:32 IST" duration-ms="1753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:32 IST" name="initiate" finished-at="2024-11-16T17:41:33 IST" duration-ms="1166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_page()[pri:2, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:33 IST" name="check_page" finished-at="2024-11-16T17:41:37 IST" duration-ms="4329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_page -->
+        <test-method is-config="true" signature="quite(org.testng.ITestResult)[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:37 IST" name="quite" finished-at="2024-11-16T17:41:37 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_page status=SUCCESS method=YourOrdersPageTest.check_page()[pri:2, instance:Tests.YourOrdersPageTest@3ce1e309] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:37 IST" name="deactive" finished-at="2024-11-16T17:41:38 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:38 IST" name="active" finished-at="2024-11-16T17:41:40 IST" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:40 IST" name="initiate" finished-at="2024-11-16T17:41:41 IST" duration-ms="1217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:41 IST" name="get_yourorders_options" finished-at="2024-11-16T17:41:50 IST" duration-ms="8647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_yourorders_options -->
+        <test-method is-config="true" signature="quite(org.testng.ITestResult)[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:50 IST" name="quite" finished-at="2024-11-16T17:41:50 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_yourorders_options status=SUCCESS method=YourOrdersPageTest.get_yourorders_options()[pri:3, instance:Tests.YourOrdersPageTest@3ce1e309] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:50 IST" name="deactive" finished-at="2024-11-16T17:41:50 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:50 IST" name="active" finished-at="2024-11-16T17:41:51 IST" duration-ms="1631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:51 IST" name="initiate" finished-at="2024-11-16T17:41:53 IST" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_path()[pri:4, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:41:53 IST" name="check_path" finished-at="2024-11-16T17:42:02 IST" duration-ms="9567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_path -->
+        <test-method is-config="true" signature="quite(org.testng.ITestResult)[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:42:02 IST" name="quite" finished-at="2024-11-16T17:42:02 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_path status=SUCCESS method=YourOrdersPageTest.check_path()[pri:4, instance:Tests.YourOrdersPageTest@3ce1e309] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.YourOrdersPageTest@3ce1e309]" started-at="2024-11-16T17:42:02 IST" name="deactive" finished-at="2024-11-16T17:42:03 IST" duration-ms="315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+      </class> <!-- Tests.YourOrdersPageTest -->
+      <class name="Tests.DashboardPageTest">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:04 IST" name="active" finished-at="2024-11-16T17:38:13 IST" duration-ms="9359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:13 IST" name="initialize" finished-at="2024-11-16T17:38:19 IST" duration-ms="5376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="get_title()[pri:1, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:19 IST" name="get_title" finished-at="2024-11-16T17:38:19 IST" duration-ms="535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_title -->
+        <test-method is-config="true" signature="tdown(org.testng.ITestResult)[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:19 IST" name="tdown" finished-at="2024-11-16T17:38:19 IST" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_title status=SUCCESS method=DashboardPageTest.get_title()[pri:1, instance:Tests.DashboardPageTest@72057ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:19 IST" name="deactive" finished-at="2024-11-16T17:38:20 IST" duration-ms="438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:20 IST" name="active" finished-at="2024-11-16T17:38:24 IST" duration-ms="4594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:24 IST" name="initialize" finished-at="2024-11-16T17:38:26 IST" duration-ms="1583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:26 IST" name="check_logo" finished-at="2024-11-16T17:38:30 IST" duration-ms="4629" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [103] but found [129]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [103] but found [129]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:1419)
+at org.testng.Assert.assertEquals(Assert.java:1383)
+at org.testng.Assert.assertEquals(Assert.java:1429)
+at Pages.DashboardPage.verify_dashboard_logo(DashboardPage.java:65)
+at Tests.DashboardPageTest.check_logo(DashboardPageTest.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="tdown(org.testng.ITestResult)[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:30 IST" name="tdown" finished-at="2024-11-16T17:38:30 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_logo status=FAILURE method=DashboardPageTest.check_logo()[pri:2, instance:Tests.DashboardPageTest@72057ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:30 IST" name="deactive" finished-at="2024-11-16T17:38:31 IST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:31 IST" name="active" finished-at="2024-11-16T17:38:34 IST" duration-ms="3418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:34 IST" name="initialize" finished-at="2024-11-16T17:38:36 IST" duration-ms="1614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="get_elements()[pri:3, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:36 IST" name="get_elements" finished-at="2024-11-16T17:38:41 IST" duration-ms="5236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- get_elements -->
+        <test-method is-config="true" signature="tdown(org.testng.ITestResult)[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:41 IST" name="tdown" finished-at="2024-11-16T17:38:41 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=get_elements status=SUCCESS method=DashboardPageTest.get_elements()[pri:3, instance:Tests.DashboardPageTest@72057ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:41 IST" name="deactive" finished-at="2024-11-16T17:38:41 IST" duration-ms="317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:41 IST" name="active" finished-at="2024-11-16T17:38:44 IST" duration-ms="2674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:44 IST" name="initialize" finished-at="2024-11-16T17:38:46 IST" duration-ms="1970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="search_products()[pri:4, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:46 IST" name="search_products" finished-at="2024-11-16T17:38:56 IST" duration-ms="9600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_products -->
+        <test-method is-config="true" signature="tdown(org.testng.ITestResult)[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:56 IST" name="tdown" finished-at="2024-11-16T17:38:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=search_products status=SUCCESS method=DashboardPageTest.search_products()[pri:4, instance:Tests.DashboardPageTest@72057ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:56 IST" name="deactive" finished-at="2024-11-16T17:38:58 IST" duration-ms="1858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:38:58 IST" name="active" finished-at="2024-11-16T17:39:03 IST" duration-ms="5215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:39:03 IST" name="initialize" finished-at="2024-11-16T17:39:04 IST" duration-ms="1395" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0cd371490c11b45fb0574350f901959, clickElement {id=f.47EB668673A607D543D7FE2F33F2CB15.d.79E1DB3AF621063DBD9F7C051089239C.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49773}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49773/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a0cd371490c11b45fb0574350f901959)] -> css selector: span#continue]
+Session ID: a0cd371490c11b45fb0574350f901959]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0cd371490c11b45fb0574350f901959, clickElement {id=f.47EB668673A607D543D7FE2F33F2CB15.d.79E1DB3AF621063DBD9F7C051089239C.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49773}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49773/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a0cd371490c11b45fb0574350f901959)] -> css selector: span#continue]
+Session ID: a0cd371490c11b45fb0574350f901959
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at Pages.LoginPage.do_login(LoginPage.java:83)
+at Tests.DashboardPageTest.initialize(DashboardPageTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_user_name()[pri:5, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:39:04 IST" name="check_user_name" finished-at="2024-11-16T17:39:04 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0cd371490c11b45fb0574350f901959, clickElement {id=f.47EB668673A607D543D7FE2F33F2CB15.d.79E1DB3AF621063DBD9F7C051089239C.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49773}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49773/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a0cd371490c11b45fb0574350f901959)] -> css selector: span#continue]
+Session ID: a0cd371490c11b45fb0574350f901959]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.119)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a0cd371490c11b45fb0574350f901959, clickElement {id=f.47EB668673A607D543D7FE2F33F2CB15.d.79E1DB3AF621063DBD9F7C051089239C.e.25}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49773}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49773/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a0cd371490c11b45fb0574350f901959)] -> css selector: span#continue]
+Session ID: a0cd371490c11b45fb0574350f901959
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+at Pages.LoginPage.do_login(LoginPage.java:83)
+at Tests.DashboardPageTest.initialize(DashboardPageTest.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_user_name -->
+        <test-method is-config="true" signature="tdown(org.testng.ITestResult)[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:39:04 IST" name="tdown" finished-at="2024-11-16T17:39:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tdown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.DashboardPageTest@72057ecf]" started-at="2024-11-16T17:39:04 IST" name="deactive" finished-at="2024-11-16T17:39:04 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+      </class> <!-- Tests.DashboardPageTest -->
+      <class name="Tests.LoginPageTest">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:04 IST" name="active" finished-at="2024-11-16T17:39:07 IST" duration-ms="3134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:07 IST" name="initialize" finished-at="2024-11-16T17:39:07 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_title()[pri:1, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:07 IST" name="check_title" finished-at="2024-11-16T17:39:07 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:07 IST" name="teardown" finished-at="2024-11-16T17:39:07 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_title status=SUCCESS method=LoginPageTest.check_title()[pri:1, instance:Tests.LoginPageTest@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:07 IST" name="deactive" finished-at="2024-11-16T17:39:08 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:08 IST" name="active" finished-at="2024-11-16T17:39:47 IST" duration-ms="39619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:47 IST" name="initialize" finished-at="2024-11-16T17:39:47 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:47 IST" name="check_logo" finished-at="2024-11-16T17:39:47 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:47 IST" name="deactive" finished-at="2024-11-16T17:39:48 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:47 IST" name="teardown" finished-at="2024-11-16T17:39:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_logo status=SUCCESS method=LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:48 IST" name="active" finished-at="2024-11-16T17:39:50 IST" duration-ms="2780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:50 IST" name="initialize" finished-at="2024-11-16T17:39:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="login()[pri:3, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:50 IST" name="login" finished-at="2024-11-16T17:39:53 IST" duration-ms="2717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:53 IST" name="teardown" finished-at="2024-11-16T17:39:53 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=login status=SUCCESS method=LoginPageTest.login()[pri:3, instance:Tests.LoginPageTest@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:53 IST" name="deactive" finished-at="2024-11-16T17:39:57 IST" duration-ms="4269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:57 IST" name="active" finished-at="2024-11-16T17:39:59 IST" duration-ms="1780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:59 IST" name="initialize" finished-at="2024-11-16T17:39:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:59 IST" name="verify_createaccount_option" finished-at="2024-11-16T17:39:59 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_createaccount_option -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:59 IST" name="teardown" finished-at="2024-11-16T17:39:59 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_createaccount_option status=SUCCESS method=LoginPageTest.verify_createaccount_option()[pri:4, instance:Tests.LoginPageTest@8dbdac1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@8dbdac1]" started-at="2024-11-16T17:39:59 IST" name="deactive" finished-at="2024-11-16T17:39:59 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+      </class> <!-- Tests.LoginPageTest -->
+      <class name="BaseTest.Base_Test">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:BaseTest.Base_Test@31368b99]" started-at="2024-11-16T17:38:03 IST" name="setupReport" finished-at="2024-11-16T17:38:04 IST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:BaseTest.Base_Test@31368b99]" started-at="2024-11-16T17:42:03 IST" name="tearDownReport" finished-at="2024-11-16T17:42:03 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- BaseTest.Base_Test -->
+      <class name="Tests.ProductDetailsPageTest">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:39:59 IST" name="active" finished-at="2024-11-16T17:40:01 IST" duration-ms="1999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:01 IST" name="initiate" finished-at="2024-11-16T17:40:10 IST" duration-ms="9073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:10 IST" name="check_title_page" finished-at="2024-11-16T17:40:16 IST" duration-ms="5594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_title_page -->
+        <test-method is-config="true" signature="terminate(org.testng.ITestResult)[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:16 IST" name="terminate" finished-at="2024-11-16T17:40:16 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_title_page status=SUCCESS method=ProductDetailsPageTest.check_title_page()[pri:1, instance:Tests.ProductDetailsPageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:16 IST" name="deactive" finished-at="2024-11-16T17:40:16 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:16 IST" name="active" finished-at="2024-11-16T17:40:18 IST" duration-ms="1918" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:18 IST" name="initiate" finished-at="2024-11-16T17:40:26 IST" duration-ms="7972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:26 IST" name="verify_productdetailscreen" finished-at="2024-11-16T17:40:31 IST" duration-ms="4551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_productdetailscreen -->
+        <test-method is-config="true" signature="terminate(org.testng.ITestResult)[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:31 IST" name="terminate" finished-at="2024-11-16T17:40:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verify_productdetailscreen status=SUCCESS method=ProductDetailsPageTest.verify_productdetailscreen()[pri:2, instance:Tests.ProductDetailsPageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:31 IST" name="deactive" finished-at="2024-11-16T17:40:31 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:31 IST" name="active" finished-at="2024-11-16T17:40:34 IST" duration-ms="2729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:34 IST" name="initiate" finished-at="2024-11-16T17:40:42 IST" duration-ms="7646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate -->
+        <test-method signature="about_product()[pri:3, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:42 IST" name="about_product" finished-at="2024-11-16T17:40:47 IST" duration-ms="5450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- about_product -->
+        <test-method is-config="true" signature="terminate(org.testng.ITestResult)[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:47 IST" name="terminate" finished-at="2024-11-16T17:40:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=about_product status=SUCCESS method=ProductDetailsPageTest.about_product()[pri:3, instance:Tests.ProductDetailsPageTest@6e20b53a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- terminate -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ProductDetailsPageTest@6e20b53a]" started-at="2024-11-16T17:40:47 IST" name="deactive" finished-at="2024-11-16T17:40:47 IST" duration-ms="354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+      </class> <!-- Tests.ProductDetailsPageTest -->
+      <class name="Tests.ShoppingCardPageTest">
+        <test-method is-config="true" signature="ensureTestReportsInitialized()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:47 IST" name="ensureTestReportsInitialized" finished-at="2024-11-16T17:40:47 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensureTestReportsInitialized -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:47 IST" name="active" finished-at="2024-11-16T17:40:49 IST" duration-ms="1605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:49 IST" name="initiate_all" finished-at="2024-11-16T17:40:50 IST" duration-ms="995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:50 IST" name="Verify_title_of_page" finished-at="2024-11-16T17:40:56 IST" duration-ms="5713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verify_title_of_page -->
+        <test-method is-config="true" signature="quite_all(org.testng.ITestResult)[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:56 IST" name="quite_all" finished-at="2024-11-16T17:40:56 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Verify_title_of_page status=SUCCESS method=ShoppingCardPageTest.Verify_title_of_page()[pri:1, instance:Tests.ShoppingCardPageTest@71809907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:56 IST" name="deactive" finished-at="2024-11-16T17:40:56 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:56 IST" name="active" finished-at="2024-11-16T17:40:58 IST" duration-ms="1754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:58 IST" name="initiate_all" finished-at="2024-11-16T17:40:59 IST" duration-ms="1202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="check_page()[pri:2, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:40:59 IST" name="check_page" finished-at="2024-11-16T17:41:03 IST" duration-ms="4407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_page -->
+        <test-method is-config="true" signature="quite_all(org.testng.ITestResult)[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:03 IST" name="quite_all" finished-at="2024-11-16T17:41:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_page status=SUCCESS method=ShoppingCardPageTest.check_page()[pri:2, instance:Tests.ShoppingCardPageTest@71809907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:03 IST" name="deactive" finished-at="2024-11-16T17:41:04 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:04 IST" name="active" finished-at="2024-11-16T17:41:05 IST" duration-ms="1639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:05 IST" name="initiate_all" finished-at="2024-11-16T17:41:07 IST" duration-ms="1143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:07 IST" name="list_of_items" finished-at="2024-11-16T17:41:11 IST" duration-ms="3992" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- list_of_items -->
+        <test-method is-config="true" signature="quite_all(org.testng.ITestResult)[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:11 IST" name="quite_all" finished-at="2024-11-16T17:41:11 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=list_of_items status=SUCCESS method=ShoppingCardPageTest.list_of_items()[pri:4, instance:Tests.ShoppingCardPageTest@71809907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:11 IST" name="deactive" finished-at="2024-11-16T17:41:11 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:11 IST" name="active" finished-at="2024-11-16T17:41:13 IST" duration-ms="1795" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initiate_all()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:13 IST" name="initiate_all" finished-at="2024-11-16T17:41:14 IST" duration-ms="1142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initiate_all -->
+        <test-method signature="do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:14 IST" name="do_checkout" finished-at="2024-11-16T17:41:22 IST" duration-ms="8246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- do_checkout -->
+        <test-method is-config="true" signature="quite_all(org.testng.ITestResult)[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:22 IST" name="quite_all" finished-at="2024-11-16T17:41:22 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=do_checkout status=SUCCESS method=ShoppingCardPageTest.do_checkout()[pri:5, instance:Tests.ShoppingCardPageTest@71809907] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_all -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.ShoppingCardPageTest@71809907]" started-at="2024-11-16T17:41:22 IST" name="deactive" finished-at="2024-11-16T17:41:22 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+      </class> <!-- Tests.ShoppingCardPageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
