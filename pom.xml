@@ -41,7 +41,7 @@
 
 	<dependencies>
 
-	<dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.25.0</version>
@@ -114,6 +114,20 @@
 			<artifactId>Maven_Project_Practice_Set</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>-->
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>2.0.16</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.5.12</version>
+			<scope>test</scope>
+		</dependency>
 
 
 	</dependencies>

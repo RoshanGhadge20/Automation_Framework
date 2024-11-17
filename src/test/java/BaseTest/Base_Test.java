@@ -13,58 +13,66 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import CommonUtilities.Extent_Reports;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Base_Test {
-    public static WebDriver driver;
-    public static Properties pr;
-    public static Extent_Reports testreports;
+	public static WebDriver driver;
+	public static Properties pr;
+	public static Extent_Reports testreports;
+	protected static final Logger logger = LoggerFactory.getLogger(BaseTest.Base_Test.class);
 
-    public Base_Test() throws IOException, FileNotFoundException {
-        // Load configuration properties
-    	pr = new Properties();
-        FileReader fin = new FileReader("E://Automation_Framework//POM//src//test//java//Configurations//config.properties");
-        pr.load(fin);
-    }
+	public Base_Test() throws IOException, FileNotFoundException {
+		// Load configuration properties
+		pr = new Properties();
+		FileReader fin = new FileReader(
+				"E://Automation_Framework//POM//src//test//java//Configurations//config.properties");
+		pr.load(fin);
+	}
 
-    @BeforeSuite
-    public void setupReport() {
-        testreports = new Extent_Reports(); 
-        testreports.start_reporter();
-    }
+	@BeforeSuite
+	public void setupReport() {
+		testreports = new Extent_Reports();
+		testreports.start_reporter();
+	}
 
-    @BeforeMethod
-    public void active() {
-        // Initialize WebDriver based on the browser property
-        String browser = pr.getProperty("browser").toLowerCase();
-        if (browser.equals("chrome")) {
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        } else if (browser.equals("firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        } else {
-            System.out.println("Webdriver not initialized");
-        }
+	@BeforeMethod
+	public void active() 
+	{
+		logger.info("Initialize WebDriver based on the browser property");
+		String browser = pr.getProperty("browser").toLowerCase();
+		if (browser.equals("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (browser.equals("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		} else {
+			System.out.println("Webdriver not initialized");
+		}
 
-        // Load URL with exception handling
-        try {
-            driver.get(pr.getProperty("URL"));
-            driver.manage().window().maximize();
-        } catch (Exception e) {
-            System.out.println("Unable to load URL: " + e.getMessage());
-        }
-    }
+		logger.info("URL with exception handling");
+		try {
+			driver.get(pr.getProperty("URL"));
+			driver.manage().window().maximize();
+		} catch (Exception e) {
+			System.out.println("Unable to load URL: " + e.getMessage());
+		}
+		logger.info("Webdriver Initiated");
+	}
 
-    @AfterMethod
-    public void deactive() {
-        if (driver != null) {
-            driver.manage().deleteAllCookies();
-            driver.quit();
-        }
-    }
+	@AfterMethod
+	public void deactive() {
+		if (driver != null) {
+			driver.manage().deleteAllCookies();
+			driver.quit();
+			logger.info("After method all cookies are cleared & driver close");
+		}
+	}
 
-    @AfterSuite
-    public void tearDownReport() {
-        testreports.tear_down(); 
-    }
+	@AfterSuite
+	public void tearDownReport() {
+		testreports.tear_down();
+	}
+
 }
