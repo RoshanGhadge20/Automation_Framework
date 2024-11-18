@@ -43,6 +43,7 @@ public class DashboardPageTest extends Base_Test
 	{
 		testreports.test_details("Verify title of dashboard page");
 		dashboardpage.get_page_title();
+		logger.info("DashboardTest get_title executed");
 	}
 	
 	/**
@@ -53,6 +54,7 @@ public class DashboardPageTest extends Base_Test
 	{
 		testreports.test_details("verify appearnace of logo in dashboard page");
 		Assert.assertEquals(true, dashboardpage.verify_dashboard_logo());
+		logger.info("DashboardTest check_logo executed");
 	}
 	
 	
@@ -64,6 +66,7 @@ public class DashboardPageTest extends Base_Test
 	{
 		testreports.test_details("Validate all navbar options in dashboard page");
 		dashboardpage.dash_pg_navbar();
+		logger.info("DashboardTest get_elements executed");
 	}
 	
 	/**
@@ -74,6 +77,7 @@ public class DashboardPageTest extends Base_Test
 	{
 		testreports.test_details("Verify user is able to search product");
 		dashboardpage.search_product(pr.getProperty("product"));
+		logger.info("DashboardTest search_products executed");
 	}
 	
 	/**
@@ -84,6 +88,7 @@ public class DashboardPageTest extends Base_Test
 	{
 		testreports.test_details("Verify user profile details name on all section");
 		Assert.assertEquals(true, dashboardpage.verify_profile_details());
+		logger.info("DashboardTest check_user_name executed");
 	}
 	
 	@AfterMethod

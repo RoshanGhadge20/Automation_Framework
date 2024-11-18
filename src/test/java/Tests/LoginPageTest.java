@@ -40,6 +40,7 @@ public class LoginPageTest extends Base_Test
     	testreports.test_details("Check title of login page");
         String titleString = loginpage.getpagetitle();
         Assert.assertEquals(titleString, "Amazon Sign In", "Title does not match");
+        logger.info("LoginTest check_title executed");    
     }
     
     
@@ -52,6 +53,7 @@ public class LoginPageTest extends Base_Test
     {
         testreports.test_details("Verify Amazon logo displays on login page");
         Assert.assertTrue(loginpage.amazon_logo(), "Logo is not displayed");
+        logger.info("LoginTest check_logo executed");    
     }
 
     
@@ -65,6 +67,7 @@ public class LoginPageTest extends Base_Test
         testreports.test_details("Verify user can log in with valid credentials");
         capturevideo.StopRecording();
         loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
+        logger.info("LoginTest login with valid credentials");
     }
     
     /**
@@ -75,6 +78,7 @@ public class LoginPageTest extends Base_Test
     {
     	testreports.test_details("Verify Create_account option in login page");
     	Assert.assertTrue(loginpage.check_create_account_option());
+    	logger.info("LoginTest verify_createaccount_option gets executed");
     }
 
     @AfterMethod
