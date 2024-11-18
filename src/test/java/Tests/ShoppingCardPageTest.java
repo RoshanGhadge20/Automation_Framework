@@ -16,7 +16,8 @@ import Pages.LoginPage;
 import Pages.ProductDetailsPage;
 import Pages.ShoppingCardPage;
 
-public class ShoppingCardPageTest extends Base_Test {
+public class ShoppingCardPageTest extends Base_Test 
+{
 
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
@@ -50,6 +51,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	public void Verify_title_of_page() {
 		testreports.test_details("Verify title of page");
 		shoppingcardpage.verify_title();
+		logger.info("ShoppingCardPageTest verify_title_of_page executed");
 	}
 
 	/**
@@ -59,6 +61,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	public void check_page() {
 		testreports.test_details("Validate user lands on correct page");
 		shoppingcardpage.verify_correct_page();
+		logger.info("ShoppingCardPageTest check_page executed");
 	}
 
 
@@ -71,6 +74,7 @@ public class ShoppingCardPageTest extends Base_Test {
 		testreports.test_details("Select a product and add it to the shopping cart");
 		//dashboardpage.search_product(pr.getProperty("product"));
 		productdetailspage.add_to_shoppingcart();
+		logger.info("ShoppingCardPageTest add_product executed");
 	}
 	
 	/**
@@ -81,7 +85,8 @@ public class ShoppingCardPageTest extends Base_Test {
 	{
 		testreports.test_details("fetching list of items added into shoppingcart");
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
-	}
+		logger.info("ShoppingCardPageTest list_of_items executed");	
+		}
 	
 	/**
 	 * Check if user is able to proceed to checkout
@@ -91,6 +96,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	{
 		testreports.test_details("Verify Checkout Functionality");
 		shoppingcardpage.proceed_to_buy();
+		logger.info("ShoppingCardPageTest do_checkout executed");
 	}
 	
 	@AfterMethod void quite_all(ITestResult result) 

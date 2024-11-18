@@ -48,6 +48,7 @@ public class YourOrdersPageTest extends Base_Test
 	{
 		testreports.test_details("Verify title of page");
 		yourorderspage.get_title_of_yourorderpage();
+		logger.info("YourOrderPageTest check_title executed");
 	}
 	
 	/**
@@ -58,6 +59,7 @@ public class YourOrdersPageTest extends Base_Test
 	{
 		testreports.test_details("Validate user is correctly landed on Yours order page by validating text");
 		Assert.assertTrue(yourorderspage.Verify_YourOrdersPage());
+		logger.info("YourOrderPageTest check_page executed");
 	}
 	
 	/**
@@ -68,6 +70,7 @@ public class YourOrdersPageTest extends Base_Test
 	{
 		testreports.test_details("Verifying all list of options available on your orders page");
 		yourorderspage.order_options();
+		logger.info("YourOrderPageTest get_yourorders_options executed");
 	}
 	
 	/**
@@ -78,6 +81,7 @@ public class YourOrdersPageTest extends Base_Test
 	{
 		testreports.test_details("Verify correct path gets shown in your orders page");
 		yourorderspage.validate_path();
+		logger.info("YourOrderPageTest check_path executed");
 	}
 	
 	
