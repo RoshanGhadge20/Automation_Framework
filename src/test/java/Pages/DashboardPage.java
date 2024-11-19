@@ -62,7 +62,7 @@ public class DashboardPage extends Base_Test
 		int height= Dashboardlogo.getRect().getHeight();
 		int width= Dashboardlogo.getRect().getWidth();
 		Assert.assertEquals(height, 50);
-		Assert.assertEquals(width, 103);
+		Assert.assertEquals(width, 129);
 		return Dashboardlogo.isDisplayed();
 	}
 

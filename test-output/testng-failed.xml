@@ -3,6 +3,18 @@
 <suite name="Failed suite [Test_Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="All_Test(failed)">
     <classes>
+      <class name="Tests.ProductDetailsPageTest">
+        <methods>
+          <include name="initiate"/>
+          <include name="deactive"/>
+          <include name="tearDownReport"/>
+          <include name="active"/>
+          <include name="check_title_page"/>
+          <include name="verify_productdetailscreen"/>
+          <include name="setupReport"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- Tests.ProductDetailsPageTest -->
       <class name="Tests.DashboardPageTest">
         <methods>
           <include name="check_logo"/>
