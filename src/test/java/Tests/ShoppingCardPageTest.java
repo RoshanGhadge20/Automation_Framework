@@ -16,8 +16,7 @@ import Pages.LoginPage;
 import Pages.ProductDetailsPage;
 import Pages.ShoppingCardPage;
 
-public class ShoppingCardPageTest extends Base_Test 
-{
+public class ShoppingCardPageTest extends Base_Test {
 
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
@@ -27,14 +26,14 @@ public class ShoppingCardPageTest extends Base_Test
 	public ShoppingCardPageTest() throws IOException, FileNotFoundException {
 		super();
 	}
-	
+
 	@BeforeClass
-    public void ensureTestReportsInitialized() {
-        if (testreports == null) {
-            testreports = new Extent_Reports();
-            testreports.start_reporter();
-        }
-    }
+	public void ensureTestReportsInitialized() {
+		if (testreports == null) {
+			testreports = new Extent_Reports();
+			testreports.start_reporter();
+		}
+	}
 
 	@BeforeMethod
 	public void initiate_all() throws FileNotFoundException, IOException, InterruptedException {
@@ -47,7 +46,7 @@ public class ShoppingCardPageTest extends Base_Test
 	/**
 	 * Verify title of page on shopping card page
 	 */
-	@Test(priority = 1, groups = {"Sanity"})
+	@Test(priority = 1, groups = { "Sanity" })
 	public void Verify_title_of_page() {
 		testreports.test_details("Verify title of page");
 		shoppingcardpage.verify_title();
@@ -57,50 +56,46 @@ public class ShoppingCardPageTest extends Base_Test
 	/**
 	 * Verify if user correctly land on shopping card page
 	 */
-	@Test(priority = 2, groups = {"Sanity"})
+	@Test(priority = 2, groups = { "Sanity" })
 	public void check_page() {
 		testreports.test_details("Validate user lands on correct page");
 		shoppingcardpage.verify_correct_page();
 		logger.info("ShoppingCardPageTest check_page executed");
 	}
 
-
 	/**
-	 * Check if user is able to search product & add it into shopping cart page 
+	 * Check if user is able to search product & add it into shopping cart page
 	 */
-	@Test(priority = 3, groups = {"Sanity", "Regression"}, enabled = false)
-	public void add_product() throws IOException, Exception
-	{
+	@Test(priority = 3, groups = { "Sanity", "Regression" }, enabled = false)
+	public void add_product() throws IOException, Exception {
 		testreports.test_details("Select a product and add it to the shopping cart");
-		//dashboardpage.search_product(pr.getProperty("product"));
+		// dashboardpage.search_product(pr.getProperty("product"));
 		productdetailspage.add_to_shoppingcart();
 		logger.info("ShoppingCardPageTest add_product executed");
 	}
-	
+
 	/**
 	 * Getting list of items added into shopping cart page
 	 */
 	@Test(priority = 4, groups = "Sanity")
-	public void list_of_items()
-	{
+	public void list_of_items() {
 		testreports.test_details("fetching list of items added into shoppingcart");
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
-		logger.info("ShoppingCardPageTest list_of_items executed");	
-		}
-	
+		logger.info("ShoppingCardPageTest list_of_items executed");
+	}
+
 	/**
 	 * Check if user is able to proceed to checkout
 	 */
 	@Test(priority = 5, groups = "Regression")
-	public void do_checkout()
-	{
+	public void do_checkout() {
 		testreports.test_details("Verify Checkout Functionality");
 		shoppingcardpage.proceed_to_buy();
 		logger.info("ShoppingCardPageTest do_checkout executed");
 	}
-	
-	@AfterMethod void quite_all(ITestResult result) 
-	{
+
+	@AfterMethod
+	void quite_all(ITestResult result) {
 		testreports.getresult(result);
 	}
 
