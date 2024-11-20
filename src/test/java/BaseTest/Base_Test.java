@@ -37,8 +37,7 @@ public class Base_Test {
 	}
 
 	@BeforeMethod
-	public void active() 
-	{
+	public void active() {
 		logger.info("Initialize WebDriver based on the browser property");
 		String browser = pr.getProperty("browser").toLowerCase();
 		if (browser.equals("chrome")) {

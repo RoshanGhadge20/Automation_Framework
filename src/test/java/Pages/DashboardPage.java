@@ -28,6 +28,7 @@ public class DashboardPage extends Base_Test {
 		testutils = new Testutils();
 	}
 
+	// Object Pool Webelements 
 	@FindBy(css = "a#nav-logo-sprites")
 	WebElement Dashboardlogo;
 
@@ -61,11 +62,13 @@ public class DashboardPage extends Base_Test {
 		return Dashboardlogo.isDisplayed();
 	}
 
-	public void get_page_title() {
+	public void get_page_title() 
+	{
 		System.out.println("Dashboard page title " + (driver.getTitle()));
 	}
 
-	public void dash_pg_navbar() {
+	public void dash_pg_navbar() 
+	{
 		testutils.wait.until(ExpectedConditions.visibilityOf(navbarElement));
 		String element = navbarElement.getText();
 		System.out.println("Elements from Navbar" + element);
@@ -90,7 +93,8 @@ public class DashboardPage extends Base_Test {
 		System.out.println("nameString " + nameString);
 		if (nameString.equalsIgnoreCase("Hello, Roshan")) {
 			return true;
-		} else {
+		} else 
+		{
 			return false;
 		}
 
@@ -100,8 +104,10 @@ public class DashboardPage extends Base_Test {
 		search_bar.clear();
 		search_bar.sendKeys(product_name);
 		search_icon.click();
-		for (WebElement element : list_of_product) {
-			if ((element.getText().equalsIgnoreCase("realme 10 Pro 5G (Dark Matter, 6GB RAM, 128GB Storage)"))) {
+		for (WebElement element : list_of_product)
+		{
+			if ((element.getText().equalsIgnoreCase("realme 10 Pro 5G (Dark Matter, 6GB RAM, 128GB Storage)"))) 
+			{
 				element.click();
 			}
 		}

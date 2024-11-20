@@ -21,7 +21,7 @@ import CommonUtilities.Extent_Reports;
 import CommonUtilities.Testutils;
 import lombok.With;
 
-public class LoginPage extends Base_Test  {
+public class LoginPage extends Base_Test {
 	Testutils testutils;
 
 	public LoginPage() throws IOException, FileNotFoundException {
@@ -29,8 +29,9 @@ public class LoginPage extends Base_Test  {
 		PageFactory.initElements(driver, this);
 		testutils = new Testutils();
 	}
-	
+
 	// object pool ( Weblements )
+	
 	@FindBy(css = "input#ap_email")
 	@CacheLookup
 	WebElement email_field;
@@ -41,49 +42,48 @@ public class LoginPage extends Base_Test  {
 
 	@FindBy(css = ".a-icon-logo")
 	WebElement logo;
-	
-	@FindBy(css ="input[name='password']")
+
+	@FindBy(css = "input[name='password']")
 	@CacheLookup
 	WebElement password;
-	
-	@FindBy (css = "input#signInSubmit")
+
+	@FindBy(css = "input#signInSubmit")
 	@CacheLookup
 	WebElement signbtn;
-	
 
-    @FindBy(xpath = "//h5[contains(text(),'New to Amazon?')]")
-    WebElement newToAmazonText;
+	@FindBy(xpath = "//h5[contains(text(),'New to Amazon?')]")
+	WebElement newToAmazonText;
 
-    @FindBy(css = "#createAccountSubmit")
-    WebElement creatent_account;
-    
+	@FindBy(css = "#createAccountSubmit")
+	WebElement creatent_account;
+
 	public String getpagetitle() {
 		return driver.getTitle();
 	}
 
-	public boolean amazon_logo() 
-	{
+	public boolean amazon_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(logo));
-		int height= logo.getRect().getHeight();
-		int width= logo.getRect().getWidth();
+		int height = logo.getRect().getHeight();
+		int width = logo.getRect().getWidth();
 		Assert.assertEquals(height, 31);
 		Assert.assertEquals(width, 103);
 		return logo.isDisplayed();
 	}
 
-	public boolean check_create_account_option()
-	{
+	public boolean check_create_account_option() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(creatent_account));
 		return true;
 	}
-	
-	// After login it return object of dashboard page 
-	public DashboardPage do_login(String un, String pass) throws InterruptedException, FileNotFoundException, IOException {
+
+	// After login it return object of dashboard page
+	public DashboardPage do_login(String un, String pass)
+			throws InterruptedException, FileNotFoundException, IOException
+	{
 		email_field.sendKeys(un);
 		continue_btn.click();
 		password.sendKeys(pass);
 		signbtn.click();
-		//System.out.println("Login Successful");
+		// System.out.println("Login Successful");
 		return new DashboardPage();
 	}
 
