@@ -3,14 +3,12 @@ package Pages;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
 
@@ -25,6 +23,7 @@ public class YourOrdersPage extends Base_Test
 		PageFactory.initElements(driver, this);
 	}
 	
+	// Object Pool Webelement
 	
 	@FindBy(xpath = "//span[contains(text(),'Returns')]")
 	@CacheLookup
@@ -74,13 +73,11 @@ public class YourOrdersPage extends Base_Test
 		String path= page_path.getText();
 		if (path.contains("Your Orders")) 
 		{
-			System.out.println("Correct page path");
+			System.out.println("Correct Page Path");
 		}
 		else
 		{
-			System.out.println("Incorrect page path");
+			System.out.println("Incorrect Page Path");
 		}
-		
 	}
-
 }

@@ -24,6 +24,8 @@ public class ShoppingCardPage extends Base_Test
 		PageFactory.initElements(driver, this);
 	}
 	
+	// Object Pool Webelement
+	
 	@FindBy(xpath = "//div[@id='nav-cart-text-container']")
 	@CacheLookup
 	WebElement Cart;
