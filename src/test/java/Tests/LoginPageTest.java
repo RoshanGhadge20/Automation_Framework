@@ -56,9 +56,9 @@ public class LoginPageTest extends Base_Test {
 	public void login() throws InterruptedException, IOException {
 		capturevideo.StartRecording();
 		testreports.test_details("Verify user can log in with valid credentials");
-		capturevideo.StopRecording();
 		loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
 		logger.info("LoginTest login with valid credentials");
+		capturevideo.StopRecording();
 	}
 
 	/**
