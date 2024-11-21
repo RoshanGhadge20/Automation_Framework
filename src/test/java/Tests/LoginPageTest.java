@@ -52,7 +52,7 @@ public class LoginPageTest extends Base_Test {
 	/**
 	 * To check if user is able to login with valid credentials
 	 */
-	@Test(priority = 3, groups = { "Sanity", "Regression" })
+	@Test(priority = 3, groups = { "Sanity", "Regression" }, retryAnalyzer = Listners.Retry.class)
 	public void login() throws InterruptedException, IOException {
 		capturevideo.StartRecording();
 		testreports.test_details("Verify user can log in with valid credentials");
