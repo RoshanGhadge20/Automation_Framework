@@ -15,6 +15,7 @@ import Pages.DashboardPage;
 import Pages.LoginPage;
 import Pages.ProductDetailsPage;
 import Pages.ShoppingCardPage;
+import ScreenRecording.CaptureVideo;
 
 public class ShoppingCardPageTest extends Base_Test {
 
@@ -22,6 +23,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	DashboardPage dashboardpage;
 	ProductDetailsPage productdetailspage;
 	ShoppingCardPage shoppingcardpage;
+	CaptureVideo capturevideo;
 
 	public ShoppingCardPageTest() throws IOException, FileNotFoundException {
 		super();
@@ -41,6 +43,7 @@ public class ShoppingCardPageTest extends Base_Test {
 		dashboardpage = loginpage.do_login(pr.getProperty("username"), pr.getProperty("password"));
 		productdetailspage = new ProductDetailsPage();
 		shoppingcardpage = new ShoppingCardPage();
+		capturevideo = new CaptureVideo();
 	}
 
 	/**
@@ -67,31 +70,40 @@ public class ShoppingCardPageTest extends Base_Test {
 	 * Check if user is able to search product & add it into shopping cart page
 	 */
 	@Test(priority = 3, groups = { "Sanity", "Regression" }, enabled = false)
-	public void add_product() throws IOException, Exception {
+	public void add_product() throws IOException, Exception 
+	{
+		//capturevideo.StartRecording();
 		testreports.test_details("Select a product and add it to the shopping cart");
 		// dashboardpage.search_product(pr.getProperty("product"));
 		productdetailspage.add_to_shoppingcart();
 		logger.info("ShoppingCardPageTest add_product executed");
+		//capturevideo.StopRecording();
 	}
 
 	/**
 	 * Getting list of items added into shopping cart page
 	 */
 	@Test(priority = 4, groups = "Sanity")
-	public void list_of_items() {
+	public void list_of_items() 
+	{
+		//capturevideo.StartRecording();
 		testreports.test_details("fetching list of items added into shoppingcart");
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
 		logger.info("ShoppingCardPageTest list_of_items executed");
+		//capturevideo.StopRecording();
 	}
 
 	/**
 	 * Check if user is able to proceed to checkout
 	 */
 	@Test(priority = 5, groups = "Regression")
-	public void do_checkout() {
+	public void do_checkout() 
+	{
+		//capturevideo.StartRecording();
 		testreports.test_details("Verify Checkout Functionality");
 		shoppingcardpage.proceed_to_buy();
 		logger.info("ShoppingCardPageTest do_checkout executed");
+		//capturevideo.StopRecording();
 	}
 
 	@AfterMethod

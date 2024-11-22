@@ -15,12 +15,14 @@ import com.github.dockerjava.api.command.PullImageCmd;
 import BaseTest.Base_Test;
 import Pages.DashboardPage;
 import Pages.LoginPage;
+import ScreenRecording.CaptureVideo;
 
 public class DashboardPageTest extends Base_Test
 {
 
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
+	CaptureVideo capturevideo;
 	
 	
 	public DashboardPageTest() throws IOException
@@ -31,7 +33,9 @@ public class DashboardPageTest extends Base_Test
 	@BeforeMethod
 	public void initialize() throws IOException, InterruptedException
 	{
+		
 		dashboardpage = new LoginPage().do_login(pr.getProperty("username"), pr.getProperty("password"));
+		capturevideo = new CaptureVideo();
 	}
 	
 	
@@ -75,9 +79,11 @@ public class DashboardPageTest extends Base_Test
 	@Test(priority = 4, groups = {"Regression"})
 	public void search_products()
 	{
+		//capturevideo.StartRecording();
 		testreports.test_details("Verify user is able to search product");
 		dashboardpage.search_product(pr.getProperty("product"));
 		logger.info("DashboardTest search_products executed");
+		//capturevideo.StopRecording();
 	}
 	
 	/**
