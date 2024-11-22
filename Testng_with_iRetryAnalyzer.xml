@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test_Suite_with_iRetryAnalyzer">
+<listeners>
+<listener class-name="Listners.Retry"></listener>
+</listeners>
+  <test thread-count="5" name="Testng_with_iRetryAnalyzer">
+    <classes>
+      <class name="Tests.LoginPageTest">
+      <methods>
+      <include name="login"></include>
+      </methods>
+      </class>
+    </classes>
+  </test> 
+</suite> 
