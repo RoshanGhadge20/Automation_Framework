@@ -42,7 +42,7 @@ public class DashboardPageTest extends Base_Test
 	/**
 	 * Verify title of dashboard page
 	 */
-	@Test(priority = 1 , groups = {"Sanity"})
+	@Test(priority = 1 , groups = {"Sanity"}, retryAnalyzer = Listners.Retry.class)
 	public void get_title()
 	{
 		testreports.test_details("Verify title of dashboard page");
@@ -76,7 +76,7 @@ public class DashboardPageTest extends Base_Test
 	/**
 	 * Check if user is able to search product on dashboard page
 	 */
-	@Test(priority = 4, groups = {"Regression"})
+	@Test(priority = 4, groups = {"Regression"}, retryAnalyzer = Listners.Retry.class)
 	public void search_products()
 	{
 		//capturevideo.StartRecording();

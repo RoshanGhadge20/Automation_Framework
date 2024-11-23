@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Test_Suite_with_iRetryAnalyzer]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testng_with_iRetryAnalyzer(failed)">
     <classes>
-      <class name="Tests.LoginPageTest">
+      <class name="Tests.ProductDetailsPageTest">
         <methods>
-          <include name="login"/>
-          <include name="initialize"/>
+          <include name="initiate"/>
           <include name="deactive"/>
           <include name="tearDownReport"/>
           <include name="active"/>
-          <include name="teardown"/>
+          <include name="check_title_page"/>
           <include name="setupReport"/>
+          <include name="terminate"/>
         </methods>
-      </class> <!-- Tests.LoginPageTest -->
+      </class> <!-- Tests.ProductDetailsPageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Testng_with_iRetryAnalyzer(failed) -->
+</suite> <!-- Failed suite [Test_Suite_with_iRetryAnalyzer] -->

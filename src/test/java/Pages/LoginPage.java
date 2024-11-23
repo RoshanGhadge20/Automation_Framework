@@ -79,7 +79,7 @@ public class LoginPage extends Base_Test {
 	public DashboardPage do_login(String un, String pass)
 			throws InterruptedException, FileNotFoundException, IOException
 	{
-		email_field.sendKeys("RG");
+		email_field.sendKeys(un);
 		continue_btn.click();
 		password.sendKeys(pass);
 		signbtn.click();

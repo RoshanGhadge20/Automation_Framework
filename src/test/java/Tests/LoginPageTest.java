@@ -30,7 +30,7 @@ public class LoginPageTest extends Base_Test {
 	/**
 	 * To check the title of login page
 	 */
-	@Test(priority = 1, groups = { "Sanity" })
+	@Test(priority = 1, groups = { "Sanity" }, retryAnalyzer = Listners.Retry.class)
 	public void check_title() throws IOException {
 		testreports.test_details("Check title of login page");
 		String titleString = loginpage.getpagetitle();

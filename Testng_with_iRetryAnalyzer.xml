@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Test_Suite_with_iRetryAnalyzer">
-<listeners>
-<listener class-name="Listners.Retry"></listener>
-</listeners>
-  <test thread-count="5" name="Testng_with_iRetryAnalyzer">
-    <classes>
-      <class name="Tests.LoginPageTest">
-      <methods>
-      <include name="login"></include>
-      </methods>
-      </class>
-    </classes>
-  </test> 
+	<test thread-count="5" name="Testng_with_iRetryAnalyzer">
+		<classes>
+			<class name="Tests.LoginPageTest">
+				<methods>
+					<include name="check_title"></include>
+					<include name="login"></include>
+				</methods>
+			</class>
+			<class name="Tests.DashboardPageTest">
+				<methods>
+					<include name="get_title"></include>
+					<include name="search_products"></include>
+				</methods>
+			</class>
+			<class name="Tests.ProductDetailsPageTest">
+				<methods>
+					<include name="check_title_page"></include>
+					<include name="about_product"></include>
+				</methods>
+			</class>
+			<class name="Tests.ShoppingCardPageTest">
+				<methods>
+					<include name="Verify_title_of_page"></include>
+					<include name="add_product"></include>
+					<include name="list_of_items"></include>
+				</methods>
+			</class>
+			<class name="Tests.YourOrdersPageTest">
+				<methods>
+					<include name="check_title"></include>
+					<include name="get_yourorders_options"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite> 

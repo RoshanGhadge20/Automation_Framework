@@ -47,7 +47,7 @@ public class ProductDetailsPageTest extends Base_Test {
 	/**
 	 * Verify page title on product detail page
 	 */
-	@Test(priority = 1, groups = { "Sanity" })
+	@Test(priority = 1, groups = { "Sanity" }, retryAnalyzer = Listners.Retry.class)
 	public void check_title_page() {
 		testreports.test_details("Verifying Page title on Product details screen");
 		productdetailspage.check_title_page();
@@ -71,7 +71,7 @@ public class ProductDetailsPageTest extends Base_Test {
 	/**
 	 * Getting all product details from its details page
 	 */
-	@Test(priority = 3, groups = "Sanity")
+	@Test(priority = 3, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
 	public void about_product() 
 	{
 		testreports.test_details("Fetch details about product");

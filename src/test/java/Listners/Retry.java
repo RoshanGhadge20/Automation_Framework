@@ -1,8 +1,5 @@
 package Listners;
 
-import java.lang.System.Logger;
-
-import org.slf4j.LoggerFactory;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 

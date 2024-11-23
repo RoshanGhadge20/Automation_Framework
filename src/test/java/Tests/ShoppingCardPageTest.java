@@ -49,7 +49,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	/**
 	 * Verify title of page on shopping card page
 	 */
-	@Test(priority = 1, groups = { "Sanity" })
+	@Test(priority = 1, groups = { "Sanity" }, retryAnalyzer = Listners.Retry.class)
 	public void Verify_title_of_page() {
 		testreports.test_details("Verify title of page");
 		shoppingcardpage.verify_title();
@@ -69,7 +69,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	/**
 	 * Check if user is able to search product & add it into shopping cart page
 	 */
-	@Test(priority = 3, groups = { "Sanity", "Regression" }, enabled = false)
+	@Test(priority = 3, groups = { "Sanity", "Regression" }, enabled = false, retryAnalyzer = Listners.Retry.class)
 	public void add_product() throws IOException, Exception 
 	{
 		//capturevideo.StartRecording();
@@ -83,7 +83,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	/**
 	 * Getting list of items added into shopping cart page
 	 */
-	@Test(priority = 4, groups = "Sanity")
+	@Test(priority = 4, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
 	public void list_of_items() 
 	{
 		//capturevideo.StartRecording();

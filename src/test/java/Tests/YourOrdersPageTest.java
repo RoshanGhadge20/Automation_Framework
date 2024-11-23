@@ -41,7 +41,7 @@ public class YourOrdersPageTest extends Base_Test {
 	/**
 	 * Verify title of page on Yourorders page
 	 */
-	@Test(priority = 1, groups = "Sanity")
+	@Test(priority = 1, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
 	public void check_title() 
 	{
 		testreports.test_details("Verify title of page");
@@ -64,7 +64,7 @@ public class YourOrdersPageTest extends Base_Test {
 	/**
 	 * Verify listing of all options available on your orders page
 	 */
-	@Test(priority = 3, groups = "Sanity")
+	@Test(priority = 3, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
 	public void get_yourorders_options() throws InterruptedException 
 	{
 		//capturevideo.StartRecording();
