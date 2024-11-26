@@ -17,20 +17,18 @@ public class TakeScreenshot extends Base_Test {
 		super();
 	}
 
-	public void Takescreenhots() throws IOException
-	{
-		TakesScreenshot ts= (TakesScreenshot) driver;
-		File source= ts.getScreenshotAs(OutputType.FILE);
-		File dest= new File("E:/Automation_Framework/POM//Screenshot/FailedTC.png");
+	public void Takescreenhots() throws IOException {
+		TakesScreenshot ts = (TakesScreenshot) driver;
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		File dest = new File("E:/Automation_Framework/POM//Screenshot/FailedTC.png");
 		FileUtils.copyFile(source, dest);
 		System.out.println("screenshot saved");
 	}
-	
-	public void Takepartialscreenshots(WebElement element) throws IOException
-	{
-		File src= element.getScreenshotAs(OutputType.FILE);
-		File destn= new File("E:/Automation_Framework/POM//Screenshot/FailedTC.png");
+
+	public void Takepartialscreenshots(WebElement element) throws IOException {
+		File src = element.getScreenshotAs(OutputType.FILE);
+		File destn = new File("E:/Automation_Framework/POM//Screenshot/FailedTC.png");
 		FileUtils.copyFile(src, destn);
-		System.out.println(" partial screenshot saved");	
+		System.out.println(" partial screenshot saved");
 	}
 }
