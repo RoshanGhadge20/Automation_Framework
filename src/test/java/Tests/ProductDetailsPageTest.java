@@ -59,21 +59,19 @@ public class ProductDetailsPageTest extends Base_Test {
 	 * searching & clicking on respective product
 	 */
 	@Test(priority = 2, groups = { "Sanity" })
-	public void verify_productdetailscreen() 
-	{
-		//capturevideo.StartRecording();
+	public void verify_productdetailscreen() {
+		// capturevideo.StartRecording();
 		testreports.test_details("Validate user redirects to correct product details screen");
 		Assert.assertEquals((productdetailspage.Verify_Productdetail_page()), true);
 		logger.info("ProductDetailsPage verify_productdetailscreen executed");
-		//capturevideo.StopRecording();
+		// capturevideo.StopRecording();
 	}
 
 	/**
 	 * Getting all product details from its details page
 	 */
 	@Test(priority = 3, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
-	public void about_product() 
-	{
+	public void about_product() {
 		testreports.test_details("Fetch details about product");
 		productdetailspage.get_product_details();
 		logger.info("ProductDetailsPage about_product executed");

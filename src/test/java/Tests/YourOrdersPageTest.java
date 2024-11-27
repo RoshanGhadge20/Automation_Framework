@@ -42,8 +42,7 @@ public class YourOrdersPageTest extends Base_Test {
 	 * Verify title of page on Yourorders page
 	 */
 	@Test(priority = 1, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
-	public void check_title() 
-	{
+	public void check_title() {
 		testreports.test_details("Verify title of page");
 		yourorderspage.get_title_of_yourorderpage();
 		logger.info("YourOrderPageTest check_title executed");
@@ -54,8 +53,7 @@ public class YourOrdersPageTest extends Base_Test {
 	 * Your Orders )
 	 */
 	@Test(priority = 2, groups = { "Sanity", "Regression" })
-	public void check_page() 
-	{
+	public void check_page() {
 		testreports.test_details("Validate user is correctly landed on Yours order page by validating text");
 		Assert.assertTrue(yourorderspage.Verify_YourOrdersPage());
 		logger.info("YourOrderPageTest check_page executed");
@@ -65,13 +63,12 @@ public class YourOrdersPageTest extends Base_Test {
 	 * Verify listing of all options available on your orders page
 	 */
 	@Test(priority = 3, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
-	public void get_yourorders_options() throws InterruptedException 
-	{
-		//capturevideo.StartRecording();
+	public void get_yourorders_options() throws InterruptedException {
+		// capturevideo.StartRecording();
 		testreports.test_details("Verifying all list of options available on your orders page");
 		yourorderspage.order_options();
 		logger.info("YourOrderPageTest get_yourorders_options executed");
-		//capturevideo.StopRecording();
+		// capturevideo.StopRecording();
 	}
 
 	/**

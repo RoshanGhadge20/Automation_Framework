@@ -70,40 +70,37 @@ public class ShoppingCardPageTest extends Base_Test {
 	 * Check if user is able to search product & add it into shopping cart page
 	 */
 	@Test(priority = 3, groups = { "Sanity", "Regression" }, enabled = false, retryAnalyzer = Listners.Retry.class)
-	public void add_product() throws IOException, Exception 
-	{
-		//capturevideo.StartRecording();
+	public void add_product() throws IOException, Exception {
+		// capturevideo.StartRecording();
 		testreports.test_details("Select a product and add it to the shopping cart");
 		// dashboardpage.search_product(pr.getProperty("product"));
 		productdetailspage.add_to_shoppingcart();
 		logger.info("ShoppingCardPageTest add_product executed");
-		//capturevideo.StopRecording();
+		// capturevideo.StopRecording();
 	}
 
 	/**
 	 * Getting list of items added into shopping cart page
 	 */
 	@Test(priority = 4, groups = "Sanity", retryAnalyzer = Listners.Retry.class)
-	public void list_of_items() 
-	{
-		//capturevideo.StartRecording();
+	public void list_of_items() {
+		// capturevideo.StartRecording();
 		testreports.test_details("fetching list of items added into shoppingcart");
 		shoppingcardpage.list_of_items_addedinto_shopping_cart();
 		logger.info("ShoppingCardPageTest list_of_items executed");
-		//capturevideo.StopRecording();
+		// capturevideo.StopRecording();
 	}
 
 	/**
 	 * Check if user is able to proceed to checkout
 	 */
 	@Test(priority = 5, groups = "Regression")
-	public void do_checkout() 
-	{
-		//capturevideo.StartRecording();
+	public void do_checkout() {
+		// capturevideo.StartRecording();
 		testreports.test_details("Verify Checkout Functionality");
 		shoppingcardpage.proceed_to_buy();
 		logger.info("ShoppingCardPageTest do_checkout executed");
-		//capturevideo.StopRecording();
+		// capturevideo.StopRecording();
 	}
 
 	@AfterMethod
