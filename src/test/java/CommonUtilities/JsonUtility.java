@@ -7,8 +7,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import BaseTest.Base_Test;
 
-public class JsonUtility extends Base_Test 
-{
+public class JsonUtility extends Base_Test {
 	public JsonObject jobj;
 	String json_file_path = "E://Automation_Framework//POM//Test_Data//logindetails.json";
 
