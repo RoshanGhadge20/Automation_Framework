@@ -38,7 +38,6 @@
 		<maven.compiler.target>11</maven.compiler.target>
 	</properties>
 
-
 	<dependencies>
 
 		<dependency>
@@ -46,12 +45,7 @@
 			<artifactId>selenium-java</artifactId>
 			<version>4.25.0</version>
 		</dependency>
-		<!--<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
--->
+
 
 		<dependency>
 			<groupId>org.testng</groupId>
