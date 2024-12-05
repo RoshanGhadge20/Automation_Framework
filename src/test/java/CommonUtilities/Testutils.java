@@ -13,10 +13,12 @@ import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.v127.log.model.LogEntry;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -43,7 +45,7 @@ public class Testutils extends Base_Test {
 		TakesScreenshot TS = (TakesScreenshot) driver;
 		File fs = TS.getScreenshotAs(OutputType.FILE);
 		File des = new File(path);
-		FileUtils.copyFile(fs, des);	
+		FileUtils.copyFile(fs, des);
 	}
 
 	// Implemented select option utility
@@ -74,17 +76,28 @@ public class Testutils extends Base_Test {
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
-	// Added Alert Utility 
+	// Added Alert Utility
 	public void accept_alert() {
 		driver.switchTo().alert().accept();
 	}
-	
+
 	public void dismiss_alert() {
 		driver.switchTo().alert().dismiss();
 	}
-	
+
 	public void get_text_alert() {
-	String alert_text=	driver.switchTo().alert().getText();
-	System.out.println("Alert Text :- " + alert_text);
+		String alert_text = driver.switchTo().alert().getText();
+		System.out.println("Alert Text :- " + alert_text);
 	}
+
+	// Highlight an element during testing for debugging
+	public void highlightElement(WebElement element) {
+		js.executeScript("arguments[0].style.border='3px solid red'", element);
+	}
+
+	// File Upload Utility
+	public void upload_file(WebElement element, String file_path) {
+		element.sendKeys(file_path);
+	}
+
 }
