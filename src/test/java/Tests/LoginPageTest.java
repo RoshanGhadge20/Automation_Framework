@@ -2,20 +2,23 @@ package Tests;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import org.openqa.selenium.Capabilities;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import BaseTest.Base_Test;
-import CommonUtilities.ExcelUtility;
+import CommonUtilities.Testutils;
 import Pages.LoginPage;
 import ScreenRecording.*;
+import bsh.util.Util;
 
 public class LoginPageTest extends Base_Test {
 
 	LoginPage loginpage;
 	CaptureVideo capturevideo;
+	Testutils testutils;
 
 	public LoginPageTest() throws IOException, FileNotFoundException {
 		super();
@@ -25,7 +28,7 @@ public class LoginPageTest extends Base_Test {
 	public void initialize() throws IOException {
 		loginpage = new Pages.LoginPage();
 		capturevideo = new CaptureVideo();
-	}
+		testutils = new Testutils();	}
 
 	/**
 	 * To check the title of login page
@@ -33,7 +36,7 @@ public class LoginPageTest extends Base_Test {
 	@Test(priority = 1, groups = { "Sanity" }, retryAnalyzer = Listners.Retry.class)
 	public void check_title() throws IOException {
 		testreports.test_details("Check title of login page");
-		String titleString = loginpage.getpagetitle();
+		String titleString = testutils.get_pagetitle();
 		Assert.assertEquals(titleString, "Amazon Sign In", "Title does not match");
 		logger.info("LoginTest check_title executed");
 	}

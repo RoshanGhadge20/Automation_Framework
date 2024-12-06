@@ -57,10 +57,6 @@ public class LoginPage extends Base_Test {
 	@FindBy(css = "#createAccountSubmit")
 	WebElement creatent_account;
 
-	public String getpagetitle() {
-		return driver.getTitle();
-	}
-
 	public boolean amazon_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(logo));
 		int height = logo.getRect().getHeight();

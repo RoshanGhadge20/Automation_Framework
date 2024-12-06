@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.github.dockerjava.api.command.PullImageCmd;
 
 import BaseTest.Base_Test;
+import CommonUtilities.Testutils;
 import Pages.DashboardPage;
 import Pages.LoginPage;
 import ScreenRecording.CaptureVideo;
@@ -22,6 +23,7 @@ public class DashboardPageTest extends Base_Test {
 	LoginPage loginpage;
 	DashboardPage dashboardpage;
 	CaptureVideo capturevideo;
+	Testutils testutils;
 
 	public DashboardPageTest() throws IOException {
 		super();
@@ -32,6 +34,7 @@ public class DashboardPageTest extends Base_Test {
 
 		dashboardpage = new LoginPage().do_login(pr.getProperty("username"), pr.getProperty("password"));
 		capturevideo = new CaptureVideo();
+		testutils = new Testutils();
 	}
 
 	/**
@@ -40,7 +43,7 @@ public class DashboardPageTest extends Base_Test {
 	@Test(priority = 1, groups = { "Sanity" }, retryAnalyzer = Listners.Retry.class)
 	public void get_title() {
 		testreports.test_details("Verify title of dashboard page");
-		dashboardpage.get_page_title();
+		String title_page = testutils.get_pagetitle();
 		logger.info("DashboardTest get_title executed");
 	}
 

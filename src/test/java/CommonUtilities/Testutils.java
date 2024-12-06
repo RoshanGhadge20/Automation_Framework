@@ -12,6 +12,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
+import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,11 +24,20 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import BaseTest.Base_Test;
+import io.github.bonigarcia.wdm.managers.VoidDriverManager;
 
-public class Testutils extends Base_Test {
+public class Testutils extends Base_Test
+{
 
-	public Testutils() throws IOException, FileNotFoundException {
+	public Testutils() throws IOException, FileNotFoundException 
+	{
 		super();
+	}
+	
+	//To get Page Title 
+	public String get_pagetitle()
+	{
+		 return driver.getTitle();
 	}
 
 	// Added JavascriptExecutor & cascaded with driver obj

@@ -62,10 +62,6 @@ public class DashboardPage extends Base_Test {
 		return Dashboardlogo.isDisplayed();
 	}
 
-	public void get_page_title() {
-		System.out.println("Dashboard page title " + (driver.getTitle()));
-	}
-
 	public void dash_pg_navbar() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(navbarElement));
 		String element = navbarElement.getText();
