@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import BaseTest.Base_Test;
 import CommonUtilities.Extent_Reports;
+import CommonUtilities.Testutils;
 import Pages.DashboardPage;
 import Pages.LoginPage;
 import Pages.ProductDetailsPage;
@@ -24,6 +25,7 @@ public class ShoppingCardPageTest extends Base_Test {
 	ProductDetailsPage productdetailspage;
 	ShoppingCardPage shoppingcardpage;
 	CaptureVideo capturevideo;
+	Testutils testutils;
 
 	public ShoppingCardPageTest() throws IOException, FileNotFoundException {
 		super();
@@ -44,6 +46,7 @@ public class ShoppingCardPageTest extends Base_Test {
 		productdetailspage = new ProductDetailsPage();
 		shoppingcardpage = new ShoppingCardPage();
 		capturevideo = new CaptureVideo();
+		testutils = new Testutils();
 	}
 
 	/**

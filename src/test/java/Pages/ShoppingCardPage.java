@@ -47,7 +47,7 @@ public class ShoppingCardPage extends Base_Test
 	{
 		testutils.wait.until(ExpectedConditions.visibilityOf(Cart));
 		Cart.click();
-		System.out.println(driver.getTitle());
+		System.out.println(testutils.get_pagetitle());
 	}
 
 

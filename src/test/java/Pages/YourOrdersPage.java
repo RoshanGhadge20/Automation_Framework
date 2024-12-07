@@ -44,9 +44,8 @@ public class YourOrdersPage extends Base_Test
 	public void get_title_of_yourorderpage() 
 	{
 		Return_Order.click();
-		System.out.println("Title of Page"+driver.getTitle());
+		System.out.println("Title of Page :- "+ testutils.get_pagetitle());
 	}
-	
 
 	public boolean Verify_YourOrdersPage() 
 	{
