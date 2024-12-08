@@ -59,6 +59,7 @@ public class LoginPage extends Base_Test {
 
 	public boolean amazon_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(logo));
+		testutils.highlightElement(logo, 2000);	
 		int height = logo.getRect().getHeight();
 		int width = logo.getRect().getWidth();
 		Assert.assertEquals(height, 31);

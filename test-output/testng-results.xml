@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-08T11:36:25 IST" name="Default suite" finished-at="2024-12-08T11:36:30 IST" duration-ms="5291">
+    <groups>
+      <group name="Sanity">
+        <method signature="LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@1fb700ee]" name="check_logo" class="Tests.LoginPageTest"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test started-at="2024-12-08T11:36:25 IST" name="Default test" finished-at="2024-12-08T11:36:30 IST" duration-ms="5291">
+      <class name="Tests.LoginPageTest">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:24 IST" name="setupReport" finished-at="2024-12-08T11:36:25 IST" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReport -->
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:25 IST" name="active" finished-at="2024-12-08T11:36:27 IST" duration-ms="2860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- active -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:27 IST" name="initialize" finished-at="2024-12-08T11:36:28 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="check_logo()[pri:2, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:28 IST" name="check_logo" finished-at="2024-12-08T11:36:30 IST" duration-ms="2174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_logo -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:30 IST" name="teardown" finished-at="2024-12-08T11:36:30 IST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=check_logo status=SUCCESS method=LoginPageTest.check_logo()[pri:2, instance:Tests.LoginPageTest@1fb700ee] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:30 IST" name="deactive" finished-at="2024-12-08T11:36:30 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deactive -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.LoginPageTest@1fb700ee]" started-at="2024-12-08T11:36:30 IST" name="tearDownReport" finished-at="2024-12-08T11:36:30 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- Tests.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

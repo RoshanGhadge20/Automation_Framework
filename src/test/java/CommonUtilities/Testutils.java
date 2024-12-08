@@ -109,5 +109,22 @@ public class Testutils extends Base_Test
 	public void upload_file(WebElement element, String file_path) {
 		element.sendKeys(file_path);
 	}
+	
+	
+	// Highlighting Elements on webpage for debugging purpose 
+	public void highlightElement(WebElement element, int durationInMillis) {
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].style.border='3px solid red';", element);
+	    try 
+	    {
+	        Thread.sleep(durationInMillis); 
+	    } 
+	    catch (InterruptedException e) 
+	    {
+	        e.printStackTrace();
+	    }
+	    js.executeScript("arguments[0].style.border=''; arguments[0].style.background='';", element);
+	}
+
 
 }
