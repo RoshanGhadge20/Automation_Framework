@@ -28,7 +28,8 @@ public class LoginPageTest extends Base_Test {
 	public void initialize() throws IOException {
 		loginpage = new Pages.LoginPage();
 		capturevideo = new CaptureVideo();
-		testutils = new Testutils();	}
+		testutils = new Testutils();
+	}
 
 	/**
 	 * To check the title of login page

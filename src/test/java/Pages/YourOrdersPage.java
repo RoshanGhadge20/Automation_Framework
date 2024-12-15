@@ -41,6 +41,8 @@ public class YourOrdersPage extends Base_Test
 	WebElement page_path;
 	
 
+	// Test Methods
+	
 	public void get_title_of_yourorderpage() 
 	{
 		Return_Order.click();

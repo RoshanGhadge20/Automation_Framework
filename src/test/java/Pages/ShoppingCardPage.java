@@ -43,6 +43,8 @@ public class ShoppingCardPage extends Base_Test
 	@FindBy(xpath = "//h1[contains(text(),'Checkout')]")
 	WebElement checkout_title;
 
+	// Test Method
+	
 	public void verify_title()
 	{
 		testutils.wait.until(ExpectedConditions.visibilityOf(Cart));

@@ -41,6 +41,8 @@ public class ProductDetailsPage extends Base_Test
 	List<WebElement> About_Product_Details;
 
 	private boolean element;
+	
+	// Test Method
 
 	public void check_title_page() 
 	{

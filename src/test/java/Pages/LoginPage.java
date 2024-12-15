@@ -56,6 +56,8 @@ public class LoginPage extends Base_Test {
 
 	@FindBy(css = "#createAccountSubmit")
 	WebElement creatent_account;
+	
+	//Test Methods 
 
 	public boolean amazon_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(logo));

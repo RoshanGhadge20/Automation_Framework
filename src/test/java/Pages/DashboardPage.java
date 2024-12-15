@@ -53,6 +53,8 @@ public class DashboardPage extends Base_Test {
 	@FindBy(css = "#hmenu-customer-name b")
 	WebElement UserProfile;
 
+	// Test Methods 
+	
 	public boolean verify_dashboard_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(Dashboardlogo));
 		int height = Dashboardlogo.getRect().getHeight();
