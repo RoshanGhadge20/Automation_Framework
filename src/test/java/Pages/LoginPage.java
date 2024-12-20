@@ -85,5 +85,17 @@ public class LoginPage extends Base_Test {
 		// System.out.println("Login Successful");
 		return new DashboardPage();
 	}
+	
+	// After login it return object for youaccount page
+		public YourAccountPage logining(String un, String pass)
+				throws InterruptedException, FileNotFoundException, IOException
+		{
+			email_field.sendKeys(un);
+			continue_btn.click();
+			password.sendKeys(pass);
+			signbtn.click();
+			// System.out.println("Login Successful");
+			return new YourAccountPage();
+		}
 
 }
