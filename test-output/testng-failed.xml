@@ -8,9 +8,9 @@
           <include name="deactive"/>
           <include name="tearDownReport"/>
           <include name="active"/>
-          <include name="check_title"/>
           <include name="setupReport"/>
           <include name="initialize"/>
+          <include name="check_options"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- Tests.YourAccountPageTest -->

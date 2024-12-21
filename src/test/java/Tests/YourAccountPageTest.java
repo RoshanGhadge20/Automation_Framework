@@ -38,6 +38,15 @@ public class YourAccountPageTest extends Base_Test
 		System.out.println(youraccountpage.check_page());
 	}
 	
+	@Test(priority = 2, groups = {"Sanity"})
+	public void check_options()
+	{
+		testreports.test_details("Verify options on your account page");
+		youraccountpage.list_of_options();
+	}
+	
+	
+	
 	@AfterMethod
 	public void teardown(ITestResult result)
 	{

@@ -2,6 +2,8 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
+import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -13,6 +15,7 @@ import com.mysql.cj.util.TestUtils;
 
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
+import io.github.bonigarcia.wdm.managers.VoidDriverManager;
 
 public class YourAccountPage extends Base_Test
 {
@@ -33,6 +36,9 @@ public class YourAccountPage extends Base_Test
 	@FindBy(xpath = "//h1[contains(text(),' Your Account')]")
 	WebElement PageText;
 	
+	@FindBy(css = "div.a-box-inner")
+	List<WebElement> Youraccount_options;
+	
 	// Test Methods 
 	
 	public void navigate_to_youraccount()
@@ -45,6 +51,20 @@ public class YourAccountPage extends Base_Test
 		testutils.wait.until(ExpectedConditions.visibilityOf(PageText));
 		return PageText;
 	}
+	
+	public void list_of_options()
+	{
+		int i=1;
+		YourAccount.click();
+		testutils.wait.until(ExpectedConditions.visibilityOf(PageText));
+		for(WebElement ele: Youraccount_options)
+		{
+			System.out.println("Options in Your Account Page"+ele.getText()+i);
+			i++;
+		}
+	}
+	
+	
 	
 	
 }
