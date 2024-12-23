@@ -34,6 +34,12 @@
 					<include name="get_yourorders_options"></include>
 				</methods>
 			</class>
+			<class name="Tests.YourAccountPagetTest">
+			<methods>
+			<include name="check_titles"></include>
+			<include name="check_options"></include>
+			</methods>
+			</class>
 		</classes>
 	</test>
 </suite> 

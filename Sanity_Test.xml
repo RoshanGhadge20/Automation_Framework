@@ -13,6 +13,7 @@
 			<class name="Tests.ProductDetailsPageTest"></class>
 			<class name="Tests.ShoppingCardPageTest"></class>
 			<class name="Tests.YourOrdersPageTest"></class>
+			<class name="Tests.YourAccountPageTest"></class>
 		</classes>
 	</test> <!--
 	Test -->

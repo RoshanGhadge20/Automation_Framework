@@ -8,6 +8,7 @@
       <class name="Tests.ProductDetailsPageTest"/>
       <class name="Tests.ShoppingCardPageTest"/>
       <class name="Tests.YourOrdersPageTest"/>
+      <class name="Tests.YourAccountPageTest/"></class>
     </classes>
   </test> 
 </suite> 
