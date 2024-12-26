@@ -3,6 +3,7 @@ package BaseTest;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,6 +44,15 @@ public class Base_Test {
 		String browser = pr.getProperty("browser").toLowerCase();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
+		
+		//Setting up behaviour of chromedriver
+		/*
+		 * options.addArguments("Headless"); String downloadpath="E://"; HashMap<String,
+		 * Object> chromepref=new HashMap<String, Object>();
+		 * chromepref.put("profile.default_content_setting_popup", 0); c
+		 * hromepref.put("download.default_directory", downloadpath);
+		 */
+		
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(options);
