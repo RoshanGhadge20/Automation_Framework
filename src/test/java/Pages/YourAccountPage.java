@@ -1,9 +1,14 @@
 package Pages;
 
+import java.awt.RenderingHints.Key;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.concurrent.ConcurrentHashMap.KeySetView;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -30,8 +35,13 @@ public class YourAccountPage extends Base_Test {
 	@FindBy(css = "div.a-box-inner")
 	List<WebElement> Youraccount_options;
 
+	// Actions class 
+	Actions act= new Actions(driver);
+	
+	
+	
+	
 	// Test Methods
-
 	public void navigate_to_youraccount() {
 		YourAccount.click();
 	}
@@ -49,6 +59,16 @@ public class YourAccountPage extends Base_Test {
 		for (WebElement ele : Youraccount_options) {
 			System.out.println("Options in Your Account Page" + ele.getText() + i);
 			i++;
+		}
+	}
+	
+	public void verify_redirection_of_links()
+	{
+		YourAccount.click();
+		testutils.wait.until(ExpectedConditions.visibilityOf(PageText));
+		for (WebElement element: Youraccount_options) 
+		{
+			act.keyDown(Keys.CONTROL).click(element).build().perform();
 		}
 	}
 
