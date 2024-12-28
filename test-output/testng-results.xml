@@ -2,31 +2,31 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-28T18:14:48 IST" name="Default suite" finished-at="2024-12-28T18:15:02 IST" duration-ms="13873">
+  <suite started-at="2024-12-28T18:29:20 IST" name="Default suite" finished-at="2024-12-28T18:29:30 IST" duration-ms="10024">
     <groups>
       <group name="Regression">
         <method signature="YourAccountPageTest.check_links()[pri:3, instance:Tests.YourAccountPageTest@53aad5d5]" name="check_links" class="Tests.YourAccountPageTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-12-28T18:14:48 IST" name="Default test" finished-at="2024-12-28T18:15:02 IST" duration-ms="13873">
+    <test started-at="2024-12-28T18:29:20 IST" name="Default test" finished-at="2024-12-28T18:29:30 IST" duration-ms="10024">
       <class name="Tests.YourAccountPageTest">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:14:48 IST" name="setupReport" finished-at="2024-12-28T18:14:48 IST" duration-ms="222" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:20 IST" name="setupReport" finished-at="2024-12-28T18:29:20 IST" duration-ms="225" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="active()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:14:48 IST" name="active" finished-at="2024-12-28T18:14:53 IST" duration-ms="5030" status="PASS">
+        <test-method is-config="true" signature="active()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:20 IST" name="active" finished-at="2024-12-28T18:29:23 IST" duration-ms="2392" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- active -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:14:53 IST" name="initialize" finished-at="2024-12-28T18:14:55 IST" duration-ms="1666" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:23 IST" name="initialize" finished-at="2024-12-28T18:29:24 IST" duration-ms="1280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="check_links()[pri:3, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:14:55 IST" name="check_links" finished-at="2024-12-28T18:15:02 IST" duration-ms="6856" status="PASS">
+        <test-method signature="check_links()[pri:3, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:24 IST" name="check_links" finished-at="2024-12-28T18:29:30 IST" duration-ms="6116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- check_links -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:15:02 IST" name="teardown" finished-at="2024-12-28T18:15:02 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:30 IST" name="teardown" finished-at="2024-12-28T18:29:30 IST" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,11 +37,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:15:02 IST" name="deactive" finished-at="2024-12-28T18:15:02 IST" duration-ms="280" status="PASS">
+        <test-method is-config="true" signature="deactive()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:30 IST" name="deactive" finished-at="2024-12-28T18:29:30 IST" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deactive -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:15:02 IST" name="tearDownReport" finished-at="2024-12-28T18:15:03 IST" duration-ms="525" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:Tests.YourAccountPageTest@53aad5d5]" started-at="2024-12-28T18:29:30 IST" name="tearDownReport" finished-at="2024-12-28T18:29:31 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->

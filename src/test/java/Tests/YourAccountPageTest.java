@@ -39,7 +39,7 @@ public class YourAccountPageTest extends Base_Test {
 	}
 
 	@Test(priority = 3, groups = {"Regression"})
-	public void check_links()
+	public void check_links() throws IOException
 	{
 		testreports.test_details("Checking links on page");
 		youraccountpage.verify_redirection_of_links();

@@ -5,12 +5,12 @@
     <classes>
       <class name="Tests.YourAccountPageTest">
         <methods>
+          <include name="check_links"/>
           <include name="deactive"/>
           <include name="tearDownReport"/>
           <include name="active"/>
           <include name="setupReport"/>
           <include name="initialize"/>
-          <include name="check_options"/>
           <include name="teardown"/>
         </methods>
       </class> <!-- Tests.YourAccountPageTest -->
