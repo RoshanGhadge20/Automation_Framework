@@ -2,24 +2,16 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.DriverManager;
-import java.time.Duration;
-import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 import BaseTest.Base_Test;
-import CommonUtilities.Extent_Reports;
 import CommonUtilities.Testutils;
-import lombok.With;
 
 public class LoginPage extends Base_Test {
 	Testutils testutils;
@@ -31,37 +23,37 @@ public class LoginPage extends Base_Test {
 	}
 
 	// object pool ( Weblements )
-	
+
 	@FindBy(css = "input#ap_email")
 	@CacheLookup
-	WebElement email_field;
+	private WebElement email_field;
 
 	@FindBy(css = "span#continue")
 	@CacheLookup
-	WebElement continue_btn;
+	private WebElement continue_btn;
 
 	@FindBy(css = ".a-icon-logo")
-	WebElement logo;
+	private WebElement logo;
 
 	@FindBy(css = "input[name='password']")
 	@CacheLookup
-	WebElement password;
+	private WebElement password;
 
 	@FindBy(css = "input#signInSubmit")
 	@CacheLookup
-	WebElement signbtn;
+	private WebElement signbtn;
 
 	@FindBy(xpath = "//h5[contains(text(),'New to Amazon?')]")
-	WebElement newToAmazonText;
+	private WebElement newToAmazonText;
 
 	@FindBy(css = "#createAccountSubmit")
-	WebElement creatent_account;
-	
-	//Test Methods 
+	private WebElement creatent_account;
+
+	// Test Methods
 
 	public boolean amazon_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(logo));
-		testutils.highlightElement(logo, 2000);	
+		testutils.highlightElement(logo, 2000);
 		int height = logo.getRect().getHeight();
 		int width = logo.getRect().getWidth();
 		Assert.assertEquals(height, 31);
@@ -76,8 +68,7 @@ public class LoginPage extends Base_Test {
 
 	// After login it return object of dashboard page
 	public DashboardPage do_login(String un, String pass)
-			throws InterruptedException, FileNotFoundException, IOException
-	{
+			throws InterruptedException, FileNotFoundException, IOException {
 		email_field.sendKeys(un);
 		continue_btn.click();
 		password.sendKeys(pass);
@@ -85,17 +76,16 @@ public class LoginPage extends Base_Test {
 		// System.out.println("Login Successful");
 		return new DashboardPage();
 	}
-	
+
 	// After login it return object for youaccount page
-		public YourAccountPage logining(String un, String pass)
-				throws InterruptedException, FileNotFoundException, IOException
-		{
-			email_field.sendKeys(un);
-			continue_btn.click();
-			password.sendKeys(pass);
-			signbtn.click();
-			// System.out.println("Login Successful");
-			return new YourAccountPage();
-		}
+	public YourAccountPage logining(String un, String pass)
+			throws InterruptedException, FileNotFoundException, IOException {
+		email_field.sendKeys(un);
+		continue_btn.click();
+		password.sendKeys(pass);
+		signbtn.click();
+		// System.out.println("Login Successful");
+		return new YourAccountPage();
+	}
 
 }

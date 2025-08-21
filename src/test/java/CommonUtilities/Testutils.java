@@ -3,7 +3,6 @@ package CommonUtilities;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.annotation.Documented;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -12,32 +11,24 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.apache.commons.io.FileUtils;
-import org.jspecify.annotations.Nullable;
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v127.log.model.LogEntry;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import BaseTest.Base_Test;
-import io.github.bonigarcia.wdm.managers.VoidDriverManager;
 
-public class Testutils extends Base_Test
-{
+public class Testutils extends Base_Test {
 
-	public Testutils() throws IOException, FileNotFoundException 
-	{
+	public Testutils() throws IOException, FileNotFoundException {
 		super();
 	}
-	
-	//To get Page Title 
-	public String get_pagetitle()
-	{
-		 return driver.getTitle();
+
+	// To get Page Title
+	public String get_pagetitle() {
+		return driver.getTitle();
 	}
 
 	// Added JavascriptExecutor & cascaded with driver obj
@@ -109,22 +100,17 @@ public class Testutils extends Base_Test
 	public void upload_file(WebElement element, String file_path) {
 		element.sendKeys(file_path);
 	}
-	
-	
-	// Highlighting Elements on webpage for debugging purpose 
-	public void highlightElement(WebElement element, int durationInMillis) {
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-	    js.executeScript("arguments[0].style.border='3px solid red';", element);
-	    try 
-	    {
-	        Thread.sleep(durationInMillis); 
-	    } 
-	    catch (InterruptedException e) 
-	    {
-	        e.printStackTrace();
-	    }
-	    js.executeScript("arguments[0].style.border=''; arguments[0].style.background='';", element);
-	}
 
+	// Highlighting Elements on webpage for debugging purpose
+	public void highlightElement(WebElement element, int durationInMillis) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].style.border='3px solid red';", element);
+		try {
+			Thread.sleep(durationInMillis);
+		} catch (InterruptedException e) {
+			e.getMessage();
+		}
+		js.executeScript("arguments[0].style.border=''; arguments[0].style.background='';", element);
+	}
 
 }

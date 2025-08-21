@@ -1,9 +1,7 @@
 package CommonUtilities;
 
 import java.io.File;
-
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -29,7 +27,6 @@ public class Extent_Reports {
 		extentsparkreporter.config().setReportName("QA,Test Reports");
 		extentsparkreporter.config().setTheme(Theme.DARK);
 		extentsparkreporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
-
 	}
 
 	public void getresult(ITestResult result) {

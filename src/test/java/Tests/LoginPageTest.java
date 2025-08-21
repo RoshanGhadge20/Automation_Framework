@@ -2,7 +2,6 @@ package Tests;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import org.openqa.selenium.Capabilities;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -11,8 +10,7 @@ import org.testng.annotations.Test;
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
 import Pages.LoginPage;
-import ScreenRecording.*;
-import bsh.util.Util;
+import ScreenRecording.CaptureVideo;
 
 public class LoginPageTest extends Base_Test {
 

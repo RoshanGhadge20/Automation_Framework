@@ -19,6 +19,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Base_Test {
+
 	public static WebDriver driver;
 	public static Properties pr;
 	public static Extent_Reports testreports;
@@ -44,33 +45,38 @@ public class Base_Test {
 		String browser = pr.getProperty("browser").toLowerCase();
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
-		
-		//Setting up behaviour of chromedriver
+
+		// Setting up behaviour of chromedriver
 		/*
 		 * options.addArguments("Headless"); String downloadpath="E://"; HashMap<String,
 		 * Object> chromepref=new HashMap<String, Object>();
 		 * chromepref.put("profile.default_content_setting_popup", 0); c
 		 * hromepref.put("download.default_directory", downloadpath);
 		 */
-		
-		if (browser.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver(options);
-		} else if (browser.equals("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
-		} else {
+
+		try {
+			if (browser.equalsIgnoreCase("chrome")) {
+				WebDriverManager.chromedriver().setup();
+				driver = new ChromeDriver(options);
+				logger.info("ChromeDriver initiated");
+			} else if (browser.equalsIgnoreCase("firefox")) {
+				WebDriverManager.firefoxdriver().setup();
+				driver = new FirefoxDriver();
+				logger.info("FirefoxDriver initiated");
+			}
+		} catch (Exception e) {
+			logger.info("Exception is caught while initializing the driver :- " + e.getMessage());
 			System.out.println("Webdriver not initialized");
 		}
 
-		logger.info("URL with exception handling");
+		// logger.info("URL with exception handling");
 		try {
 			driver.get(pr.getProperty("URL"));
 			driver.manage().window().maximize();
 		} catch (Exception e) {
 			System.out.println("Unable to load URL: " + e.getMessage());
 		}
-		logger.info("Webdriver Initiated");
+		logger.info("Fetched URL Successfully ");
 	}
 
 	@AfterMethod
