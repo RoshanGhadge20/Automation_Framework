@@ -2,21 +2,17 @@ package Pages;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.annotation.ElementType;
-import java.util.Iterator;
 import java.util.List;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+
 import BaseTest.Base_Test;
 import CommonUtilities.Testutils;
-import io.github.bonigarcia.wdm.managers.VoidDriverManager;
-import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
 
 public class DashboardPage extends Base_Test {
 	LoginPage loginpage;
@@ -53,8 +49,8 @@ public class DashboardPage extends Base_Test {
 	@FindBy(css = "#hmenu-customer-name b")
 	WebElement UserProfile;
 
-	// Test Methods 
-	
+	// Test Methods
+
 	public boolean verify_dashboard_logo() {
 		testutils.wait.until(ExpectedConditions.visibilityOf(Dashboardlogo));
 		int height = Dashboardlogo.getRect().getHeight();

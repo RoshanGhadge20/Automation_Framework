@@ -39,7 +39,6 @@ public class DashboardPageTest extends Base_Test {
 	@Test(priority = 1, groups = { "Sanity" }, retryAnalyzer = Listners.Retry.class)
 	public void get_title() {
 		testreports.test_details("Verify title of dashboard page");
-		String title_page = testutils.get_pagetitle();
 		logger.info("DashboardTest get_title executed");
 	}
 
